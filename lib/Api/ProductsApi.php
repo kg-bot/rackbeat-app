@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * ProductsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -91,9 +91,9 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $media Image (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product
+     * @return \RackbeatApp\Client\Model\Product
      */
     public function addProductImage($number, $media)
     {
@@ -109,14 +109,14 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $media Image (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
      */
     public function addProductImageWithHttpInfo($number, $media)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->addProductImageRequest($number, $media);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->addProductImageRequest($number, $media);
 
         try {
             $options = $this->createHttpClientOption();
@@ -167,7 +167,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product',
+                        '\RackbeatApp\Client\Model\Product',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,8 +211,8 @@ class ProductsApi
      */
     public function addProductImageAsyncWithHttpInfo($number, $media)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->addProductImageRequest($number, $media);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->addProductImageRequest($number, $media);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -371,7 +371,7 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -387,7 +387,7 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -596,7 +596,7 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -612,7 +612,7 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -823,7 +823,7 @@ class ProductsApi
      * @param  string $variation_type Variation type number (required)
      * @param  string $option_number Product Variation Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -841,7 +841,7 @@ class ProductsApi
      * @param  string $variation_type Variation type number (required)
      * @param  string $option_number Product Variation Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1085,7 +1085,7 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_number Products Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1102,7 +1102,7 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_number Products Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1329,7 +1329,7 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type_number Products Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1346,7 +1346,7 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type_number Products Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1573,9 +1573,9 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $locale Locale number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Translation
+     * @return \RackbeatApp\Client\Model\Translation
      */
     public function getProductsTranslation($number, $locale)
     {
@@ -1591,14 +1591,14 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $locale Locale number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Translation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Translation, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProductsTranslationWithHttpInfo($number, $locale)
     {
-        $returnType = '\Swagger\Client\Model\Translation';
-        $request = $this->getProductsTranslationRequest($number, $locale);
+        $returnType = '\RackbeatApp\Client\Model\Translation';
+        $request    = $this->getProductsTranslationRequest($number, $locale);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1649,7 +1649,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Translation',
+                        '\RackbeatApp\Client\Model\Translation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1693,8 +1693,8 @@ class ProductsApi
      */
     public function getProductsTranslationAsyncWithHttpInfo($number, $locale)
     {
-        $returnType = '\Swagger\Client\Model\Translation';
-        $request = $this->getProductsTranslationRequest($number, $locale);
+        $returnType = '\RackbeatApp\Client\Model\Translation';
+        $request    = $this->getProductsTranslationRequest($number, $locale);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1860,9 +1860,9 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Translation[]
+     * @return \RackbeatApp\Client\Model\Translation[]
      */
     public function getProductsTranslations($number)
     {
@@ -1877,14 +1877,14 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Translation[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Translation[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getProductsTranslationsWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Translation[]';
-        $request = $this->getProductsTranslationsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Translation[]';
+        $request    = $this->getProductsTranslationsRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1935,7 +1935,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Translation[]',
+                        '\RackbeatApp\Client\Model\Translation[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1977,8 +1977,8 @@ class ProductsApi
      */
     public function getProductsTranslationsAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Translation[]';
-        $request = $this->getProductsTranslationsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Translation[]';
+        $request    = $this->getProductsTranslationsRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2123,7 +2123,7 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $location_id Filter by location id (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2141,7 +2141,7 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $location_id Filter by location id (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2392,9 +2392,9 @@ class ProductsApi
      * Index products.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse206
+     * @return \RackbeatApp\Client\Model\InlineResponse206
      */
     public function indexProduct()
     {
@@ -2408,14 +2408,14 @@ class ProductsApi
      * Index products.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse206, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse206, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexProductWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse206';
-        $request = $this->indexProductRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse206';
+        $request    = $this->indexProductRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -2466,7 +2466,7 @@ class ProductsApi
                 case 206:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse206',
+                        '\RackbeatApp\Client\Model\InlineResponse206',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2506,8 +2506,8 @@ class ProductsApi
      */
     public function indexProductAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse206';
-        $request = $this->indexProductRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse206';
+        $request    = $this->indexProductRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2637,9 +2637,9 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type Variation type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationOption[]
+     * @return \RackbeatApp\Client\Model\ProductVariationOption[]
      */
     public function indexProductVariationOption($number, $variation_type)
     {
@@ -2655,14 +2655,14 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type Variation type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationOption[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationOption[], HTTP status code, HTTP response headers (array of strings)
      */
     public function indexProductVariationOptionWithHttpInfo($number, $variation_type)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption[]';
-        $request = $this->indexProductVariationOptionRequest($number, $variation_type);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption[]';
+        $request    = $this->indexProductVariationOptionRequest($number, $variation_type);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2713,7 +2713,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationOption[]',
+                        '\RackbeatApp\Client\Model\ProductVariationOption[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2757,8 +2757,8 @@ class ProductsApi
      */
     public function indexProductVariationOptionAsyncWithHttpInfo($number, $variation_type)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption[]';
-        $request = $this->indexProductVariationOptionRequest($number, $variation_type);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption[]';
+        $request    = $this->indexProductVariationOptionRequest($number, $variation_type);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2919,9 +2919,9 @@ class ProductsApi
      * @param  string $number Filter by number (optional)
      * @param  string $search Filter by search query (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductsDraftList
+     * @return \RackbeatApp\Client\Model\ProductsDraftList
      */
     public function indexProductsDraft($is_draft = null, $number = null, $search = null)
     {
@@ -2938,14 +2938,14 @@ class ProductsApi
      * @param  string $number Filter by number (optional)
      * @param  string $search Filter by search query (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductsDraftList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductsDraftList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexProductsDraftWithHttpInfo($is_draft = null, $number = null, $search = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductsDraftList';
-        $request = $this->indexProductsDraftRequest($is_draft, $number, $search);
+        $returnType = '\RackbeatApp\Client\Model\ProductsDraftList';
+        $request    = $this->indexProductsDraftRequest($is_draft, $number, $search);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2996,7 +2996,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductsDraftList',
+                        '\RackbeatApp\Client\Model\ProductsDraftList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3042,8 +3042,8 @@ class ProductsApi
      */
     public function indexProductsDraftAsyncWithHttpInfo($is_draft = null, $number = null, $search = null)
     {
-        $returnType = '\Swagger\Client\Model\ProductsDraftList';
-        $request = $this->indexProductsDraftRequest($is_draft, $number, $search);
+        $returnType = '\RackbeatApp\Client\Model\ProductsDraftList';
+        $request    = $this->indexProductsDraftRequest($is_draft, $number, $search);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3187,9 +3187,9 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product[]
+     * @return \RackbeatApp\Client\Model\Product[]
      */
     public function indexProductsVariation($number)
     {
@@ -3204,14 +3204,14 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Product[], HTTP status code, HTTP response headers (array of strings)
      */
     public function indexProductsVariationWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
-        $request = $this->indexProductsVariationRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Product[]';
+        $request    = $this->indexProductsVariationRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3262,7 +3262,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product[]',
+                        '\RackbeatApp\Client\Model\Product[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3304,8 +3304,8 @@ class ProductsApi
      */
     public function indexProductsVariationAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Product[]';
-        $request = $this->indexProductsVariationRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Product[]';
+        $request    = $this->indexProductsVariationRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3449,9 +3449,9 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationType[]
+     * @return \RackbeatApp\Client\Model\ProductVariationType[]
      */
     public function indexProductsVariationType($number)
     {
@@ -3466,14 +3466,14 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationType[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationType[], HTTP status code, HTTP response headers (array of strings)
      */
     public function indexProductsVariationTypeWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType[]';
-        $request = $this->indexProductsVariationTypeRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType[]';
+        $request    = $this->indexProductsVariationTypeRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3524,7 +3524,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationType[]',
+                        '\RackbeatApp\Client\Model\ProductVariationType[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3566,8 +3566,8 @@ class ProductsApi
      */
     public function indexProductsVariationTypeAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType[]';
-        $request = $this->indexProductsVariationTypeRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType[]';
+        $request    = $this->indexProductsVariationTypeRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3711,9 +3711,9 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product
+     * @return \RackbeatApp\Client\Model\Product
      */
     public function publishProduct($number)
     {
@@ -3728,14 +3728,14 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
      */
     public function publishProductWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->publishProductRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->publishProductRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3786,7 +3786,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product',
+                        '\RackbeatApp\Client\Model\Product',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3828,8 +3828,8 @@ class ProductsApi
      */
     public function publishProductAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->publishProductRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->publishProductRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3973,9 +3973,9 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \RackbeatApp\Client\Model\InlineResponse200
      */
     public function showProduct($number)
     {
@@ -3990,14 +3990,14 @@ class ProductsApi
      *
      * @param  string $number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
     public function showProductWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
-        $request = $this->showProductRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse200';
+        $request    = $this->showProductRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4048,7 +4048,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse200',
+                        '\RackbeatApp\Client\Model\InlineResponse200',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4090,8 +4090,8 @@ class ProductsApi
      */
     public function showProductAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
-        $request = $this->showProductRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse200';
+        $request    = $this->showProductRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4237,9 +4237,9 @@ class ProductsApi
      * @param  string $variation_type Variation type number (required)
      * @param  string $option_number Product Variation Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationOption
+     * @return \RackbeatApp\Client\Model\ProductVariationOption
      */
     public function showProductVariationOption($number, $variation_type, $option_number)
     {
@@ -4256,14 +4256,14 @@ class ProductsApi
      * @param  string $variation_type Variation type number (required)
      * @param  string $option_number Product Variation Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationOption, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationOption, HTTP status code, HTTP response headers (array of strings)
      */
     public function showProductVariationOptionWithHttpInfo($number, $variation_type, $option_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption';
-        $request = $this->showProductVariationOptionRequest($number, $variation_type, $option_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption';
+        $request    = $this->showProductVariationOptionRequest($number, $variation_type, $option_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4314,7 +4314,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationOption',
+                        '\RackbeatApp\Client\Model\ProductVariationOption',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4360,8 +4360,8 @@ class ProductsApi
      */
     public function showProductVariationOptionAsyncWithHttpInfo($number, $variation_type, $option_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption';
-        $request = $this->showProductVariationOptionRequest($number, $variation_type, $option_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption';
+        $request    = $this->showProductVariationOptionRequest($number, $variation_type, $option_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4533,13 +4533,13 @@ class ProductsApi
      *
      * Show single products variation
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_number Products Variation number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number           Product number (required)
+     * @param  string                                         $variation_number Products Variation number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body             Products variation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariation
+     * @return \RackbeatApp\Client\Model\ProductVariation
      */
     public function showProductsVariation($number, $variation_number, $body)
     {
@@ -4552,18 +4552,18 @@ class ProductsApi
      *
      * Show single products variation
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_number Products Variation number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number           Product number (required)
+     * @param  string                                         $variation_number Products Variation number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body             Products variation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariation, HTTP status code, HTTP response headers (array of strings)
      */
     public function showProductsVariationWithHttpInfo($number, $variation_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariation';
-        $request = $this->showProductsVariationRequest($number, $variation_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariation';
+        $request    = $this->showProductsVariationRequest($number, $variation_number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4614,7 +4614,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariation',
+                        '\RackbeatApp\Client\Model\ProductVariation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4629,9 +4629,9 @@ class ProductsApi
      *
      * Show single products variation
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_number Products Variation number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number           Product number (required)
+     * @param  string                                         $variation_number Products Variation number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body             Products variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4651,17 +4651,17 @@ class ProductsApi
      *
      * Show single products variation
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_number Products Variation number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number           Product number (required)
+     * @param  string                                         $variation_number Products Variation number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body             Products variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function showProductsVariationAsyncWithHttpInfo($number, $variation_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariation';
-        $request = $this->showProductsVariationRequest($number, $variation_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariation';
+        $request    = $this->showProductsVariationRequest($number, $variation_number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4703,9 +4703,9 @@ class ProductsApi
     /**
      * Create request for operation 'showProductsVariation'
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_number Products Variation number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number           Product number (required)
+     * @param  string                                         $variation_number Products Variation number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body             Products variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4831,9 +4831,9 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type_number Products Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationType
+     * @return \RackbeatApp\Client\Model\ProductVariationType
      */
     public function showProductsVariationType($number, $variation_type_number)
     {
@@ -4849,14 +4849,14 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type_number Products Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationType, HTTP status code, HTTP response headers (array of strings)
      */
     public function showProductsVariationTypeWithHttpInfo($number, $variation_type_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType';
-        $request = $this->showProductsVariationTypeRequest($number, $variation_type_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType';
+        $request    = $this->showProductsVariationTypeRequest($number, $variation_type_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4907,7 +4907,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationType',
+                        '\RackbeatApp\Client\Model\ProductVariationType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4951,8 +4951,8 @@ class ProductsApi
      */
     public function showProductsVariationTypeAsyncWithHttpInfo($number, $variation_type_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType';
-        $request = $this->showProductsVariationTypeRequest($number, $variation_type_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType';
+        $request    = $this->showProductsVariationTypeRequest($number, $variation_type_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -5109,11 +5109,11 @@ class ProductsApi
      *
      * Create a new product
      *
-     * @param  \Swagger\Client\Model\Body $body Product object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\Body $body Product object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \RackbeatApp\Client\Model\InlineResponse200
      */
     public function storeProduct($body)
     {
@@ -5126,16 +5126,16 @@ class ProductsApi
      *
      * Create a new product
      *
-     * @param  \Swagger\Client\Model\Body $body Product object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\Body $body Product object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeProductWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
-        $request = $this->storeProductRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse200';
+        $request    = $this->storeProductRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -5186,7 +5186,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse200',
+                        '\RackbeatApp\Client\Model\InlineResponse200',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5201,7 +5201,7 @@ class ProductsApi
      *
      * Create a new product
      *
-     * @param  \Swagger\Client\Model\Body $body Product object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\Body $body Product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5221,15 +5221,15 @@ class ProductsApi
      *
      * Create a new product
      *
-     * @param  \Swagger\Client\Model\Body $body Product object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\Body $body Product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeProductAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
-        $request = $this->storeProductRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse200';
+        $request    = $this->storeProductRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -5271,7 +5271,7 @@ class ProductsApi
     /**
      * Create request for operation 'storeProduct'
      *
-     * @param  \Swagger\Client\Model\Body $body Product object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\Body $body Product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5366,13 +5366,13 @@ class ProductsApi
      *
      * Create new product variation option
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_type Variation type number (required)
-     * @param  \Swagger\Client\Model\ProductVariationOptionForm $body Product variation option object that should be created. (required)
+     * @param  string                                               $number         Product number (required)
+     * @param  string                                               $variation_type Variation type number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationOptionForm $body           Product variation option object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationOption
+     * @return \RackbeatApp\Client\Model\ProductVariationOption
      */
     public function storeProductVariationOption($number, $variation_type, $body)
     {
@@ -5385,18 +5385,18 @@ class ProductsApi
      *
      * Create new product variation option
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_type Variation type number (required)
-     * @param  \Swagger\Client\Model\ProductVariationOptionForm $body Product variation option object that should be created. (required)
+     * @param  string                                               $number         Product number (required)
+     * @param  string                                               $variation_type Variation type number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationOptionForm $body           Product variation option object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationOption, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationOption, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeProductVariationOptionWithHttpInfo($number, $variation_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption';
-        $request = $this->storeProductVariationOptionRequest($number, $variation_type, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption';
+        $request    = $this->storeProductVariationOptionRequest($number, $variation_type, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -5447,7 +5447,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationOption',
+                        '\RackbeatApp\Client\Model\ProductVariationOption',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5462,9 +5462,9 @@ class ProductsApi
      *
      * Create new product variation option
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_type Variation type number (required)
-     * @param  \Swagger\Client\Model\ProductVariationOptionForm $body Product variation option object that should be created. (required)
+     * @param  string                                               $number         Product number (required)
+     * @param  string                                               $variation_type Variation type number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationOptionForm $body           Product variation option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5484,17 +5484,17 @@ class ProductsApi
      *
      * Create new product variation option
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_type Variation type number (required)
-     * @param  \Swagger\Client\Model\ProductVariationOptionForm $body Product variation option object that should be created. (required)
+     * @param  string                                               $number         Product number (required)
+     * @param  string                                               $variation_type Variation type number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationOptionForm $body           Product variation option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeProductVariationOptionAsyncWithHttpInfo($number, $variation_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption';
-        $request = $this->storeProductVariationOptionRequest($number, $variation_type, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption';
+        $request    = $this->storeProductVariationOptionRequest($number, $variation_type, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -5536,9 +5536,9 @@ class ProductsApi
     /**
      * Create request for operation 'storeProductVariationOption'
      *
-     * @param  string $number Product number (required)
-     * @param  string $variation_type Variation type number (required)
-     * @param  \Swagger\Client\Model\ProductVariationOptionForm $body Product variation option object that should be created. (required)
+     * @param  string                                               $number         Product number (required)
+     * @param  string                                               $variation_type Variation type number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationOptionForm $body           Product variation option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5661,11 +5661,11 @@ class ProductsApi
      *
      * Create new products draft
      *
-     * @param  \Swagger\Client\Model\ProductForm $body Products draft object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductForm $body Products draft object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product
+     * @return \RackbeatApp\Client\Model\Product
      */
     public function storeProductsDraft($body)
     {
@@ -5678,16 +5678,16 @@ class ProductsApi
      *
      * Create new products draft
      *
-     * @param  \Swagger\Client\Model\ProductForm $body Products draft object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductForm $body Products draft object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeProductsDraftWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->storeProductsDraftRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->storeProductsDraftRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -5738,7 +5738,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product',
+                        '\RackbeatApp\Client\Model\Product',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5753,7 +5753,7 @@ class ProductsApi
      *
      * Create new products draft
      *
-     * @param  \Swagger\Client\Model\ProductForm $body Products draft object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductForm $body Products draft object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5773,15 +5773,15 @@ class ProductsApi
      *
      * Create new products draft
      *
-     * @param  \Swagger\Client\Model\ProductForm $body Products draft object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductForm $body Products draft object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeProductsDraftAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->storeProductsDraftRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->storeProductsDraftRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -5823,7 +5823,7 @@ class ProductsApi
     /**
      * Create request for operation 'storeProductsDraft'
      *
-     * @param  \Swagger\Client\Model\ProductForm $body Products draft object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductForm $body Products draft object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5918,12 +5918,12 @@ class ProductsApi
      *
      * Create new products variation
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body   Products variation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariation
+     * @return \RackbeatApp\Client\Model\ProductVariation
      */
     public function storeProductsVariation($number, $body)
     {
@@ -5936,17 +5936,17 @@ class ProductsApi
      *
      * Create new products variation
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body   Products variation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariation, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeProductsVariationWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariation';
-        $request = $this->storeProductsVariationRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariation';
+        $request    = $this->storeProductsVariationRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -5997,7 +5997,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariation',
+                        '\RackbeatApp\Client\Model\ProductVariation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6012,8 +6012,8 @@ class ProductsApi
      *
      * Create new products variation
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body   Products variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6033,16 +6033,16 @@ class ProductsApi
      *
      * Create new products variation
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body   Products variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeProductsVariationAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariation';
-        $request = $this->storeProductsVariationRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariation';
+        $request    = $this->storeProductsVariationRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -6084,8 +6084,8 @@ class ProductsApi
     /**
      * Create request for operation 'storeProductsVariation'
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationForm $body Products variation object that should be created. (required)
+     * @param  string                                         $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationForm $body   Products variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6194,12 +6194,12 @@ class ProductsApi
      *
      * Create new products variation type
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationTypeForm $body Products variation type object that should be created. (required)
+     * @param  string                                             $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationTypeForm $body   Products variation type object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationType
+     * @return \RackbeatApp\Client\Model\ProductVariationType
      */
     public function storeProductsVariationType($number, $body)
     {
@@ -6212,17 +6212,17 @@ class ProductsApi
      *
      * Create new products variation type
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationTypeForm $body Products variation type object that should be created. (required)
+     * @param  string                                             $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationTypeForm $body   Products variation type object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationType, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeProductsVariationTypeWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType';
-        $request = $this->storeProductsVariationTypeRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType';
+        $request    = $this->storeProductsVariationTypeRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -6273,7 +6273,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationType',
+                        '\RackbeatApp\Client\Model\ProductVariationType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6288,8 +6288,8 @@ class ProductsApi
      *
      * Create new products variation type
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationTypeForm $body Products variation type object that should be created. (required)
+     * @param  string                                             $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationTypeForm $body   Products variation type object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6309,16 +6309,16 @@ class ProductsApi
      *
      * Create new products variation type
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationTypeForm $body Products variation type object that should be created. (required)
+     * @param  string                                             $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationTypeForm $body   Products variation type object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeProductsVariationTypeAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType';
-        $request = $this->storeProductsVariationTypeRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType';
+        $request    = $this->storeProductsVariationTypeRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -6360,8 +6360,8 @@ class ProductsApi
     /**
      * Create request for operation 'storeProductsVariationType'
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\ProductVariationTypeForm $body Products variation type object that should be created. (required)
+     * @param  string                                             $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\ProductVariationTypeForm $body   Products variation type object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6470,12 +6470,12 @@ class ProductsApi
      *
      * Update existing product
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\Body1 $body Values to update. (required)
+     * @param  string                          $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body1 $body   Values to update. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \RackbeatApp\Client\Model\InlineResponse200
      */
     public function updateProduct($number, $body)
     {
@@ -6488,17 +6488,17 @@ class ProductsApi
      *
      * Update existing product
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\Body1 $body Values to update. (required)
+     * @param  string                          $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body1 $body   Values to update. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateProductWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
-        $request = $this->updateProductRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse200';
+        $request    = $this->updateProductRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -6549,7 +6549,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse200',
+                        '\RackbeatApp\Client\Model\InlineResponse200',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6564,8 +6564,8 @@ class ProductsApi
      *
      * Update existing product
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\Body1 $body Values to update. (required)
+     * @param  string                          $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body1 $body   Values to update. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6585,16 +6585,16 @@ class ProductsApi
      *
      * Update existing product
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\Body1 $body Values to update. (required)
+     * @param  string                          $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body1 $body   Values to update. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateProductAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse200';
-        $request = $this->updateProductRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse200';
+        $request    = $this->updateProductRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -6636,8 +6636,8 @@ class ProductsApi
     /**
      * Create request for operation 'updateProduct'
      *
-     * @param  string $number Product number (required)
-     * @param  \Swagger\Client\Model\Body1 $body Values to update. (required)
+     * @param  string                          $number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body1 $body   Values to update. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6750,9 +6750,9 @@ class ProductsApi
      * @param  string $variation_type Variation type number (required)
      * @param  string $option_number Product Variation Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationOption
+     * @return \RackbeatApp\Client\Model\ProductVariationOption
      */
     public function updateProductVariationOption($number, $variation_type, $option_number)
     {
@@ -6769,14 +6769,14 @@ class ProductsApi
      * @param  string $variation_type Variation type number (required)
      * @param  string $option_number Product Variation Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationOption, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationOption, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateProductVariationOptionWithHttpInfo($number, $variation_type, $option_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption';
-        $request = $this->updateProductVariationOptionRequest($number, $variation_type, $option_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption';
+        $request    = $this->updateProductVariationOptionRequest($number, $variation_type, $option_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -6827,7 +6827,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationOption',
+                        '\RackbeatApp\Client\Model\ProductVariationOption',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6873,8 +6873,8 @@ class ProductsApi
      */
     public function updateProductVariationOptionAsyncWithHttpInfo($number, $variation_type, $option_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationOption';
-        $request = $this->updateProductVariationOptionRequest($number, $variation_type, $option_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationOption';
+        $request    = $this->updateProductVariationOptionRequest($number, $variation_type, $option_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -7046,13 +7046,13 @@ class ProductsApi
      *
      * Update product translation
      *
-     * @param  string $number Product number (required)
-     * @param  string $locale Locale number (required)
-     * @param  \Swagger\Client\Model\Body6 $body Translation data to update (optional)
+     * @param  string                          $number Product number (required)
+     * @param  string                          $locale Locale number (required)
+     * @param  \RackbeatApp\Client\Model\Body6 $body   Translation data to update (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Translation
+     * @return \RackbeatApp\Client\Model\Translation
      */
     public function updateProductsTranslations($number, $locale, $body = null)
     {
@@ -7065,18 +7065,18 @@ class ProductsApi
      *
      * Update product translation
      *
-     * @param  string $number Product number (required)
-     * @param  string $locale Locale number (required)
-     * @param  \Swagger\Client\Model\Body6 $body Translation data to update (optional)
+     * @param  string                          $number Product number (required)
+     * @param  string                          $locale Locale number (required)
+     * @param  \RackbeatApp\Client\Model\Body6 $body   Translation data to update (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Translation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Translation, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateProductsTranslationsWithHttpInfo($number, $locale, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\Translation';
-        $request = $this->updateProductsTranslationsRequest($number, $locale, $body);
+        $returnType = '\RackbeatApp\Client\Model\Translation';
+        $request    = $this->updateProductsTranslationsRequest($number, $locale, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -7127,7 +7127,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Translation',
+                        '\RackbeatApp\Client\Model\Translation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7142,9 +7142,9 @@ class ProductsApi
      *
      * Update product translation
      *
-     * @param  string $number Product number (required)
-     * @param  string $locale Locale number (required)
-     * @param  \Swagger\Client\Model\Body6 $body Translation data to update (optional)
+     * @param  string                          $number Product number (required)
+     * @param  string                          $locale Locale number (required)
+     * @param  \RackbeatApp\Client\Model\Body6 $body   Translation data to update (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7164,17 +7164,17 @@ class ProductsApi
      *
      * Update product translation
      *
-     * @param  string $number Product number (required)
-     * @param  string $locale Locale number (required)
-     * @param  \Swagger\Client\Model\Body6 $body Translation data to update (optional)
+     * @param  string                          $number Product number (required)
+     * @param  string                          $locale Locale number (required)
+     * @param  \RackbeatApp\Client\Model\Body6 $body   Translation data to update (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateProductsTranslationsAsyncWithHttpInfo($number, $locale, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\Translation';
-        $request = $this->updateProductsTranslationsRequest($number, $locale, $body);
+        $returnType = '\RackbeatApp\Client\Model\Translation';
+        $request    = $this->updateProductsTranslationsRequest($number, $locale, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -7216,9 +7216,9 @@ class ProductsApi
     /**
      * Create request for operation 'updateProductsTranslations'
      *
-     * @param  string $number Product number (required)
-     * @param  string $locale Locale number (required)
-     * @param  \Swagger\Client\Model\Body6 $body Translation data to update (optional)
+     * @param  string                          $number Product number (required)
+     * @param  string                          $locale Locale number (required)
+     * @param  \RackbeatApp\Client\Model\Body6 $body   Translation data to update (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7345,9 +7345,9 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_number Products Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariation
+     * @return \RackbeatApp\Client\Model\ProductVariation
      */
     public function updateProductsVariation($number, $variation_number)
     {
@@ -7363,14 +7363,14 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_number Products Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariation, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateProductsVariationWithHttpInfo($number, $variation_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariation';
-        $request = $this->updateProductsVariationRequest($number, $variation_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariation';
+        $request    = $this->updateProductsVariationRequest($number, $variation_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -7421,7 +7421,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariation',
+                        '\RackbeatApp\Client\Model\ProductVariation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7465,8 +7465,8 @@ class ProductsApi
      */
     public function updateProductsVariationAsyncWithHttpInfo($number, $variation_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariation';
-        $request = $this->updateProductsVariationRequest($number, $variation_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariation';
+        $request    = $this->updateProductsVariationRequest($number, $variation_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -7626,9 +7626,9 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type_number Products Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductVariationType
+     * @return \RackbeatApp\Client\Model\ProductVariationType
      */
     public function updateProductsVariationType($number, $variation_type_number)
     {
@@ -7644,14 +7644,14 @@ class ProductsApi
      * @param  string $number Product number (required)
      * @param  string $variation_type_number Products Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductVariationType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductVariationType, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateProductsVariationTypeWithHttpInfo($number, $variation_type_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType';
-        $request = $this->updateProductsVariationTypeRequest($number, $variation_type_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType';
+        $request    = $this->updateProductsVariationTypeRequest($number, $variation_type_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -7702,7 +7702,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductVariationType',
+                        '\RackbeatApp\Client\Model\ProductVariationType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7746,8 +7746,8 @@ class ProductsApi
      */
     public function updateProductsVariationTypeAsyncWithHttpInfo($number, $variation_type_number)
     {
-        $returnType = '\Swagger\Client\Model\ProductVariationType';
-        $request = $this->updateProductsVariationTypeRequest($number, $variation_type_number);
+        $returnType = '\RackbeatApp\Client\Model\ProductVariationType';
+        $request    = $this->updateProductsVariationTypeRequest($number, $variation_type_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

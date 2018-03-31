@@ -1,4 +1,4 @@
-# Swagger\Client\BillingApi
+# RackbeatApp\Client\BillingApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -24,7 +24,7 @@ Billing download invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new RackbeatApp\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingInvoices**
-> \Swagger\Client\Model\InlineResponse2004 billingInvoices()
+> \RackbeatApp\Client\Model\InlineResponse2004 billingInvoices()
 
 Billing invoices
 
@@ -72,7 +72,7 @@ Billing invoices
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new RackbeatApp\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -92,7 +92,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
+[**\RackbeatApp\Client\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **billingSources**
-> \Swagger\Client\Model\InlineResponse2005 billingSources()
+> \RackbeatApp\Client\Model\InlineResponse2005 billingSources()
 
 Billing sources
 
@@ -117,7 +117,7 @@ Billing sources
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new RackbeatApp\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -137,7 +137,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\RackbeatApp\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -151,7 +151,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsList**
-> \Swagger\Client\Model\InlineResponse2002 subscriptionsList()
+> \RackbeatApp\Client\Model\InlineResponse2002 subscriptionsList()
 
 Subscriptions list
 
@@ -162,7 +162,7 @@ Subscriptions list
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new RackbeatApp\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -182,7 +182,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\RackbeatApp\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsListByType**
-> \Swagger\Client\Model\InlineResponse2002 subscriptionsListByType()
+> \RackbeatApp\Client\Model\InlineResponse2002 subscriptionsListByType()
 
 Subscriptions list by type
 
@@ -207,7 +207,7 @@ Subscriptions list by type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new RackbeatApp\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -227,7 +227,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\RackbeatApp\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -241,7 +241,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **totalMonthlyPrice**
-> \Swagger\Client\Model\InlineResponse2003 totalMonthlyPrice()
+> \RackbeatApp\Client\Model\InlineResponse2003 totalMonthlyPrice()
 
 Total monthly price
 
@@ -252,7 +252,7 @@ Total monthly price
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\BillingApi(
+$apiInstance = new RackbeatApp\Client\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -272,7 +272,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\RackbeatApp\Client\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
 
 ### Authorization
 

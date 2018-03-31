@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **in_order_quantity** | **int** |  | [optional] 
 **available_quantity** | **int** |  | [optional] 
 **purchased_quantity** | **int** |  | [optional] 
-**lines** | [**\Swagger\Client\Model\LotLine[]**](LotLine.md) |  | [optional] 
+**lines** | [**\RackbeatApp\Client\Model\LotLine[]**](LotLine.md) |  | [optional] 
 **created_at** | **string** |  | [optional] 
 **updated_at** | **string** |  | [optional] 
 **self** | **string** |  | [optional] 

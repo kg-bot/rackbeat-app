@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Lot Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,19 +56,19 @@ class Lot implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'number' => 'string',
-        'total_price' => 'float',
-        'cost_price' => 'float',
+        'name'                      => 'string',
+        'number'                    => 'string',
+        'total_price'               => 'float',
+        'cost_price'                => 'float',
         'add_products_individually' => 'int',
-        'stock_quantity' => 'int',
-        'in_order_quantity' => 'int',
-        'available_quantity' => 'int',
-        'purchased_quantity' => 'int',
-        'lines' => '\Swagger\Client\Model\LotLine[]',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'self' => 'string'
+        'stock_quantity'            => 'int',
+        'in_order_quantity'         => 'int',
+        'available_quantity'        => 'int',
+        'purchased_quantity'        => 'int',
+        'lines'                     => '\RackbeatApp\Client\Model\LotLine[]',
+        'created_at'                => 'string',
+        'updated_at'                => 'string',
+        'self'                      => 'string'
     ];
 
     /**
@@ -495,7 +495,7 @@ class Lot implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\LotLine[]
+     * @return \RackbeatApp\Client\Model\LotLine[]
      */
     public function getLines()
     {
@@ -505,7 +505,7 @@ class Lot implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\LotLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\LotLine[] $lines lines
      *
      * @return $this
      */

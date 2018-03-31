@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * UnitList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class UnitList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'units' => '\Swagger\Client\Model\Unit[]',
+        'units' => '\RackbeatApp\Client\Model\Unit[]',
         'total' => 'int',
         'pages' => 'int',
         'limit' => 'int',
-        'page' => 'int'
+        'page'  => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class UnitList implements ModelInterface, ArrayAccess
     /**
      * Gets units
      *
-     * @return \Swagger\Client\Model\Unit[]
+     * @return \RackbeatApp\Client\Model\Unit[]
      */
     public function getUnits()
     {
@@ -241,7 +241,7 @@ class UnitList implements ModelInterface, ArrayAccess
     /**
      * Sets units
      *
-     * @param \Swagger\Client\Model\Unit[] $units units
+     * @param \RackbeatApp\Client\Model\Unit[] $units units
      *
      * @return $this
      */

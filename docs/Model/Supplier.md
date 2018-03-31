@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **currency** | **string** |  | [optional] 
 **vat_zone** | **string** |  | [optional] 
 **payment_terms_id** | **int** |  | [optional] 
-**payment_terms** | [**\Swagger\Client\Model\PaymentTerm**](PaymentTerm.md) |  | [optional] 
+**payment_terms** | [**\RackbeatApp\Client\Model\PaymentTerm**](PaymentTerm.md) |  | [optional] 
 **supplier_groups** | **string** |  | [optional] 
 **created_at** | **string** |  | [optional] 
 **updated_at** | **string** |  | [optional] 

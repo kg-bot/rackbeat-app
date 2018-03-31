@@ -1,4 +1,4 @@
-# Swagger\Client\StatsApi
+# RackbeatApp\Client\StatsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **indexStats**
-> \Swagger\Client\Model\Stats indexStats()
+> \RackbeatApp\Client\Model\Stats indexStats()
 
 Index stats
 
@@ -19,7 +19,7 @@ C
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\StatsApi(
+$apiInstance = new RackbeatApp\Client\Api\StatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -39,7 +39,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Stats**](../Model/Stats.md)
+[**\RackbeatApp\Client\Model\Stats**](../Model/Stats.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Customer Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,29 +56,29 @@ class Customer implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
+        'number'           => 'int',
         'company_name' => 'string',
         'company_vat' => 'string',
-        'address_street' => 'string',
-        'address_street2' => 'string',
-        'address_city' => 'string',
-        'address_zipcode' => 'string',
-        'address_country' => 'string',
-        'contact_email' => 'string',
-        'contact_phone' => 'string',
-        'locale' => 'string',
-        'ean' => 'string',
-        'our_reference' => 'string',
-        'their_reference' => 'string',
-        'attention' => 'string',
-        'max_credit' => 'float',
+        'address_street'   => 'string',
+        'address_street2'  => 'string',
+        'address_city'     => 'string',
+        'address_zipcode'  => 'string',
+        'address_country'  => 'string',
+        'contact_email'    => 'string',
+        'contact_phone'    => 'string',
+        'locale'           => 'string',
+        'ean'              => 'string',
+        'our_reference'    => 'string',
+        'their_reference'  => 'string',
+        'attention'        => 'string',
+        'max_credit'       => 'float',
         'payment_terms_id' => 'int',
-        'payment_terms' => '\Swagger\Client\Model\PaymentTerm',
-        'employee_id' => 'int',
-        'employee' => '\Swagger\Client\Model\Employee',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'is_deleted' => 'bool'
+        'payment_terms'    => '\RackbeatApp\Client\Model\PaymentTerm',
+        'employee_id'      => 'int',
+        'employee'         => '\RackbeatApp\Client\Model\Employee',
+        'created_at'       => 'string',
+        'updated_at'       => 'string',
+        'is_deleted'       => 'bool'
     ];
 
     /**
@@ -901,7 +901,7 @@ class Customer implements ModelInterface, ArrayAccess
     /**
      * Gets payment_terms
      *
-     * @return \Swagger\Client\Model\PaymentTerm
+     * @return \RackbeatApp\Client\Model\PaymentTerm
      */
     public function getPaymentTerms()
     {
@@ -911,7 +911,7 @@ class Customer implements ModelInterface, ArrayAccess
     /**
      * Sets payment_terms
      *
-     * @param \Swagger\Client\Model\PaymentTerm $payment_terms payment_terms
+     * @param \RackbeatApp\Client\Model\PaymentTerm $payment_terms payment_terms
      *
      * @return $this
      */
@@ -949,7 +949,7 @@ class Customer implements ModelInterface, ArrayAccess
     /**
      * Gets employee
      *
-     * @return \Swagger\Client\Model\Employee
+     * @return \RackbeatApp\Client\Model\Employee
      */
     public function getEmployee()
     {
@@ -959,7 +959,7 @@ class Customer implements ModelInterface, ArrayAccess
     /**
      * Sets employee
      *
-     * @param \Swagger\Client\Model\Employee $employee employee
+     * @param \RackbeatApp\Client\Model\Employee $employee employee
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * ProductVariationType Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,12 +56,12 @@ class ProductVariationType implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'name' => 'string',
-        'options' => '\Swagger\Client\Model\ProductVariationOption[]',
+        'id'         => 'int',
+        'name'       => 'string',
+        'options'    => '\RackbeatApp\Client\Model\ProductVariationOption[]',
         'created_at' => 'string',
         'updated_at' => 'string',
-        'self' => 'string'
+        'self'       => 'string'
     ];
 
     /**
@@ -285,7 +285,7 @@ class ProductVariationType implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \Swagger\Client\Model\ProductVariationOption[]
+     * @return \RackbeatApp\Client\Model\ProductVariationOption[]
      */
     public function getOptions()
     {
@@ -295,7 +295,7 @@ class ProductVariationType implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \Swagger\Client\Model\ProductVariationOption[] $options options
+     * @param \RackbeatApp\Client\Model\ProductVariationOption[] $options options
      *
      * @return $this
      */

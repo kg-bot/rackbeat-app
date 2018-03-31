@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PaymentTermsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class PaymentTermsApi
      *
      * @param  string $number Payment Term number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class PaymentTermsApi
      *
      * @param  string $number Payment Term number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -314,9 +314,9 @@ class PaymentTermsApi
      * Index payment term
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PaymentTermList
+     * @return \RackbeatApp\Client\Model\PaymentTermList
      */
     public function indexPaymentTerm()
     {
@@ -330,14 +330,14 @@ class PaymentTermsApi
      * Index payment term
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PaymentTermList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\PaymentTermList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexPaymentTermWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\PaymentTermList';
-        $request = $this->indexPaymentTermRequest();
+        $returnType = '\RackbeatApp\Client\Model\PaymentTermList';
+        $request    = $this->indexPaymentTermRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -388,7 +388,7 @@ class PaymentTermsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PaymentTermList',
+                        '\RackbeatApp\Client\Model\PaymentTermList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -428,8 +428,8 @@ class PaymentTermsApi
      */
     public function indexPaymentTermAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\PaymentTermList';
-        $request = $this->indexPaymentTermRequest();
+        $returnType = '\RackbeatApp\Client\Model\PaymentTermList';
+        $request    = $this->indexPaymentTermRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -558,9 +558,9 @@ class PaymentTermsApi
      *
      * @param  string $number Payment Term number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PaymentTerm
+     * @return \RackbeatApp\Client\Model\PaymentTerm
      */
     public function showPaymentTerm($number)
     {
@@ -575,14 +575,14 @@ class PaymentTermsApi
      *
      * @param  string $number Payment Term number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PaymentTerm, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\PaymentTerm, HTTP status code, HTTP response headers (array of strings)
      */
     public function showPaymentTermWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\PaymentTerm';
-        $request = $this->showPaymentTermRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\PaymentTerm';
+        $request    = $this->showPaymentTermRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -633,7 +633,7 @@ class PaymentTermsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PaymentTerm',
+                        '\RackbeatApp\Client\Model\PaymentTerm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -675,8 +675,8 @@ class PaymentTermsApi
      */
     public function showPaymentTermAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\PaymentTerm';
-        $request = $this->showPaymentTermRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\PaymentTerm';
+        $request    = $this->showPaymentTermRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -818,11 +818,11 @@ class PaymentTermsApi
      *
      * Create new payment term
      *
-     * @param  \Swagger\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PaymentTerm
+     * @return \RackbeatApp\Client\Model\PaymentTerm
      */
     public function storePaymentTerm($body)
     {
@@ -835,16 +835,16 @@ class PaymentTermsApi
      *
      * Create new payment term
      *
-     * @param  \Swagger\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PaymentTerm, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\PaymentTerm, HTTP status code, HTTP response headers (array of strings)
      */
     public function storePaymentTermWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\PaymentTerm';
-        $request = $this->storePaymentTermRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\PaymentTerm';
+        $request    = $this->storePaymentTermRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -895,7 +895,7 @@ class PaymentTermsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PaymentTerm',
+                        '\RackbeatApp\Client\Model\PaymentTerm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -910,7 +910,7 @@ class PaymentTermsApi
      *
      * Create new payment term
      *
-     * @param  \Swagger\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -930,15 +930,15 @@ class PaymentTermsApi
      *
      * Create new payment term
      *
-     * @param  \Swagger\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storePaymentTermAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\PaymentTerm';
-        $request = $this->storePaymentTermRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\PaymentTerm';
+        $request    = $this->storePaymentTermRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -980,7 +980,7 @@ class PaymentTermsApi
     /**
      * Create request for operation 'storePaymentTerm'
      *
-     * @param  \Swagger\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\PaymentTermForm $body Payment term object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1077,9 +1077,9 @@ class PaymentTermsApi
      *
      * @param  string $number Payment Term number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PaymentTerm
+     * @return \RackbeatApp\Client\Model\PaymentTerm
      */
     public function updatePaymentTerm($number)
     {
@@ -1094,14 +1094,14 @@ class PaymentTermsApi
      *
      * @param  string $number Payment Term number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PaymentTerm, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\PaymentTerm, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePaymentTermWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\PaymentTerm';
-        $request = $this->updatePaymentTermRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\PaymentTerm';
+        $request    = $this->updatePaymentTermRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1152,7 +1152,7 @@ class PaymentTermsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PaymentTerm',
+                        '\RackbeatApp\Client\Model\PaymentTerm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1194,8 +1194,8 @@ class PaymentTermsApi
      */
     public function updatePaymentTermAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\PaymentTerm';
-        $request = $this->updatePaymentTermRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\PaymentTerm';
+        $request    = $this->updatePaymentTermRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

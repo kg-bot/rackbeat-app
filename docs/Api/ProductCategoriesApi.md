@@ -1,4 +1,4 @@
-# Swagger\Client\ProductCategoriesApi
+# RackbeatApp\Client\ProductCategoriesApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -26,7 +26,7 @@ Delete existing product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -74,7 +74,7 @@ Delete existing product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProductCategory**
-> \Swagger\Client\Model\ProductCategoryList indexProductCategory()
+> \RackbeatApp\Client\Model\ProductCategoryList indexProductCategory()
 
 Index product category
 
@@ -122,7 +122,7 @@ Index product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -142,7 +142,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductCategoryList**](../Model/ProductCategoryList.md)
+[**\RackbeatApp\Client\Model\ProductCategoryList**](../Model/ProductCategoryList.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProductCategoryProducts**
-> \Swagger\Client\Model\ProductList indexProductCategoryProducts($number)
+> \RackbeatApp\Client\Model\ProductList indexProductCategoryProducts($number)
 
 Index product category
 
@@ -167,7 +167,7 @@ Index product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductList**](../Model/ProductList.md)
+[**\RackbeatApp\Client\Model\ProductList**](../Model/ProductList.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showProductCategory**
-> \Swagger\Client\Model\ProductCategory showProductCategory($number)
+> \RackbeatApp\Client\Model\ProductCategory showProductCategory($number)
 
 Show single product category
 
@@ -216,7 +216,7 @@ Show single product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductCategory**](../Model/ProductCategory.md)
+[**\RackbeatApp\Client\Model\ProductCategory**](../Model/ProductCategory.md)
 
 ### Authorization
 
@@ -254,7 +254,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProductCategory**
-> \Swagger\Client\Model\ProductCategory storeProductCategory($body)
+> \RackbeatApp\Client\Model\ProductCategory storeProductCategory($body)
 
 Create new product category
 
@@ -265,12 +265,12 @@ Create new product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ProductCategoryForm(); // \Swagger\Client\Model\ProductCategoryForm | Product category object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductCategoryForm(); // \RackbeatApp\Client\Model\ProductCategoryForm | Product category object that should be created.
 
 try {
     $result = $apiInstance->storeProductCategory($body);
@@ -285,11 +285,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProductCategoryForm**](../Model/ProductCategoryForm.md)| Product category object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductCategoryForm**](../Model/ProductCategoryForm.md)| Product category object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductCategory**](../Model/ProductCategory.md)
+[**\RackbeatApp\Client\Model\ProductCategory**](../Model/ProductCategory.md)
 
 ### Authorization
 
@@ -303,7 +303,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProductCategoryProduct**
-> \Swagger\Client\Model\Product storeProductCategoryProduct($number, $body)
+> \RackbeatApp\Client\Model\Product storeProductCategoryProduct($number, $body)
 
 Create new product category
 
@@ -314,13 +314,13 @@ Create new product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product category number
-$body = new \Swagger\Client\Model\Body7(); // \Swagger\Client\Model\Body7 | Product category object that should be created.
+$body = new \RackbeatApp\Client\Model\Body7(); // \RackbeatApp\Client\Model\Body7 | Product category object that should be created.
 
 try {
     $result = $apiInstance->storeProductCategoryProduct($number, $body);
@@ -336,11 +336,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product category number |
- **body** | [**\Swagger\Client\Model\Body7**](../Model/Body7.md)| Product category object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\Body7**](../Model/Body7.md)| Product category object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Product**](../Model/Product.md)
+[**\RackbeatApp\Client\Model\Product**](../Model/Product.md)
 
 ### Authorization
 
@@ -354,7 +354,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProductCategory**
-> \Swagger\Client\Model\ProductCategory updateProductCategory($number, $body)
+> \RackbeatApp\Client\Model\ProductCategory updateProductCategory($number, $body)
 
 Update existing product category
 
@@ -365,13 +365,13 @@ Update existing product category
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductCategoriesApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductCategoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product Category number
-$body = new \Swagger\Client\Model\ProductCategoryForm(); // \Swagger\Client\Model\ProductCategoryForm | Product category object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductCategoryForm(); // \RackbeatApp\Client\Model\ProductCategoryForm | Product category object that should be created.
 
 try {
     $result = $apiInstance->updateProductCategory($number, $body);
@@ -387,11 +387,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product Category number |
- **body** | [**\Swagger\Client\Model\ProductCategoryForm**](../Model/ProductCategoryForm.md)| Product category object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductCategoryForm**](../Model/ProductCategoryForm.md)| Product category object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductCategory**](../Model/ProductCategory.md)
+[**\RackbeatApp\Client\Model\ProductCategory**](../Model/ProductCategory.md)
 
 ### Authorization
 

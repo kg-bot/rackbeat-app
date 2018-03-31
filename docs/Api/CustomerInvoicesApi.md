@@ -1,4 +1,4 @@
-# Swagger\Client\CustomerInvoicesApi
+# RackbeatApp\Client\CustomerInvoicesApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -36,7 +36,7 @@ Book customer invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -84,7 +84,7 @@ Delete existing customer invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -132,7 +132,7 @@ Delete existing customer invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -182,7 +182,7 @@ Delete existing customer invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -221,7 +221,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **draftCustomerInvoice**
-> \Swagger\Client\Model\CustomerInvoice draftCustomerInvoice($body)
+> \RackbeatApp\Client\Model\CustomerInvoice draftCustomerInvoice($body)
 
 Create customer invoice draft
 
@@ -232,12 +232,12 @@ Create customer invoice draft
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CustomerInvoiceForm(); // \Swagger\Client\Model\CustomerInvoiceForm | Customer invoice object that should be drafted.
+$body = new \RackbeatApp\Client\Model\CustomerInvoiceForm(); // \RackbeatApp\Client\Model\CustomerInvoiceForm | Customer invoice object that should be drafted.
 
 try {
     $result = $apiInstance->draftCustomerInvoice($body);
@@ -252,11 +252,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CustomerInvoiceForm**](../Model/CustomerInvoiceForm.md)| Customer invoice object that should be drafted. |
+ **body** | [**\RackbeatApp\Client\Model\CustomerInvoiceForm**](../Model/CustomerInvoiceForm.md)| Customer invoice object that should be drafted. |
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
+[**\RackbeatApp\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexCustomerInvoicePayments**
-> \Swagger\Client\Model\CustomerInvoicePaymentList indexCustomerInvoicePayments($number)
+> \RackbeatApp\Client\Model\CustomerInvoicePaymentList indexCustomerInvoicePayments($number)
 
 Index customer invoice payments
 
@@ -281,7 +281,7 @@ Index customer invoice payments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoicePaymentList**](../Model/CustomerInvoicePaymentList.md)
+[**\RackbeatApp\Client\Model\CustomerInvoicePaymentList**](../Model/CustomerInvoicePaymentList.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexCustomerInvoices**
-> \Swagger\Client\Model\CustomerInvoiceList indexCustomerInvoices($is_paid, $is_booked, $order_number, $customer_number, $search)
+> \RackbeatApp\Client\Model\CustomerInvoiceList indexCustomerInvoices($is_paid, $is_booked, $order_number, $customer_number, $search)
 
 Index customer invoices
 
@@ -330,7 +330,7 @@ Index customer invoices
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoiceList**](../Model/CustomerInvoiceList.md)
+[**\RackbeatApp\Client\Model\CustomerInvoiceList**](../Model/CustomerInvoiceList.md)
 
 ### Authorization
 
@@ -376,7 +376,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexCustomerInvoicesNotes**
-> \Swagger\Client\Model\NoteList indexCustomerInvoicesNotes($number)
+> \RackbeatApp\Client\Model\NoteList indexCustomerInvoicesNotes($number)
 
 Index customer invoices notes
 
@@ -387,7 +387,7 @@ Index customer invoices notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\NoteList**](../Model/NoteList.md)
+[**\RackbeatApp\Client\Model\NoteList**](../Model/NoteList.md)
 
 ### Authorization
 
@@ -425,7 +425,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showCustomerInvoice**
-> \Swagger\Client\Model\CustomerInvoice showCustomerInvoice($number)
+> \RackbeatApp\Client\Model\CustomerInvoice showCustomerInvoice($number)
 
 Show single customer invoice
 
@@ -436,7 +436,7 @@ Show single customer invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -460,7 +460,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
+[**\RackbeatApp\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
 
 ### Authorization
 
@@ -474,7 +474,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showCustomerInvoiceNote**
-> \Swagger\Client\Model\Note showCustomerInvoiceNote($number, $note_id)
+> \RackbeatApp\Client\Model\Note showCustomerInvoiceNote($number, $note_id)
 
 Show single customer invoice note
 
@@ -485,7 +485,7 @@ Show single customer invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -511,7 +511,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -525,7 +525,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showCustomerInvoicePayment**
-> \Swagger\Client\Model\CustomerInvoicePayment showCustomerInvoicePayment($number, $payment_number)
+> \RackbeatApp\Client\Model\CustomerInvoicePayment showCustomerInvoicePayment($number, $payment_number)
 
 Show single customer invoice payment
 
@@ -536,7 +536,7 @@ Show single customer invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -562,7 +562,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoicePayment**](../Model/CustomerInvoicePayment.md)
+[**\RackbeatApp\Client\Model\CustomerInvoicePayment**](../Model/CustomerInvoicePayment.md)
 
 ### Authorization
 
@@ -576,7 +576,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeCustomerInvoice**
-> \Swagger\Client\Model\CustomerInvoice storeCustomerInvoice($body)
+> \RackbeatApp\Client\Model\CustomerInvoice storeCustomerInvoice($body)
 
 Create new customer invoice
 
@@ -587,12 +587,12 @@ Create new customer invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CustomerInvoiceForm(); // \Swagger\Client\Model\CustomerInvoiceForm | Customer invoice object that should be created.
+$body = new \RackbeatApp\Client\Model\CustomerInvoiceForm(); // \RackbeatApp\Client\Model\CustomerInvoiceForm | Customer invoice object that should be created.
 
 try {
     $result = $apiInstance->storeCustomerInvoice($body);
@@ -607,11 +607,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CustomerInvoiceForm**](../Model/CustomerInvoiceForm.md)| Customer invoice object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\CustomerInvoiceForm**](../Model/CustomerInvoiceForm.md)| Customer invoice object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
+[**\RackbeatApp\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
 
 ### Authorization
 
@@ -625,7 +625,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeCustomerInvoiceNote**
-> \Swagger\Client\Model\Note storeCustomerInvoiceNote($number, $body)
+> \RackbeatApp\Client\Model\Note storeCustomerInvoiceNote($number, $body)
 
 Create new customer invoice note
 
@@ -636,13 +636,13 @@ Create new customer invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Customer invoice number
-$body = new \Swagger\Client\Model\NoteForm(); // \Swagger\Client\Model\NoteForm | Customer invoice object that should be created.
+$body = new \RackbeatApp\Client\Model\NoteForm(); // \RackbeatApp\Client\Model\NoteForm | Customer invoice object that should be created.
 
 try {
     $result = $apiInstance->storeCustomerInvoiceNote($number, $body);
@@ -658,11 +658,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Customer invoice number |
- **body** | [**\Swagger\Client\Model\NoteForm**](../Model/NoteForm.md)| Customer invoice object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\NoteForm**](../Model/NoteForm.md)| Customer invoice object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -676,7 +676,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeCustomerInvoicePayment**
-> \Swagger\Client\Model\CustomerInvoicePayment storeCustomerInvoicePayment($number, $body)
+> \RackbeatApp\Client\Model\CustomerInvoicePayment storeCustomerInvoicePayment($number, $body)
 
 Create new customer invoice payment
 
@@ -687,13 +687,13 @@ Create new customer invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Customer invoice number
-$body = new \Swagger\Client\Model\CustomerInvoicePaymentForm(); // \Swagger\Client\Model\CustomerInvoicePaymentForm | Customer invoice payment object that should be created.
+$body = new \RackbeatApp\Client\Model\CustomerInvoicePaymentForm(); // \RackbeatApp\Client\Model\CustomerInvoicePaymentForm | Customer invoice payment object that should be created.
 
 try {
     $result = $apiInstance->storeCustomerInvoicePayment($number, $body);
@@ -709,11 +709,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Customer invoice number |
- **body** | [**\Swagger\Client\Model\CustomerInvoicePaymentForm**](../Model/CustomerInvoicePaymentForm.md)| Customer invoice payment object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\CustomerInvoicePaymentForm**](../Model/CustomerInvoicePaymentForm.md)| Customer invoice payment object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoicePayment**](../Model/CustomerInvoicePayment.md)
+[**\RackbeatApp\Client\Model\CustomerInvoicePayment**](../Model/CustomerInvoicePayment.md)
 
 ### Authorization
 
@@ -738,7 +738,7 @@ Unbook customer invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -775,7 +775,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCustomerInvoice**
-> \Swagger\Client\Model\CustomerInvoice updateCustomerInvoice($number, $body)
+> \RackbeatApp\Client\Model\CustomerInvoice updateCustomerInvoice($number, $body)
 
 Update existing customer invoice
 
@@ -786,13 +786,13 @@ Update existing customer invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Customer invoice number
-$body = new \Swagger\Client\Model\CustomerInvoiceForm(); // \Swagger\Client\Model\CustomerInvoiceForm | Customer invoice object that should be updated.
+$body = new \RackbeatApp\Client\Model\CustomerInvoiceForm(); // \RackbeatApp\Client\Model\CustomerInvoiceForm | Customer invoice object that should be updated.
 
 try {
     $result = $apiInstance->updateCustomerInvoice($number, $body);
@@ -808,11 +808,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Customer invoice number |
- **body** | [**\Swagger\Client\Model\CustomerInvoiceForm**](../Model/CustomerInvoiceForm.md)| Customer invoice object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\CustomerInvoiceForm**](../Model/CustomerInvoiceForm.md)| Customer invoice object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
+[**\RackbeatApp\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
 
 ### Authorization
 
@@ -826,7 +826,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCustomerInvoiceNote**
-> \Swagger\Client\Model\Note updateCustomerInvoiceNote($number, $note_id, $body)
+> \RackbeatApp\Client\Model\Note updateCustomerInvoiceNote($number, $note_id, $body)
 
 Update existing customer invoice note
 
@@ -837,14 +837,14 @@ Update existing customer invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Customer invoice number
 $note_id = "note_id_example"; // string | Customer invoice id
-$body = new \Swagger\Client\Model\NoteForm(); // \Swagger\Client\Model\NoteForm | Customer invoice object that should be updated.
+$body = new \RackbeatApp\Client\Model\NoteForm(); // \RackbeatApp\Client\Model\NoteForm | Customer invoice object that should be updated.
 
 try {
     $result = $apiInstance->updateCustomerInvoiceNote($number, $note_id, $body);
@@ -861,11 +861,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Customer invoice number |
  **note_id** | **string**| Customer invoice id |
- **body** | [**\Swagger\Client\Model\NoteForm**](../Model/NoteForm.md)| Customer invoice object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\NoteForm**](../Model/NoteForm.md)| Customer invoice object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -879,7 +879,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCustomerInvoicePayment**
-> \Swagger\Client\Model\CustomerInvoicePayment updateCustomerInvoicePayment($number, $payment_number, $body)
+> \RackbeatApp\Client\Model\CustomerInvoicePayment updateCustomerInvoicePayment($number, $payment_number, $body)
 
 Update existing customer invoice payment
 
@@ -890,14 +890,14 @@ Update existing customer invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomerInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomerInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Customer invoice number
 $payment_number = "payment_number_example"; // string | Customer invoice payment number
-$body = new \Swagger\Client\Model\CustomerInvoicePaymentForm(); // \Swagger\Client\Model\CustomerInvoicePaymentForm | Customer invoice payment object that should be updated.
+$body = new \RackbeatApp\Client\Model\CustomerInvoicePaymentForm(); // \RackbeatApp\Client\Model\CustomerInvoicePaymentForm | Customer invoice payment object that should be updated.
 
 try {
     $result = $apiInstance->updateCustomerInvoicePayment($number, $payment_number, $body);
@@ -914,11 +914,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Customer invoice number |
  **payment_number** | **string**| Customer invoice payment number |
- **body** | [**\Swagger\Client\Model\CustomerInvoicePaymentForm**](../Model/CustomerInvoicePaymentForm.md)| Customer invoice payment object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\CustomerInvoicePaymentForm**](../Model/CustomerInvoicePaymentForm.md)| Customer invoice payment object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoicePayment**](../Model/CustomerInvoicePayment.md)
+[**\RackbeatApp\Client\Model\CustomerInvoicePayment**](../Model/CustomerInvoicePayment.md)
 
 ### Authorization
 

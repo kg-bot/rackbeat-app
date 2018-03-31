@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **invoice_number** | **string** |  | [optional] 
 **heading** | **string** |  | [optional] 
 **number** | **int** |  | [optional] 
-**lines** | [**\Swagger\Client\Model\CustomerInvoiceLineForm[]**](CustomerInvoiceLineForm.md) |  | 
+**lines** | [**\RackbeatApp\Client\Model\CustomerInvoiceLineForm[]**](CustomerInvoiceLineForm.md) |  | 
 **address_street** | **string** |  | [optional] 
 **address_street2** | **string** |  | [optional] 
 **address_city** | **string** |  | [optional] 

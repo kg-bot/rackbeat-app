@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CustomerInvoiceForm Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,15 +56,15 @@ class CustomerInvoiceForm implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'customer_id' => 'int',
-        'currency' => 'string',
-        'invoice_number' => 'string',
-        'heading' => 'string',
-        'number' => 'int',
-        'lines' => '\Swagger\Client\Model\CustomerInvoiceLineForm[]',
-        'address_street' => 'string',
+        'customer_id'     => 'int',
+        'currency'        => 'string',
+        'invoice_number'  => 'string',
+        'heading'         => 'string',
+        'number'          => 'int',
+        'lines'           => '\RackbeatApp\Client\Model\CustomerInvoiceLineForm[]',
+        'address_street'  => 'string',
         'address_street2' => 'string',
-        'address_city' => 'string',
+        'address_city'    => 'string',
         'address_zipcode' => 'string',
         'address_country' => 'string'
     ];
@@ -467,7 +467,7 @@ class CustomerInvoiceForm implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\CustomerInvoiceLineForm[]
+     * @return \RackbeatApp\Client\Model\CustomerInvoiceLineForm[]
      */
     public function getLines()
     {
@@ -477,7 +477,7 @@ class CustomerInvoiceForm implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\CustomerInvoiceLineForm[] $lines lines
+     * @param \RackbeatApp\Client\Model\CustomerInvoiceLineForm[] $lines lines
      *
      * @return $this
      */

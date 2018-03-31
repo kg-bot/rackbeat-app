@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **is_paid** | **bool** | Is it paid? | [optional] 
 **is_party_paid** | **bool** | Is it partly paid? | [optional] 
 **is_overpaid** | **bool** | Is it over-paid? | [optional] 
-**lines** | [**\Swagger\Client\Model\SupplierInvoiceLine[]**](SupplierInvoiceLine.md) |  | [optional] 
+**lines** | [**\RackbeatApp\Client\Model\SupplierInvoiceLine[]**](SupplierInvoiceLine.md) |  | [optional] 
 **supplier_id** | **int** | Should reference a supplier number. | [optional] 
 **note** | **string** |  | [optional] 
 **address_street** | **string** |  | [optional] 

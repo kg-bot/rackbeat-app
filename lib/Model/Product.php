@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Product Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,26 +56,26 @@ class Product implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'string',
-        'group' => 'int',
-        'name' => 'string',
-        'barcode' => 'string',
-        'sales_price' => 'float',
+        'number'                 => 'string',
+        'group'                  => 'int',
+        'name'                   => 'string',
+        'barcode'                => 'string',
+        'sales_price'            => 'float',
         'recommended_cost_price' => 'float',
-        'min_order' => 'int',
-        'min_stock' => 'int',
-        'product_category' => 'int',
-        'default_location_id' => 'int',
-        'unit' => 'int',
-        'physical' => '\Swagger\Client\Model\ProductsPhysical',
-        'stock_quantity' => 'int',
-        'in_order_quantity' => 'int',
-        'purchased_quantity' => 'int',
-        'available_quantity' => 'int',
-        'is_draft' => 'bool',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'self' => 'string'
+        'min_order'              => 'int',
+        'min_stock'              => 'int',
+        'product_category'       => 'int',
+        'default_location_id'    => 'int',
+        'unit'                   => 'int',
+        'physical'               => '\RackbeatApp\Client\Model\ProductsPhysical',
+        'stock_quantity'         => 'int',
+        'in_order_quantity'      => 'int',
+        'purchased_quantity'     => 'int',
+        'available_quantity'     => 'int',
+        'is_draft'               => 'bool',
+        'created_at'             => 'string',
+        'updated_at'             => 'string',
+        'self'                   => 'string'
     ];
 
     /**
@@ -642,7 +642,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Gets physical
      *
-     * @return \Swagger\Client\Model\ProductsPhysical
+     * @return \RackbeatApp\Client\Model\ProductsPhysical
      */
     public function getPhysical()
     {
@@ -652,7 +652,7 @@ class Product implements ModelInterface, ArrayAccess
     /**
      * Sets physical
      *
-     * @param \Swagger\Client\Model\ProductsPhysical $physical physical
+     * @param \RackbeatApp\Client\Model\ProductsPhysical $physical physical
      *
      * @return $this
      */

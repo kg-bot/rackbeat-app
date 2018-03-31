@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **product_category** | **int** | Must relate to an existing Product Category. | [optional] 
 **default_location_id** | **int** | Must relate to an existing Location. | [optional] 
 **unit** | **int** | Must relate to an existing Unit. | [optional] 
-**physical** | [**\Swagger\Client\Model\ProductsPhysical**](ProductsPhysical.md) |  | [optional] 
+**physical** | [**\RackbeatApp\Client\Model\ProductsPhysical**](ProductsPhysical.md) |  | [optional] 
 **stock_quantity** | **int** | Quantity in stock | [optional] 
 **in_order_quantity** | **int** | Quantity in order (outgoing) | [optional] 
 **purchased_quantity** | **int** | Quantity purchased (incoming) | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SelfUserAccount Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,9 +56,9 @@ class SelfUserAccount implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
+        'id'           => 'int',
         'company_name' => 'string',
-        'address' => '\Swagger\Client\Model\SelfUserAccountAddress'
+        'address'      => '\RackbeatApp\Client\Model\SelfUserAccountAddress',
     ];
 
     /**
@@ -267,7 +267,7 @@ class SelfUserAccount implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\SelfUserAccountAddress
+     * @return \RackbeatApp\Client\Model\SelfUserAccountAddress
      */
     public function getAddress()
     {
@@ -277,7 +277,7 @@ class SelfUserAccount implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\SelfUserAccountAddress $address address
+     * @param \RackbeatApp\Client\Model\SelfUserAccountAddress $address address
      *
      * @return $this
      */

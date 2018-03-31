@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * VariationsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class VariationsApi
      *
      * @param  string $number Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class VariationsApi
      *
      * @param  string $number Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -316,7 +316,7 @@ class VariationsApi
      * @param  string $number Variation number (required)
      * @param  string $type_number Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -333,7 +333,7 @@ class VariationsApi
      * @param  string $number Variation number (required)
      * @param  string $type_number Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -561,7 +561,7 @@ class VariationsApi
      * @param  string $type Type number (required)
      * @param  string $option_number Variation Type Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -579,7 +579,7 @@ class VariationsApi
      * @param  string $type Type number (required)
      * @param  string $option_number Variation Type Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -822,9 +822,9 @@ class VariationsApi
      *
      * @param  string $search Filter by search query (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationList
+     * @return \RackbeatApp\Client\Model\VariationList
      */
     public function indexVariation($search = null)
     {
@@ -839,14 +839,14 @@ class VariationsApi
      *
      * @param  string $search Filter by search query (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexVariationWithHttpInfo($search = null)
     {
-        $returnType = '\Swagger\Client\Model\VariationList';
-        $request = $this->indexVariationRequest($search);
+        $returnType = '\RackbeatApp\Client\Model\VariationList';
+        $request    = $this->indexVariationRequest($search);
 
         try {
             $options = $this->createHttpClientOption();
@@ -897,7 +897,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationList',
+                        '\RackbeatApp\Client\Model\VariationList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -939,8 +939,8 @@ class VariationsApi
      */
     public function indexVariationAsyncWithHttpInfo($search = null)
     {
-        $returnType = '\Swagger\Client\Model\VariationList';
-        $request = $this->indexVariationRequest($search);
+        $returnType = '\RackbeatApp\Client\Model\VariationList';
+        $request    = $this->indexVariationRequest($search);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1074,9 +1074,9 @@ class VariationsApi
      *
      * @param  string $number Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationTypeList
+     * @return \RackbeatApp\Client\Model\VariationTypeList
      */
     public function indexVariationType($number)
     {
@@ -1091,14 +1091,14 @@ class VariationsApi
      *
      * @param  string $number Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationTypeList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationTypeList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexVariationTypeWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeList';
-        $request = $this->indexVariationTypeRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeList';
+        $request    = $this->indexVariationTypeRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1149,7 +1149,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationTypeList',
+                        '\RackbeatApp\Client\Model\VariationTypeList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1191,8 +1191,8 @@ class VariationsApi
      */
     public function indexVariationTypeAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeList';
-        $request = $this->indexVariationTypeRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeList';
+        $request    = $this->indexVariationTypeRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1337,9 +1337,9 @@ class VariationsApi
      * @param  string $number Variation number (required)
      * @param  string $number2 Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationTypeOptionList
+     * @return \RackbeatApp\Client\Model\VariationTypeOptionList
      */
     public function indexVariationTypeOption($number, $number2)
     {
@@ -1355,14 +1355,14 @@ class VariationsApi
      * @param  string $number Variation number (required)
      * @param  string $number2 Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationTypeOptionList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationTypeOptionList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexVariationTypeOptionWithHttpInfo($number, $number2)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOptionList';
-        $request = $this->indexVariationTypeOptionRequest($number, $number2);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOptionList';
+        $request    = $this->indexVariationTypeOptionRequest($number, $number2);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1413,7 +1413,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationTypeOptionList',
+                        '\RackbeatApp\Client\Model\VariationTypeOptionList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1457,8 +1457,8 @@ class VariationsApi
      */
     public function indexVariationTypeOptionAsyncWithHttpInfo($number, $number2)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOptionList';
-        $request = $this->indexVariationTypeOptionRequest($number, $number2);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOptionList';
+        $request    = $this->indexVariationTypeOptionRequest($number, $number2);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1617,9 +1617,9 @@ class VariationsApi
      *
      * @param  string $number Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Variation
+     * @return \RackbeatApp\Client\Model\Variation
      */
     public function showVariation($number)
     {
@@ -1634,14 +1634,14 @@ class VariationsApi
      *
      * @param  string $number Variation number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Variation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Variation, HTTP status code, HTTP response headers (array of strings)
      */
     public function showVariationWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Variation';
-        $request = $this->showVariationRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Variation';
+        $request    = $this->showVariationRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1692,7 +1692,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Variation',
+                        '\RackbeatApp\Client\Model\Variation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1734,8 +1734,8 @@ class VariationsApi
      */
     public function showVariationAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Variation';
-        $request = $this->showVariationRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Variation';
+        $request    = $this->showVariationRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1880,9 +1880,9 @@ class VariationsApi
      * @param  string $number Variation number (required)
      * @param  string $type_number Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationType
+     * @return \RackbeatApp\Client\Model\VariationType
      */
     public function showVariationType($number, $type_number)
     {
@@ -1898,14 +1898,14 @@ class VariationsApi
      * @param  string $number Variation number (required)
      * @param  string $type_number Variation Type number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationType, HTTP status code, HTTP response headers (array of strings)
      */
     public function showVariationTypeWithHttpInfo($number, $type_number)
     {
-        $returnType = '\Swagger\Client\Model\VariationType';
-        $request = $this->showVariationTypeRequest($number, $type_number);
+        $returnType = '\RackbeatApp\Client\Model\VariationType';
+        $request    = $this->showVariationTypeRequest($number, $type_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1956,7 +1956,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationType',
+                        '\RackbeatApp\Client\Model\VariationType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2000,8 +2000,8 @@ class VariationsApi
      */
     public function showVariationTypeAsyncWithHttpInfo($number, $type_number)
     {
-        $returnType = '\Swagger\Client\Model\VariationType';
-        $request = $this->showVariationTypeRequest($number, $type_number);
+        $returnType = '\RackbeatApp\Client\Model\VariationType';
+        $request    = $this->showVariationTypeRequest($number, $type_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2162,9 +2162,9 @@ class VariationsApi
      * @param  string $type Type number (required)
      * @param  string $option_number Variation Type Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationTypeOption
+     * @return \RackbeatApp\Client\Model\VariationTypeOption
      */
     public function showVariationTypeOption($number, $type, $option_number)
     {
@@ -2181,14 +2181,14 @@ class VariationsApi
      * @param  string $type Type number (required)
      * @param  string $option_number Variation Type Option number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationTypeOption, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationTypeOption, HTTP status code, HTTP response headers (array of strings)
      */
     public function showVariationTypeOptionWithHttpInfo($number, $type, $option_number)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOption';
-        $request = $this->showVariationTypeOptionRequest($number, $type, $option_number);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOption';
+        $request    = $this->showVariationTypeOptionRequest($number, $type, $option_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2239,7 +2239,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationTypeOption',
+                        '\RackbeatApp\Client\Model\VariationTypeOption',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2285,8 +2285,8 @@ class VariationsApi
      */
     public function showVariationTypeOptionAsyncWithHttpInfo($number, $type, $option_number)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOption';
-        $request = $this->showVariationTypeOptionRequest($number, $type, $option_number);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOption';
+        $request    = $this->showVariationTypeOptionRequest($number, $type, $option_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2458,11 +2458,11 @@ class VariationsApi
      *
      * Create new variation
      *
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body Variation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Variation
+     * @return \RackbeatApp\Client\Model\Variation
      */
     public function storeVariation($body)
     {
@@ -2475,16 +2475,16 @@ class VariationsApi
      *
      * Create new variation
      *
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body Variation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Variation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Variation, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeVariationWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Variation';
-        $request = $this->storeVariationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Variation';
+        $request    = $this->storeVariationRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2535,7 +2535,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Variation',
+                        '\RackbeatApp\Client\Model\Variation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2550,7 +2550,7 @@ class VariationsApi
      *
      * Create new variation
      *
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body Variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2570,15 +2570,15 @@ class VariationsApi
      *
      * Create new variation
      *
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body Variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeVariationAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Variation';
-        $request = $this->storeVariationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Variation';
+        $request    = $this->storeVariationRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2620,7 +2620,7 @@ class VariationsApi
     /**
      * Create request for operation 'storeVariation'
      *
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body Variation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2715,12 +2715,12 @@ class VariationsApi
      *
      * Create new variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be created. (required)
+     * @param  string                                      $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body   Variation type object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationType
+     * @return \RackbeatApp\Client\Model\VariationType
      */
     public function storeVariationType($number, $body)
     {
@@ -2733,17 +2733,17 @@ class VariationsApi
      *
      * Create new variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be created. (required)
+     * @param  string                                      $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body   Variation type object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationType, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeVariationTypeWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationType';
-        $request = $this->storeVariationTypeRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationType';
+        $request    = $this->storeVariationTypeRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2794,7 +2794,7 @@ class VariationsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationType',
+                        '\RackbeatApp\Client\Model\VariationType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2809,8 +2809,8 @@ class VariationsApi
      *
      * Create new variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be created. (required)
+     * @param  string                                      $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body   Variation type object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2830,16 +2830,16 @@ class VariationsApi
      *
      * Create new variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be created. (required)
+     * @param  string                                      $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body   Variation type object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeVariationTypeAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationType';
-        $request = $this->storeVariationTypeRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationType';
+        $request    = $this->storeVariationTypeRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2881,8 +2881,8 @@ class VariationsApi
     /**
      * Create request for operation 'storeVariationType'
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be created. (required)
+     * @param  string                                      $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body   Variation type object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2991,13 +2991,13 @@ class VariationsApi
      *
      * Create new variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $number_type number_type (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number      Variation number (required)
+     * @param  string                                            $number_type number_type (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body        Variation type option object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationTypeOption
+     * @return \RackbeatApp\Client\Model\VariationTypeOption
      */
     public function storeVariationTypeOption($number, $number_type, $body)
     {
@@ -3010,18 +3010,18 @@ class VariationsApi
      *
      * Create new variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $number_type (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number      Variation number (required)
+     * @param  string                                            $number_type (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body        Variation type option object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationTypeOption, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationTypeOption, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeVariationTypeOptionWithHttpInfo($number, $number_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOption';
-        $request = $this->storeVariationTypeOptionRequest($number, $number_type, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOption';
+        $request    = $this->storeVariationTypeOptionRequest($number, $number_type, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3072,7 +3072,7 @@ class VariationsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationTypeOption',
+                        '\RackbeatApp\Client\Model\VariationTypeOption',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3087,9 +3087,9 @@ class VariationsApi
      *
      * Create new variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $number_type (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number      Variation number (required)
+     * @param  string                                            $number_type (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body        Variation type option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3109,17 +3109,17 @@ class VariationsApi
      *
      * Create new variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $number_type (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number      Variation number (required)
+     * @param  string                                            $number_type (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body        Variation type option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeVariationTypeOptionAsyncWithHttpInfo($number, $number_type, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOption';
-        $request = $this->storeVariationTypeOptionRequest($number, $number_type, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOption';
+        $request    = $this->storeVariationTypeOptionRequest($number, $number_type, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3161,9 +3161,9 @@ class VariationsApi
     /**
      * Create request for operation 'storeVariationTypeOption'
      *
-     * @param  string $number Variation number (required)
-     * @param  string $number_type (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number      Variation number (required)
+     * @param  string                                            $number_type (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body        Variation type option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3286,12 +3286,12 @@ class VariationsApi
      *
      * Update existing variation
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be updated. (required)
+     * @param  string                                  $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body   Variation object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Variation
+     * @return \RackbeatApp\Client\Model\Variation
      */
     public function updateVariation($number, $body)
     {
@@ -3304,17 +3304,17 @@ class VariationsApi
      *
      * Update existing variation
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be updated. (required)
+     * @param  string                                  $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body   Variation object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Variation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Variation, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateVariationWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Variation';
-        $request = $this->updateVariationRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Variation';
+        $request    = $this->updateVariationRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3365,7 +3365,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Variation',
+                        '\RackbeatApp\Client\Model\Variation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3380,8 +3380,8 @@ class VariationsApi
      *
      * Update existing variation
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be updated. (required)
+     * @param  string                                  $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body   Variation object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3401,16 +3401,16 @@ class VariationsApi
      *
      * Update existing variation
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be updated. (required)
+     * @param  string                                  $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body   Variation object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateVariationAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Variation';
-        $request = $this->updateVariationRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Variation';
+        $request    = $this->updateVariationRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3452,8 +3452,8 @@ class VariationsApi
     /**
      * Create request for operation 'updateVariation'
      *
-     * @param  string $number Variation number (required)
-     * @param  \Swagger\Client\Model\VariationForm $body Variation object that should be updated. (required)
+     * @param  string                                  $number Variation number (required)
+     * @param  \RackbeatApp\Client\Model\VariationForm $body   Variation object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3562,13 +3562,13 @@ class VariationsApi
      *
      * Update existing variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type_number Variation Type number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be updated. (required)
+     * @param  string                                      $number      Variation number (required)
+     * @param  string                                      $type_number Variation Type number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body        Variation type object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationType
+     * @return \RackbeatApp\Client\Model\VariationType
      */
     public function updateVariationType($number, $type_number, $body)
     {
@@ -3581,18 +3581,18 @@ class VariationsApi
      *
      * Update existing variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type_number Variation Type number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be updated. (required)
+     * @param  string                                      $number      Variation number (required)
+     * @param  string                                      $type_number Variation Type number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body        Variation type object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationType, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateVariationTypeWithHttpInfo($number, $type_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationType';
-        $request = $this->updateVariationTypeRequest($number, $type_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationType';
+        $request    = $this->updateVariationTypeRequest($number, $type_number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3643,7 +3643,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationType',
+                        '\RackbeatApp\Client\Model\VariationType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3658,9 +3658,9 @@ class VariationsApi
      *
      * Update existing variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type_number Variation Type number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be updated. (required)
+     * @param  string                                      $number      Variation number (required)
+     * @param  string                                      $type_number Variation Type number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body        Variation type object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3680,17 +3680,17 @@ class VariationsApi
      *
      * Update existing variation type
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type_number Variation Type number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be updated. (required)
+     * @param  string                                      $number      Variation number (required)
+     * @param  string                                      $type_number Variation Type number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body        Variation type object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateVariationTypeAsyncWithHttpInfo($number, $type_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationType';
-        $request = $this->updateVariationTypeRequest($number, $type_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationType';
+        $request    = $this->updateVariationTypeRequest($number, $type_number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3732,9 +3732,9 @@ class VariationsApi
     /**
      * Create request for operation 'updateVariationType'
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type_number Variation Type number (required)
-     * @param  \Swagger\Client\Model\VariationTypeForm $body Variation type object that should be updated. (required)
+     * @param  string                                      $number      Variation number (required)
+     * @param  string                                      $type_number Variation Type number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeForm $body        Variation type object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3857,14 +3857,14 @@ class VariationsApi
      *
      * Update existing variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type Type number (required)
-     * @param  string $option_number Variation Type Option number (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number        Variation number (required)
+     * @param  string                                            $type          Type number (required)
+     * @param  string                                            $option_number Variation Type Option number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body          Variation type option object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\VariationTypeOption
+     * @return \RackbeatApp\Client\Model\VariationTypeOption
      */
     public function updateVariationTypeOption($number, $type, $option_number, $body)
     {
@@ -3877,19 +3877,19 @@ class VariationsApi
      *
      * Update existing variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type Type number (required)
-     * @param  string $option_number Variation Type Option number (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number        Variation number (required)
+     * @param  string                                            $type          Type number (required)
+     * @param  string                                            $option_number Variation Type Option number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body          Variation type option object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\VariationTypeOption, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\VariationTypeOption, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateVariationTypeOptionWithHttpInfo($number, $type, $option_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOption';
-        $request = $this->updateVariationTypeOptionRequest($number, $type, $option_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOption';
+        $request    = $this->updateVariationTypeOptionRequest($number, $type, $option_number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3940,7 +3940,7 @@ class VariationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\VariationTypeOption',
+                        '\RackbeatApp\Client\Model\VariationTypeOption',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3955,10 +3955,10 @@ class VariationsApi
      *
      * Update existing variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type Type number (required)
-     * @param  string $option_number Variation Type Option number (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number        Variation number (required)
+     * @param  string                                            $type          Type number (required)
+     * @param  string                                            $option_number Variation Type Option number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body          Variation type option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3978,18 +3978,18 @@ class VariationsApi
      *
      * Update existing variation type option
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type Type number (required)
-     * @param  string $option_number Variation Type Option number (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number        Variation number (required)
+     * @param  string                                            $type          Type number (required)
+     * @param  string                                            $option_number Variation Type Option number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body          Variation type option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateVariationTypeOptionAsyncWithHttpInfo($number, $type, $option_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\VariationTypeOption';
-        $request = $this->updateVariationTypeOptionRequest($number, $type, $option_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\VariationTypeOption';
+        $request    = $this->updateVariationTypeOptionRequest($number, $type, $option_number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4031,10 +4031,10 @@ class VariationsApi
     /**
      * Create request for operation 'updateVariationTypeOption'
      *
-     * @param  string $number Variation number (required)
-     * @param  string $type Type number (required)
-     * @param  string $option_number Variation Type Option number (required)
-     * @param  \Swagger\Client\Model\VariationTypeOptionForm $body Variation type option object that should be created. (required)
+     * @param  string                                            $number        Variation number (required)
+     * @param  string                                            $type          Type number (required)
+     * @param  string                                            $option_number Variation Type Option number (required)
+     * @param  \RackbeatApp\Client\Model\VariationTypeOptionForm $body          Variation type option object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

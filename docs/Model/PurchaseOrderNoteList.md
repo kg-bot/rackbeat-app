@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**purchase_order_notes** | [**\Swagger\Client\Model\PurchaseOrderNote[]**](PurchaseOrderNote.md) |  | [optional] 
+**purchase_order_notes** | [**\RackbeatApp\Client\Model\PurchaseOrderNote[]**](PurchaseOrderNote.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

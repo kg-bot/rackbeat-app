@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrderLineForm Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class PurchaseOrderLineForm implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'product_id' => 'string',
-        'lot_id' => 'string',
-        'quantity' => 'int',
+        'product_id'  => 'string',
+        'lot_id'      => 'string',
+        'quantity'    => 'int',
         'location_id' => 'string',
-        'variations' => '\Swagger\Client\Model\PurchaseOrderVariationForm[]'
+        'variations'  => '\RackbeatApp\Client\Model\PurchaseOrderVariationForm[]',
     ];
 
     /**
@@ -355,7 +355,7 @@ class PurchaseOrderLineForm implements ModelInterface, ArrayAccess
     /**
      * Gets variations
      *
-     * @return \Swagger\Client\Model\PurchaseOrderVariationForm[]
+     * @return \RackbeatApp\Client\Model\PurchaseOrderVariationForm[]
      */
     public function getVariations()
     {
@@ -365,7 +365,7 @@ class PurchaseOrderLineForm implements ModelInterface, ArrayAccess
     /**
      * Sets variations
      *
-     * @param \Swagger\Client\Model\PurchaseOrderVariationForm[] $variations variations
+     * @param \RackbeatApp\Client\Model\PurchaseOrderVariationForm[] $variations variations
      *
      * @return $this
      */

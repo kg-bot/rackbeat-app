@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**webhooks** | [**\Swagger\Client\Model\Webhook[]**](Webhook.md) |  | [optional] 
+**webhooks** | [**\RackbeatApp\Client\Model\Webhook[]**](Webhook.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

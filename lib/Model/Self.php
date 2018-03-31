@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Self Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class Self implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'user_account' => '\Swagger\Client\Model\SelfUserAccount',
-        'user' => '\Swagger\Client\Model\SelfUser'
+        'user_account' => '\RackbeatApp\Client\Model\SelfUserAccount',
+        'user'         => '\RackbeatApp\Client\Model\SelfUser',
     ];
 
     /**
@@ -213,7 +213,7 @@ class Self implements ModelInterface, ArrayAccess
     /**
      * Gets user_account
      *
-     * @return \Swagger\Client\Model\SelfUserAccount
+     * @return \RackbeatApp\Client\Model\SelfUserAccount
      */
     public function getUserAccount()
     {
@@ -223,7 +223,7 @@ class Self implements ModelInterface, ArrayAccess
     /**
      * Sets user_account
      *
-     * @param \Swagger\Client\Model\SelfUserAccount $user_account user_account
+     * @param \RackbeatApp\Client\Model\SelfUserAccount $user_account user_account
      *
      * @return $this
      */
@@ -237,7 +237,7 @@ class Self implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \Swagger\Client\Model\SelfUser
+     * @return \RackbeatApp\Client\Model\SelfUser
      */
     public function getUser()
     {
@@ -247,7 +247,7 @@ class Self implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \Swagger\Client\Model\SelfUser $user user
+     * @param \RackbeatApp\Client\Model\SelfUser $user user
      *
      * @return $this
      */

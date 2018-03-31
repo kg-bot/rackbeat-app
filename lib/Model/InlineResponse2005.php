@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InlineResponse2005 Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sources' => '\Swagger\Client\Model\Source[]'
+        'sources' => '\RackbeatApp\Client\Model\Source[]',
     ];
 
     /**
@@ -207,7 +207,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
     /**
      * Gets sources
      *
-     * @return \Swagger\Client\Model\Source[]
+     * @return \RackbeatApp\Client\Model\Source[]
      */
     public function getSources()
     {
@@ -217,7 +217,7 @@ class InlineResponse2005 implements ModelInterface, ArrayAccess
     /**
      * Sets sources
      *
-     * @param \Swagger\Client\Model\Source[] $sources sources
+     * @param \RackbeatApp\Client\Model\Source[] $sources sources
      *
      * @return $this
      */

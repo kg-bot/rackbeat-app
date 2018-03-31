@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * VariationList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class VariationList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'billings' => '\Swagger\Client\Model\Variation[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'billings' => '\RackbeatApp\Client\Model\Variation[]',
+        'total'    => 'int',
+        'pages'    => 'int',
+        'limit'    => 'int',
+        'page'     => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class VariationList implements ModelInterface, ArrayAccess
     /**
      * Gets billings
      *
-     * @return \Swagger\Client\Model\Variation[]
+     * @return \RackbeatApp\Client\Model\Variation[]
      */
     public function getBillings()
     {
@@ -241,7 +241,7 @@ class VariationList implements ModelInterface, ArrayAccess
     /**
      * Sets billings
      *
-     * @param \Swagger\Client\Model\Variation[] $billings billings
+     * @param \RackbeatApp\Client\Model\Variation[] $billings billings
      *
      * @return $this
      */

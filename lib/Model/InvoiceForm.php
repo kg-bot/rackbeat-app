@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InvoiceForm Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,16 +56,16 @@ class InvoiceForm implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'supplier_id' => 'int',
-        'note' => 'string',
-        'currency' => 'string',
-        'currency_rate' => 'float',
-        'address_street' => 'string',
+        'supplier_id'     => 'int',
+        'note'            => 'string',
+        'currency'        => 'string',
+        'currency_rate'   => 'float',
+        'address_street'  => 'string',
         'address_street2' => 'string',
-        'address_city' => 'string',
+        'address_city'    => 'string',
         'address_zipcode' => 'string',
         'address_country' => 'string',
-        'lines' => '\Swagger\Client\Model\InvoiceLine[]'
+        'lines'           => '\RackbeatApp\Client\Model\InvoiceLine[]',
     ];
 
     /**
@@ -477,7 +477,7 @@ class InvoiceForm implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\InvoiceLine[]
+     * @return \RackbeatApp\Client\Model\InvoiceLine[]
      */
     public function getLines()
     {
@@ -487,7 +487,7 @@ class InvoiceForm implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\InvoiceLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\InvoiceLine[] $lines lines
      *
      * @return $this
      */

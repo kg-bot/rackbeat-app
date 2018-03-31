@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * OrdersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -315,7 +315,7 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -331,7 +331,7 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -541,7 +541,7 @@ class OrdersApi
      * @param  string $number Order number (required)
      * @param  string $note_id Order note id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -558,7 +558,7 @@ class OrdersApi
      * @param  string $number Order number (required)
      * @param  string $note_id Order note id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -784,9 +784,9 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\NoteList
+     * @return \RackbeatApp\Client\Model\NoteList
      */
     public function indexOrderNotes($number)
     {
@@ -801,14 +801,14 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\NoteList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\NoteList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexOrderNotesWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\NoteList';
-        $request = $this->indexOrderNotesRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\NoteList';
+        $request    = $this->indexOrderNotesRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -859,7 +859,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NoteList',
+                        '\RackbeatApp\Client\Model\NoteList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -901,8 +901,8 @@ class OrdersApi
      */
     public function indexOrderNotesAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\NoteList';
-        $request = $this->indexOrderNotesRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\NoteList';
+        $request    = $this->indexOrderNotesRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1048,9 +1048,9 @@ class OrdersApi
      * @param  string $is_paid Filter by payment status (optional)
      * @param  string $is_shipped Filter by ship status (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrdersList
+     * @return \RackbeatApp\Client\Model\OrdersList
      */
     public function indexOrders($is_booked = null, $is_paid = null, $is_shipped = null)
     {
@@ -1067,14 +1067,14 @@ class OrdersApi
      * @param  string $is_paid Filter by payment status (optional)
      * @param  string $is_shipped Filter by ship status (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrdersList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrdersList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexOrdersWithHttpInfo($is_booked = null, $is_paid = null, $is_shipped = null)
     {
-        $returnType = '\Swagger\Client\Model\OrdersList';
-        $request = $this->indexOrdersRequest($is_booked, $is_paid, $is_shipped);
+        $returnType = '\RackbeatApp\Client\Model\OrdersList';
+        $request    = $this->indexOrdersRequest($is_booked, $is_paid, $is_shipped);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1125,7 +1125,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrdersList',
+                        '\RackbeatApp\Client\Model\OrdersList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1171,8 +1171,8 @@ class OrdersApi
      */
     public function indexOrdersAsyncWithHttpInfo($is_booked = null, $is_paid = null, $is_shipped = null)
     {
-        $returnType = '\Swagger\Client\Model\OrdersList';
-        $request = $this->indexOrdersRequest($is_booked, $is_paid, $is_shipped);
+        $returnType = '\RackbeatApp\Client\Model\OrdersList';
+        $request    = $this->indexOrdersRequest($is_booked, $is_paid, $is_shipped);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1316,9 +1316,9 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoice
+     * @return \RackbeatApp\Client\Model\CustomerInvoice
      */
     public function orderCreateInvoice($number)
     {
@@ -1333,14 +1333,14 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderCreateInvoiceWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->orderCreateInvoiceRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->orderCreateInvoiceRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1391,7 +1391,7 @@ class OrdersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoice',
+                        '\RackbeatApp\Client\Model\CustomerInvoice',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1433,8 +1433,8 @@ class OrdersApi
      */
     public function orderCreateInvoiceAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->orderCreateInvoiceRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->orderCreateInvoiceRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1578,9 +1578,9 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \RackbeatApp\Client\Model\Order
      */
     public function orderCreateReceipt($number)
     {
@@ -1595,14 +1595,14 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderCreateReceiptWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->orderCreateReceiptRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->orderCreateReceiptRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1653,7 +1653,7 @@ class OrdersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\RackbeatApp\Client\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1695,8 +1695,8 @@ class OrdersApi
      */
     public function orderCreateReceiptAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->orderCreateReceiptRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->orderCreateReceiptRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1838,11 +1838,11 @@ class OrdersApi
      *
      * Order drafts
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order draft should be created (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order draft should be created (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \RackbeatApp\Client\Model\Order
      */
     public function orderDrafts($body)
     {
@@ -1855,16 +1855,16 @@ class OrdersApi
      *
      * Order drafts
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order draft should be created (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order draft should be created (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderDraftsWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->orderDraftsRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->orderDraftsRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1915,7 +1915,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\RackbeatApp\Client\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1930,7 +1930,7 @@ class OrdersApi
      *
      * Order drafts
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order draft should be created (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order draft should be created (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1950,15 +1950,15 @@ class OrdersApi
      *
      * Order drafts
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order draft should be created (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order draft should be created (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function orderDraftsAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->orderDraftsRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->orderDraftsRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2000,7 +2000,7 @@ class OrdersApi
     /**
      * Create request for operation 'orderDrafts'
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order draft should be created (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order draft should be created (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2097,9 +2097,9 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \RackbeatApp\Client\Model\Order
      */
     public function showOrder($number)
     {
@@ -2114,14 +2114,14 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function showOrderWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->showOrderRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->showOrderRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2172,7 +2172,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\RackbeatApp\Client\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2214,8 +2214,8 @@ class OrdersApi
      */
     public function showOrderAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->showOrderRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->showOrderRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2360,9 +2360,9 @@ class OrdersApi
      * @param  string $number Order number (required)
      * @param  string $note_id Order note id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Note
+     * @return \RackbeatApp\Client\Model\Note
      */
     public function showOrderNote($number, $note_id)
     {
@@ -2378,14 +2378,14 @@ class OrdersApi
      * @param  string $number Order number (required)
      * @param  string $note_id Order note id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
      */
     public function showOrderNoteWithHttpInfo($number, $note_id)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->showOrderNoteRequest($number, $note_id);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->showOrderNoteRequest($number, $note_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2436,7 +2436,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Note',
+                        '\RackbeatApp\Client\Model\Note',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2480,8 +2480,8 @@ class OrdersApi
      */
     public function showOrderNoteAsyncWithHttpInfo($number, $note_id)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->showOrderNoteRequest($number, $note_id);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->showOrderNoteRequest($number, $note_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2640,9 +2640,9 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderLine
+     * @return \RackbeatApp\Client\Model\OrderLine
      */
     public function showUninvoicedLines($number)
     {
@@ -2657,14 +2657,14 @@ class OrdersApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderLine, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderLine, HTTP status code, HTTP response headers (array of strings)
      */
     public function showUninvoicedLinesWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\OrderLine';
-        $request = $this->showUninvoicedLinesRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\OrderLine';
+        $request    = $this->showUninvoicedLinesRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2715,7 +2715,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderLine',
+                        '\RackbeatApp\Client\Model\OrderLine',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2757,8 +2757,8 @@ class OrdersApi
      */
     public function showUninvoicedLinesAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\OrderLine';
-        $request = $this->showUninvoicedLinesRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\OrderLine';
+        $request    = $this->showUninvoicedLinesRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2900,11 +2900,11 @@ class OrdersApi
      *
      * Create new order
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \RackbeatApp\Client\Model\Order
      */
     public function storeOrder($body)
     {
@@ -2917,16 +2917,16 @@ class OrdersApi
      *
      * Create new order
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeOrderWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->storeOrderRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->storeOrderRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2977,7 +2977,7 @@ class OrdersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\RackbeatApp\Client\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2992,7 +2992,7 @@ class OrdersApi
      *
      * Create new order
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3012,15 +3012,15 @@ class OrdersApi
      *
      * Create new order
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeOrderAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->storeOrderRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->storeOrderRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3062,7 +3062,7 @@ class OrdersApi
     /**
      * Create request for operation 'storeOrder'
      *
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body Order object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3157,12 +3157,12 @@ class OrdersApi
      *
      * Create new order note
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be created. (required)
+     * @param  string                             $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Order note object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Note
+     * @return \RackbeatApp\Client\Model\Note
      */
     public function storeOrderNote($number, $body)
     {
@@ -3175,17 +3175,17 @@ class OrdersApi
      *
      * Create new order note
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be created. (required)
+     * @param  string                             $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Order note object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeOrderNoteWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->storeOrderNoteRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->storeOrderNoteRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3236,7 +3236,7 @@ class OrdersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Note',
+                        '\RackbeatApp\Client\Model\Note',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3251,8 +3251,8 @@ class OrdersApi
      *
      * Create new order note
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be created. (required)
+     * @param  string                             $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Order note object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3272,16 +3272,16 @@ class OrdersApi
      *
      * Create new order note
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be created. (required)
+     * @param  string                             $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Order note object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeOrderNoteAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->storeOrderNoteRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->storeOrderNoteRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3323,8 +3323,8 @@ class OrdersApi
     /**
      * Create request for operation 'storeOrderNote'
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be created. (required)
+     * @param  string                             $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Order note object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3433,12 +3433,12 @@ class OrdersApi
      *
      * Update existing order
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be updated. (required)
+     * @param  string                              $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body   Order object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Order
+     * @return \RackbeatApp\Client\Model\Order
      */
     public function updateOrder($number, $body)
     {
@@ -3451,17 +3451,17 @@ class OrdersApi
      *
      * Update existing order
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be updated. (required)
+     * @param  string                              $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body   Order object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateOrderWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->updateOrderRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->updateOrderRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3512,7 +3512,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Order',
+                        '\RackbeatApp\Client\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3527,8 +3527,8 @@ class OrdersApi
      *
      * Update existing order
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be updated. (required)
+     * @param  string                              $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body   Order object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3548,16 +3548,16 @@ class OrdersApi
      *
      * Update existing order
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be updated. (required)
+     * @param  string                              $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body   Order object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateOrderAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Order';
-        $request = $this->updateOrderRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Order';
+        $request    = $this->updateOrderRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3599,8 +3599,8 @@ class OrdersApi
     /**
      * Create request for operation 'updateOrder'
      *
-     * @param  string $number Order number (required)
-     * @param  \Swagger\Client\Model\OrderForm $body Order object that should be updated. (required)
+     * @param  string                              $number Order number (required)
+     * @param  \RackbeatApp\Client\Model\OrderForm $body   Order object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3709,13 +3709,13 @@ class OrdersApi
      *
      * Update existing order note
      *
-     * @param  string $number Order number (required)
-     * @param  string $note_id Order note id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be updated. (required)
+     * @param  string                             $number  Order number (required)
+     * @param  string                             $note_id Order note id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Order note object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Note
+     * @return \RackbeatApp\Client\Model\Note
      */
     public function updateOrderNote($number, $note_id, $body)
     {
@@ -3728,18 +3728,18 @@ class OrdersApi
      *
      * Update existing order note
      *
-     * @param  string $number Order number (required)
-     * @param  string $note_id Order note id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be updated. (required)
+     * @param  string                             $number  Order number (required)
+     * @param  string                             $note_id Order note id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Order note object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateOrderNoteWithHttpInfo($number, $note_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->updateOrderNoteRequest($number, $note_id, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->updateOrderNoteRequest($number, $note_id, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3790,7 +3790,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Note',
+                        '\RackbeatApp\Client\Model\Note',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3805,9 +3805,9 @@ class OrdersApi
      *
      * Update existing order note
      *
-     * @param  string $number Order number (required)
-     * @param  string $note_id Order note id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be updated. (required)
+     * @param  string                             $number  Order number (required)
+     * @param  string                             $note_id Order note id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Order note object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3827,17 +3827,17 @@ class OrdersApi
      *
      * Update existing order note
      *
-     * @param  string $number Order number (required)
-     * @param  string $note_id Order note id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be updated. (required)
+     * @param  string                             $number  Order number (required)
+     * @param  string                             $note_id Order note id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Order note object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateOrderNoteAsyncWithHttpInfo($number, $note_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->updateOrderNoteRequest($number, $note_id, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->updateOrderNoteRequest($number, $note_id, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3879,9 +3879,9 @@ class OrdersApi
     /**
      * Create request for operation 'updateOrderNote'
      *
-     * @param  string $number Order number (required)
-     * @param  string $note_id Order note id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Order note object that should be updated. (required)
+     * @param  string                             $number  Order number (required)
+     * @param  string                             $note_id Order note id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Order note object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

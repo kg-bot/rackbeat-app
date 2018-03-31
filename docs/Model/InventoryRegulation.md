@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **id** | **int** |  | [optional] 
 **reason** | **string** |  | [optional] 
 **description** | **string** |  | [optional] 
-**lines** | [**\Swagger\Client\Model\InventoryRegulationLine[]**](InventoryRegulationLine.md) |  | [optional] 
+**lines** | [**\RackbeatApp\Client\Model\InventoryRegulationLine[]**](InventoryRegulationLine.md) |  | [optional] 
 **regulated_at** | **string** |  | [optional] 
 **created_at** | **string** |  | [optional] 
 **updated_at** | **string** |  | [optional] 

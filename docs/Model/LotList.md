@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lots** | [**\Swagger\Client\Model\Lot[]**](Lot.md) |  | [optional] 
+**lots** | [**\RackbeatApp\Client\Model\Lot[]**](Lot.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

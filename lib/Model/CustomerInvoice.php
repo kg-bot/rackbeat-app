@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CustomerInvoice Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,33 +56,33 @@ class CustomerInvoice implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'total_subtotal' => 'float',
-        'total_total' => 'float',
+        'number'              => 'int',
+        'total_subtotal'      => 'float',
+        'total_total'         => 'float',
         'total_base_currency' => 'float',
-        'balance' => 'float',
-        'currency' => 'string',
-        'currency_rate' => 'float',
-        'is_booked' => 'bool',
-        'is_paid' => 'bool',
-        'is_party_paid' => 'bool',
-        'is_overpaid' => 'string',
-        'lines' => '\Swagger\Client\Model\CustomerInvoiceLine[]',
-        'customer_id' => 'int',
-        'customer' => '\Swagger\Client\Model\Customer',
-        'order_id' => 'int',
-        'order' => '\Swagger\Client\Model\Order',
-        'note' => 'string',
-        'heading' => 'string',
-        'address_street' => 'string',
-        'address_street2' => 'string',
-        'address_city' => 'string',
-        'address_zipcode' => 'string',
-        'address_country' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'due_date' => 'string',
-        'self' => 'string'
+        'balance'             => 'float',
+        'currency'            => 'string',
+        'currency_rate'       => 'float',
+        'is_booked'           => 'bool',
+        'is_paid'             => 'bool',
+        'is_party_paid'       => 'bool',
+        'is_overpaid'         => 'string',
+        'lines'               => '\RackbeatApp\Client\Model\CustomerInvoiceLine[]',
+        'customer_id'         => 'int',
+        'customer'            => '\RackbeatApp\Client\Model\Customer',
+        'order_id'            => 'int',
+        'order'               => '\RackbeatApp\Client\Model\Order',
+        'note'                => 'string',
+        'heading'             => 'string',
+        'address_street'      => 'string',
+        'address_street2'     => 'string',
+        'address_city'        => 'string',
+        'address_zipcode'     => 'string',
+        'address_country'     => 'string',
+        'created_at'          => 'string',
+        'updated_at'          => 'string',
+        'due_date'            => 'string',
+        'self'                => 'string'
     ];
 
     /**
@@ -627,7 +627,7 @@ class CustomerInvoice implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\CustomerInvoiceLine[]
+     * @return \RackbeatApp\Client\Model\CustomerInvoiceLine[]
      */
     public function getLines()
     {
@@ -637,7 +637,7 @@ class CustomerInvoice implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\CustomerInvoiceLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\CustomerInvoiceLine[] $lines lines
      *
      * @return $this
      */
@@ -675,7 +675,7 @@ class CustomerInvoice implements ModelInterface, ArrayAccess
     /**
      * Gets customer
      *
-     * @return \Swagger\Client\Model\Customer
+     * @return \RackbeatApp\Client\Model\Customer
      */
     public function getCustomer()
     {
@@ -685,7 +685,7 @@ class CustomerInvoice implements ModelInterface, ArrayAccess
     /**
      * Sets customer
      *
-     * @param \Swagger\Client\Model\Customer $customer customer
+     * @param \RackbeatApp\Client\Model\Customer $customer customer
      *
      * @return $this
      */
@@ -723,7 +723,7 @@ class CustomerInvoice implements ModelInterface, ArrayAccess
     /**
      * Gets order
      *
-     * @return \Swagger\Client\Model\Order
+     * @return \RackbeatApp\Client\Model\Order
      */
     public function getOrder()
     {
@@ -733,7 +733,7 @@ class CustomerInvoice implements ModelInterface, ArrayAccess
     /**
      * Sets order
      *
-     * @param \Swagger\Client\Model\Order $order order
+     * @param \RackbeatApp\Client\Model\Order $order order
      *
      * @return $this
      */

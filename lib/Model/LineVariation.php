@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LineVariation Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class LineVariation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'variation_id' => 'int',
-        'option_id' => 'int',
-        'variation_type' => '\Swagger\Client\Model\LineVariationVariationType[]',
-        'variation_option' => '\Swagger\Client\Model\LineVariationVariationOption[]'
+        'variation_id'     => 'int',
+        'option_id'        => 'int',
+        'variation_type'   => '\RackbeatApp\Client\Model\LineVariationVariationType[]',
+        'variation_option' => '\RackbeatApp\Client\Model\LineVariationVariationOption[]',
     ];
 
     /**
@@ -273,7 +273,7 @@ class LineVariation implements ModelInterface, ArrayAccess
     /**
      * Gets variation_type
      *
-     * @return \Swagger\Client\Model\LineVariationVariationType[]
+     * @return \RackbeatApp\Client\Model\LineVariationVariationType[]
      */
     public function getVariationType()
     {
@@ -283,7 +283,7 @@ class LineVariation implements ModelInterface, ArrayAccess
     /**
      * Sets variation_type
      *
-     * @param \Swagger\Client\Model\LineVariationVariationType[] $variation_type variation_type
+     * @param \RackbeatApp\Client\Model\LineVariationVariationType[] $variation_type variation_type
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class LineVariation implements ModelInterface, ArrayAccess
     /**
      * Gets variation_option
      *
-     * @return \Swagger\Client\Model\LineVariationVariationOption[]
+     * @return \RackbeatApp\Client\Model\LineVariationVariationOption[]
      */
     public function getVariationOption()
     {
@@ -307,7 +307,7 @@ class LineVariation implements ModelInterface, ArrayAccess
     /**
      * Sets variation_option
      *
-     * @param \Swagger\Client\Model\LineVariationVariationOption[] $variation_option variation_option
+     * @param \RackbeatApp\Client\Model\LineVariationVariationOption[] $variation_option variation_option
      *
      * @return $this
      */

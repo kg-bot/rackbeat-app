@@ -1,4 +1,4 @@
-# Swagger\Client\InventoryRegulationApi
+# RackbeatApp\Client\InventoryRegulationApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **storeInventoryAdhustment**
-> \Swagger\Client\Model\InventoryRegulation storeInventoryAdhustment($body)
+> \RackbeatApp\Client\Model\InventoryRegulation storeInventoryAdhustment($body)
 
 Create new inventory adhustment
 
@@ -20,12 +20,12 @@ Create new inventory adhustment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\InventoryRegulationApi(
+$apiInstance = new RackbeatApp\Client\Api\InventoryRegulationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\InventoryAdjustmentForm(); // \Swagger\Client\Model\InventoryAdjustmentForm | Inventory adhustment object that should be created.
+$body = new \RackbeatApp\Client\Model\InventoryAdjustmentForm(); // \RackbeatApp\Client\Model\InventoryAdjustmentForm | Inventory adhustment object that should be created.
 
 try {
     $result = $apiInstance->storeInventoryAdhustment($body);
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\InventoryAdjustmentForm**](../Model/InventoryAdjustmentForm.md)| Inventory adhustment object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\InventoryAdjustmentForm**](../Model/InventoryAdjustmentForm.md)| Inventory adhustment object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InventoryRegulation**](../Model/InventoryRegulation.md)
+[**\RackbeatApp\Client\Model\InventoryRegulation**](../Model/InventoryRegulation.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeInventoryRegulation**
-> \Swagger\Client\Model\InventoryRegulation storeInventoryRegulation($body)
+> \RackbeatApp\Client\Model\InventoryRegulation storeInventoryRegulation($body)
 
 Create new inventory regulation
 
@@ -69,12 +69,12 @@ Create new inventory regulation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\InventoryRegulationApi(
+$apiInstance = new RackbeatApp\Client\Api\InventoryRegulationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\InventoryRegulationForm(); // \Swagger\Client\Model\InventoryRegulationForm | Inventory regulation object that should be created.
+$body = new \RackbeatApp\Client\Model\InventoryRegulationForm(); // \RackbeatApp\Client\Model\InventoryRegulationForm | Inventory regulation object that should be created.
 
 try {
     $result = $apiInstance->storeInventoryRegulation($body);
@@ -89,11 +89,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\InventoryRegulationForm**](../Model/InventoryRegulationForm.md)| Inventory regulation object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\InventoryRegulationForm**](../Model/InventoryRegulationForm.md)| Inventory regulation object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InventoryRegulation**](../Model/InventoryRegulation.md)
+[**\RackbeatApp\Client\Model\InventoryRegulation**](../Model/InventoryRegulation.md)
 
 ### Authorization
 

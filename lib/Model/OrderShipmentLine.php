@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * OrderShipmentLine Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,15 +56,15 @@ class OrderShipmentLine implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'child_id' => 'string',
-        'child_type' => 'string',
-        'location_id' => 'int',
-        'location' => '\Swagger\Client\Model\Location',
-        'quantity' => 'int',
-        'is_picked' => 'bool',
-        'picked_by' => '\Swagger\Client\Model\User',
-        'variations' => 'string',
+        'id'                   => 'int',
+        'child_id'             => 'string',
+        'child_type'           => 'string',
+        'location_id'          => 'int',
+        'location'             => '\RackbeatApp\Client\Model\Location',
+        'quantity'             => 'int',
+        'is_picked'            => 'bool',
+        'picked_by'            => '\RackbeatApp\Client\Model\User',
+        'variations'           => 'string',
         'variations_formatted' => 'string'
     ];
 
@@ -357,7 +357,7 @@ class OrderShipmentLine implements ModelInterface, ArrayAccess
     /**
      * Gets location
      *
-     * @return \Swagger\Client\Model\Location
+     * @return \RackbeatApp\Client\Model\Location
      */
     public function getLocation()
     {
@@ -367,7 +367,7 @@ class OrderShipmentLine implements ModelInterface, ArrayAccess
     /**
      * Sets location
      *
-     * @param \Swagger\Client\Model\Location $location location
+     * @param \RackbeatApp\Client\Model\Location $location location
      *
      * @return $this
      */
@@ -429,7 +429,7 @@ class OrderShipmentLine implements ModelInterface, ArrayAccess
     /**
      * Gets picked_by
      *
-     * @return \Swagger\Client\Model\User
+     * @return \RackbeatApp\Client\Model\User
      */
     public function getPickedBy()
     {
@@ -439,7 +439,7 @@ class OrderShipmentLine implements ModelInterface, ArrayAccess
     /**
      * Sets picked_by
      *
-     * @param \Swagger\Client\Model\User $picked_by picked_by
+     * @param \RackbeatApp\Client\Model\User $picked_by picked_by
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CustomerGroupsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class CustomerGroupsApi
      *
      * @param  string $number Customer group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class CustomerGroupsApi
      *
      * @param  string $number Customer group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -315,9 +315,9 @@ class CustomerGroupsApi
      *
      * @param  string $name Filter by name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerGroupsList
+     * @return \RackbeatApp\Client\Model\CustomerGroupsList
      */
     public function indexCustomerGroups($name = null)
     {
@@ -332,14 +332,14 @@ class CustomerGroupsApi
      *
      * @param  string $name Filter by name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerGroupsList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerGroupsList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCustomerGroupsWithHttpInfo($name = null)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupsList';
-        $request = $this->indexCustomerGroupsRequest($name);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupsList';
+        $request    = $this->indexCustomerGroupsRequest($name);
 
         try {
             $options = $this->createHttpClientOption();
@@ -390,7 +390,7 @@ class CustomerGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerGroupsList',
+                        '\RackbeatApp\Client\Model\CustomerGroupsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -432,8 +432,8 @@ class CustomerGroupsApi
      */
     public function indexCustomerGroupsAsyncWithHttpInfo($name = null)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupsList';
-        $request = $this->indexCustomerGroupsRequest($name);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupsList';
+        $request    = $this->indexCustomerGroupsRequest($name);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -567,9 +567,9 @@ class CustomerGroupsApi
      *
      * @param  string $number Customer group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerGroupProduct
+     * @return \RackbeatApp\Client\Model\CustomerGroupProduct
      */
     public function indexCustomersGroupsProducts($number)
     {
@@ -584,14 +584,14 @@ class CustomerGroupsApi
      *
      * @param  string $number Customer group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerGroupProduct, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerGroupProduct, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCustomersGroupsProductsWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupProduct';
-        $request = $this->indexCustomersGroupsProductsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupProduct';
+        $request    = $this->indexCustomersGroupsProductsRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -642,7 +642,7 @@ class CustomerGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerGroupProduct',
+                        '\RackbeatApp\Client\Model\CustomerGroupProduct',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -684,8 +684,8 @@ class CustomerGroupsApi
      */
     public function indexCustomersGroupsProductsAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupProduct';
-        $request = $this->indexCustomersGroupsProductsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupProduct';
+        $request    = $this->indexCustomersGroupsProductsRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -830,9 +830,9 @@ class CustomerGroupsApi
      * @param  string $number Customer group number (required)
      * @param  string $product Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerGroupProduct
+     * @return \RackbeatApp\Client\Model\CustomerGroupProduct
      */
     public function shoeCustomerGroupProduct($number, $product)
     {
@@ -848,14 +848,14 @@ class CustomerGroupsApi
      * @param  string $number Customer group number (required)
      * @param  string $product Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerGroupProduct, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerGroupProduct, HTTP status code, HTTP response headers (array of strings)
      */
     public function shoeCustomerGroupProductWithHttpInfo($number, $product)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupProduct';
-        $request = $this->shoeCustomerGroupProductRequest($number, $product);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupProduct';
+        $request    = $this->shoeCustomerGroupProductRequest($number, $product);
 
         try {
             $options = $this->createHttpClientOption();
@@ -906,7 +906,7 @@ class CustomerGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerGroupProduct',
+                        '\RackbeatApp\Client\Model\CustomerGroupProduct',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -950,8 +950,8 @@ class CustomerGroupsApi
      */
     public function shoeCustomerGroupProductAsyncWithHttpInfo($number, $product)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupProduct';
-        $request = $this->shoeCustomerGroupProductRequest($number, $product);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupProduct';
+        $request    = $this->shoeCustomerGroupProductRequest($number, $product);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1110,9 +1110,9 @@ class CustomerGroupsApi
      *
      * @param  string $number Customer group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerGroup
+     * @return \RackbeatApp\Client\Model\CustomerGroup
      */
     public function showCustomerGroup($number)
     {
@@ -1127,14 +1127,14 @@ class CustomerGroupsApi
      *
      * @param  string $number Customer group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function showCustomerGroupWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroup';
-        $request = $this->showCustomerGroupRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroup';
+        $request    = $this->showCustomerGroupRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1185,7 +1185,7 @@ class CustomerGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerGroup',
+                        '\RackbeatApp\Client\Model\CustomerGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1227,8 +1227,8 @@ class CustomerGroupsApi
      */
     public function showCustomerGroupAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroup';
-        $request = $this->showCustomerGroupRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroup';
+        $request    = $this->showCustomerGroupRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1370,11 +1370,11 @@ class CustomerGroupsApi
      *
      * Create new customer group
      *
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerGroup
+     * @return \RackbeatApp\Client\Model\CustomerGroup
      */
     public function storeCustomerGroup($body)
     {
@@ -1387,16 +1387,16 @@ class CustomerGroupsApi
      *
      * Create new customer group
      *
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeCustomerGroupWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroup';
-        $request = $this->storeCustomerGroupRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroup';
+        $request    = $this->storeCustomerGroupRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1447,7 +1447,7 @@ class CustomerGroupsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerGroup',
+                        '\RackbeatApp\Client\Model\CustomerGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1462,7 +1462,7 @@ class CustomerGroupsApi
      *
      * Create new customer group
      *
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1482,15 +1482,15 @@ class CustomerGroupsApi
      *
      * Create new customer group
      *
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeCustomerGroupAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroup';
-        $request = $this->storeCustomerGroupRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroup';
+        $request    = $this->storeCustomerGroupRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1532,7 +1532,7 @@ class CustomerGroupsApi
     /**
      * Create request for operation 'storeCustomerGroup'
      *
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body Customer group object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1627,12 +1627,12 @@ class CustomerGroupsApi
      *
      * Update existing customer group
      *
-     * @param  string $number Customer group number (required)
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be updated. (required)
+     * @param  string                                       $number Customer group number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body   Customer group object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerGroupsForm
+     * @return \RackbeatApp\Client\Model\CustomerGroupsForm
      */
     public function updateCustomerGroup($number, $body)
     {
@@ -1645,17 +1645,17 @@ class CustomerGroupsApi
      *
      * Update existing customer group
      *
-     * @param  string $number Customer group number (required)
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be updated. (required)
+     * @param  string                                       $number Customer group number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body   Customer group object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerGroupsForm, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerGroupsForm, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCustomerGroupWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupsForm';
-        $request = $this->updateCustomerGroupRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupsForm';
+        $request    = $this->updateCustomerGroupRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1706,7 +1706,7 @@ class CustomerGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerGroupsForm',
+                        '\RackbeatApp\Client\Model\CustomerGroupsForm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1721,8 +1721,8 @@ class CustomerGroupsApi
      *
      * Update existing customer group
      *
-     * @param  string $number Customer group number (required)
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be updated. (required)
+     * @param  string                                       $number Customer group number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body   Customer group object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1742,16 +1742,16 @@ class CustomerGroupsApi
      *
      * Update existing customer group
      *
-     * @param  string $number Customer group number (required)
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be updated. (required)
+     * @param  string                                       $number Customer group number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body   Customer group object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCustomerGroupAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupsForm';
-        $request = $this->updateCustomerGroupRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupsForm';
+        $request    = $this->updateCustomerGroupRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1793,8 +1793,8 @@ class CustomerGroupsApi
     /**
      * Create request for operation 'updateCustomerGroup'
      *
-     * @param  string $number Customer group number (required)
-     * @param  \Swagger\Client\Model\CustomerGroupsForm $body Customer group object that should be updated. (required)
+     * @param  string                                       $number Customer group number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerGroupsForm $body   Customer group object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1903,13 +1903,13 @@ class CustomerGroupsApi
      *
      * Update customer group product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product Product number (required)
-     * @param  \Swagger\Client\Model\Body4 $body Customers group product object that should be created. (required)
+     * @param  string                          $number  Customer number (required)
+     * @param  string                          $product Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body4 $body    Customers group product object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerGroupProduct
+     * @return \RackbeatApp\Client\Model\CustomerGroupProduct
      */
     public function updateCustomerGroupProduct($number, $product, $body)
     {
@@ -1922,18 +1922,18 @@ class CustomerGroupsApi
      *
      * Update customer group product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product Product number (required)
-     * @param  \Swagger\Client\Model\Body4 $body Customers group product object that should be created. (required)
+     * @param  string                          $number  Customer number (required)
+     * @param  string                          $product Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body4 $body    Customers group product object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerGroupProduct, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerGroupProduct, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCustomerGroupProductWithHttpInfo($number, $product, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupProduct';
-        $request = $this->updateCustomerGroupProductRequest($number, $product, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupProduct';
+        $request    = $this->updateCustomerGroupProductRequest($number, $product, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1984,7 +1984,7 @@ class CustomerGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerGroupProduct',
+                        '\RackbeatApp\Client\Model\CustomerGroupProduct',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1999,9 +1999,9 @@ class CustomerGroupsApi
      *
      * Update customer group product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product Product number (required)
-     * @param  \Swagger\Client\Model\Body4 $body Customers group product object that should be created. (required)
+     * @param  string                          $number  Customer number (required)
+     * @param  string                          $product Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body4 $body    Customers group product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2021,17 +2021,17 @@ class CustomerGroupsApi
      *
      * Update customer group product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product Product number (required)
-     * @param  \Swagger\Client\Model\Body4 $body Customers group product object that should be created. (required)
+     * @param  string                          $number  Customer number (required)
+     * @param  string                          $product Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body4 $body    Customers group product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCustomerGroupProductAsyncWithHttpInfo($number, $product, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerGroupProduct';
-        $request = $this->updateCustomerGroupProductRequest($number, $product, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerGroupProduct';
+        $request    = $this->updateCustomerGroupProductRequest($number, $product, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2073,9 +2073,9 @@ class CustomerGroupsApi
     /**
      * Create request for operation 'updateCustomerGroupProduct'
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product Product number (required)
-     * @param  \Swagger\Client\Model\Body4 $body Customers group product object that should be created. (required)
+     * @param  string                          $number  Customer number (required)
+     * @param  string                          $product Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body4 $body    Customers group product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

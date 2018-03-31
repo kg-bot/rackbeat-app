@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **stock_quantity** | **int** | Initial stock amount. Currently not supported until Inventory Regulations are available. | [optional] 
 **default_location_id** | **int** | Must relate to an existing Location. | [optional] 
 **unit** | **int** | Must relate to an existing Unit. | [optional] 
-**physical** | [**\Swagger\Client\Model\ProductsPhysical**](ProductsPhysical.md) |  | [optional] 
+**physical** | [**\RackbeatApp\Client\Model\ProductsPhysical**](ProductsPhysical.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

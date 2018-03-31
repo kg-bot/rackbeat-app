@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * VariationTypeOptionList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class VariationTypeOptionList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'variation_options' => '\Swagger\Client\Model\VariationTypeOption[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'variation_options' => '\RackbeatApp\Client\Model\VariationTypeOption[]',
+        'total'             => 'int',
+        'pages'             => 'int',
+        'limit'             => 'int',
+        'page'              => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class VariationTypeOptionList implements ModelInterface, ArrayAccess
     /**
      * Gets variation_options
      *
-     * @return \Swagger\Client\Model\VariationTypeOption[]
+     * @return \RackbeatApp\Client\Model\VariationTypeOption[]
      */
     public function getVariationOptions()
     {
@@ -241,7 +241,7 @@ class VariationTypeOptionList implements ModelInterface, ArrayAccess
     /**
      * Sets variation_options
      *
-     * @param \Swagger\Client\Model\VariationTypeOption[] $variation_options variation_options
+     * @param \RackbeatApp\Client\Model\VariationTypeOption[] $variation_options variation_options
      *
      * @return $this
      */

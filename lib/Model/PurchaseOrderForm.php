@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrderForm Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,16 +56,16 @@ class PurchaseOrderForm implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'supplier_id' => 'int',
-        'employee_id' => 'int',
-        'currency' => 'string',
-        'address_street' => 'string',
+        'number'          => 'int',
+        'supplier_id'     => 'int',
+        'employee_id'     => 'int',
+        'currency'        => 'string',
+        'address_street'  => 'string',
         'address_street2' => 'string',
-        'address_city' => 'string',
+        'address_city'    => 'string',
         'address_zipcode' => 'string',
         'address_country' => 'string',
-        'lines' => '\Swagger\Client\Model\PurchaseOrderLineForm[]'
+        'lines'           => '\RackbeatApp\Client\Model\PurchaseOrderLineForm[]',
     ];
 
     /**
@@ -555,7 +555,7 @@ class PurchaseOrderForm implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\PurchaseOrderLineForm[]
+     * @return \RackbeatApp\Client\Model\PurchaseOrderLineForm[]
      */
     public function getLines()
     {
@@ -565,7 +565,7 @@ class PurchaseOrderForm implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\PurchaseOrderLineForm[] $lines lines
+     * @param \RackbeatApp\Client\Model\PurchaseOrderLineForm[] $lines lines
      *
      * @return $this
      */

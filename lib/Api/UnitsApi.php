@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * UnitsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class UnitsApi
      *
      * @param  string $number Unit number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class UnitsApi
      *
      * @param  string $number Unit number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -316,9 +316,9 @@ class UnitsApi
      * @param  bool $is_draft Filter by draft flag (optional)
      * @param  string $name Filter by name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UnitList
+     * @return \RackbeatApp\Client\Model\UnitList
      */
     public function indexUnit($is_draft = null, $name = null)
     {
@@ -334,14 +334,14 @@ class UnitsApi
      * @param  bool $is_draft Filter by draft flag (optional)
      * @param  string $name Filter by name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UnitList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\UnitList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexUnitWithHttpInfo($is_draft = null, $name = null)
     {
-        $returnType = '\Swagger\Client\Model\UnitList';
-        $request = $this->indexUnitRequest($is_draft, $name);
+        $returnType = '\RackbeatApp\Client\Model\UnitList';
+        $request    = $this->indexUnitRequest($is_draft, $name);
 
         try {
             $options = $this->createHttpClientOption();
@@ -392,7 +392,7 @@ class UnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UnitList',
+                        '\RackbeatApp\Client\Model\UnitList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -436,8 +436,8 @@ class UnitsApi
      */
     public function indexUnitAsyncWithHttpInfo($is_draft = null, $name = null)
     {
-        $returnType = '\Swagger\Client\Model\UnitList';
-        $request = $this->indexUnitRequest($is_draft, $name);
+        $returnType = '\RackbeatApp\Client\Model\UnitList';
+        $request    = $this->indexUnitRequest($is_draft, $name);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -576,9 +576,9 @@ class UnitsApi
      *
      * @param  string $number Unit number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Unit
+     * @return \RackbeatApp\Client\Model\Unit
      */
     public function showUnit($number)
     {
@@ -593,14 +593,14 @@ class UnitsApi
      *
      * @param  string $number Unit number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Unit, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Unit, HTTP status code, HTTP response headers (array of strings)
      */
     public function showUnitWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Unit';
-        $request = $this->showUnitRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Unit';
+        $request    = $this->showUnitRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -651,7 +651,7 @@ class UnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Unit',
+                        '\RackbeatApp\Client\Model\Unit',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -693,8 +693,8 @@ class UnitsApi
      */
     public function showUnitAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Unit';
-        $request = $this->showUnitRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Unit';
+        $request    = $this->showUnitRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -836,11 +836,11 @@ class UnitsApi
      *
      * Create new unit
      *
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body Unit object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Unit
+     * @return \RackbeatApp\Client\Model\Unit
      */
     public function storeUnit($body)
     {
@@ -853,16 +853,16 @@ class UnitsApi
      *
      * Create new unit
      *
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body Unit object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Unit, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Unit, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeUnitWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Unit';
-        $request = $this->storeUnitRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Unit';
+        $request    = $this->storeUnitRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -913,7 +913,7 @@ class UnitsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Unit',
+                        '\RackbeatApp\Client\Model\Unit',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -928,7 +928,7 @@ class UnitsApi
      *
      * Create new unit
      *
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body Unit object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -948,15 +948,15 @@ class UnitsApi
      *
      * Create new unit
      *
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body Unit object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeUnitAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Unit';
-        $request = $this->storeUnitRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Unit';
+        $request    = $this->storeUnitRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -998,7 +998,7 @@ class UnitsApi
     /**
      * Create request for operation 'storeUnit'
      *
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body Unit object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1093,12 +1093,12 @@ class UnitsApi
      *
      * Update existing unit
      *
-     * @param  string $number Unit number (required)
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  string                             $number Unit number (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body   Unit object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Unit
+     * @return \RackbeatApp\Client\Model\Unit
      */
     public function updateUnit($number, $body)
     {
@@ -1111,17 +1111,17 @@ class UnitsApi
      *
      * Update existing unit
      *
-     * @param  string $number Unit number (required)
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  string                             $number Unit number (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body   Unit object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Unit, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Unit, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateUnitWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Unit';
-        $request = $this->updateUnitRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Unit';
+        $request    = $this->updateUnitRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1172,7 +1172,7 @@ class UnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Unit',
+                        '\RackbeatApp\Client\Model\Unit',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1187,8 +1187,8 @@ class UnitsApi
      *
      * Update existing unit
      *
-     * @param  string $number Unit number (required)
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  string                             $number Unit number (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body   Unit object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1208,16 +1208,16 @@ class UnitsApi
      *
      * Update existing unit
      *
-     * @param  string $number Unit number (required)
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  string                             $number Unit number (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body   Unit object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateUnitAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Unit';
-        $request = $this->updateUnitRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Unit';
+        $request    = $this->updateUnitRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1259,8 +1259,8 @@ class UnitsApi
     /**
      * Create request for operation 'updateUnit'
      *
-     * @param  string $number Unit number (required)
-     * @param  \Swagger\Client\Model\UnitForm $body Unit object that should be created. (required)
+     * @param  string                             $number Unit number (required)
+     * @param  \RackbeatApp\Client\Model\UnitForm $body   Unit object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**billings** | [**\Swagger\Client\Model\Variation[]**](Variation.md) |  | [optional] 
+**billings** | [**\RackbeatApp\Client\Model\Variation[]**](Variation.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

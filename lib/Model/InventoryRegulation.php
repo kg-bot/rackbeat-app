@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InventoryRegulation Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,13 +56,13 @@ class InventoryRegulation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'reason' => 'string',
-        'description' => 'string',
-        'lines' => '\Swagger\Client\Model\InventoryRegulationLine[]',
+        'id'           => 'int',
+        'reason'       => 'string',
+        'description'  => 'string',
+        'lines'        => '\RackbeatApp\Client\Model\InventoryRegulationLine[]',
         'regulated_at' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string'
+        'created_at'   => 'string',
+        'updated_at'   => 'string'
     ];
 
     /**
@@ -315,7 +315,7 @@ class InventoryRegulation implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\InventoryRegulationLine[]
+     * @return \RackbeatApp\Client\Model\InventoryRegulationLine[]
      */
     public function getLines()
     {
@@ -325,7 +325,7 @@ class InventoryRegulation implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\InventoryRegulationLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\InventoryRegulationLine[] $lines lines
      *
      * @return $this
      */

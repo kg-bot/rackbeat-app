@@ -1,4 +1,4 @@
-# Swagger\Client\CustomersApi
+# RackbeatApp\Client\CustomersApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -28,7 +28,7 @@ Reset price of customer group product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -67,7 +67,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **customersPproductsResetPrice**
-> \Swagger\Client\Model\CustomerProduct customersPproductsResetPrice($number, $product_number)
+> \RackbeatApp\Client\Model\CustomerProduct customersPproductsResetPrice($number, $product_number)
 
 Reset price of customer product
 
@@ -78,7 +78,7 @@ Reset price of customer product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerProduct**](../Model/CustomerProduct.md)
+[**\RackbeatApp\Client\Model\CustomerProduct**](../Model/CustomerProduct.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Delete existing customer
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexCustomers**
-> \Swagger\Client\Model\CustomersList indexCustomers($company_name, $search)
+> \RackbeatApp\Client\Model\CustomersList indexCustomers($company_name, $search)
 
 Index customers
 
@@ -177,7 +177,7 @@ Index customers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomersList**](../Model/CustomersList.md)
+[**\RackbeatApp\Client\Model\CustomersList**](../Model/CustomersList.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexCustomersProducts**
-> \Swagger\Client\Model\Customer indexCustomersProducts($number)
+> \RackbeatApp\Client\Model\Customer indexCustomersProducts($number)
 
 Index customers
 
@@ -228,7 +228,7 @@ Index customers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Customer**](../Model/Customer.md)
+[**\RackbeatApp\Client\Model\Customer**](../Model/Customer.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **shoeCustomerProduct**
-> \Swagger\Client\Model\CustomerProduct shoeCustomerProduct($number, $product_number)
+> \RackbeatApp\Client\Model\CustomerProduct shoeCustomerProduct($number, $product_number)
 
 Show customer product
 
@@ -277,7 +277,7 @@ Show customer product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -303,7 +303,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerProduct**](../Model/CustomerProduct.md)
+[**\RackbeatApp\Client\Model\CustomerProduct**](../Model/CustomerProduct.md)
 
 ### Authorization
 
@@ -317,7 +317,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showCustomer**
-> \Swagger\Client\Model\Customer showCustomer($number)
+> \RackbeatApp\Client\Model\Customer showCustomer($number)
 
 Show single customer
 
@@ -328,7 +328,7 @@ Show single customer
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Customer**](../Model/Customer.md)
+[**\RackbeatApp\Client\Model\Customer**](../Model/Customer.md)
 
 ### Authorization
 
@@ -366,7 +366,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeCustomer**
-> \Swagger\Client\Model\Customer storeCustomer($body)
+> \RackbeatApp\Client\Model\Customer storeCustomer($body)
 
 Create new customer
 
@@ -377,12 +377,12 @@ Create new customer
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CustomerForm(); // \Swagger\Client\Model\CustomerForm | Customer object that should be created.\"
+$body = new \RackbeatApp\Client\Model\CustomerForm(); // \RackbeatApp\Client\Model\CustomerForm | Customer object that should be created.\"
 
 try {
     $result = $apiInstance->storeCustomer($body);
@@ -397,11 +397,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CustomerForm**](../Model/CustomerForm.md)| Customer object that should be created.\&quot; |
+ **body** | [**\RackbeatApp\Client\Model\CustomerForm**](../Model/CustomerForm.md)| Customer object that should be created.\&quot; |
 
 ### Return type
 
-[**\Swagger\Client\Model\Customer**](../Model/Customer.md)
+[**\RackbeatApp\Client\Model\Customer**](../Model/Customer.md)
 
 ### Authorization
 
@@ -415,7 +415,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCustomer**
-> \Swagger\Client\Model\Customer updateCustomer($number, $body)
+> \RackbeatApp\Client\Model\Customer updateCustomer($number, $body)
 
 Update existing customer
 
@@ -426,13 +426,13 @@ Update existing customer
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Customer number
-$body = new \Swagger\Client\Model\CustomerForm(); // \Swagger\Client\Model\CustomerForm | Customer object that should be updated.
+$body = new \RackbeatApp\Client\Model\CustomerForm(); // \RackbeatApp\Client\Model\CustomerForm | Customer object that should be updated.
 
 try {
     $result = $apiInstance->updateCustomer($number, $body);
@@ -448,11 +448,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Customer number |
- **body** | [**\Swagger\Client\Model\CustomerForm**](../Model/CustomerForm.md)| Customer object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\CustomerForm**](../Model/CustomerForm.md)| Customer object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Customer**](../Model/Customer.md)
+[**\RackbeatApp\Client\Model\Customer**](../Model/Customer.md)
 
 ### Authorization
 
@@ -466,7 +466,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCustomerProduct**
-> \Swagger\Client\Model\CustomerProduct updateCustomerProduct($number, $product_number, $body)
+> \RackbeatApp\Client\Model\CustomerProduct updateCustomerProduct($number, $product_number, $body)
 
 Update customer product
 
@@ -477,14 +477,14 @@ Update customer product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CustomersApi(
+$apiInstance = new RackbeatApp\Client\Api\CustomersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Customer number
 $product_number = "product_number_example"; // string | Product number
-$body = new \Swagger\Client\Model\Body3(); // \Swagger\Client\Model\Body3 | Customers product object that should be created.
+$body = new \RackbeatApp\Client\Model\Body3(); // \RackbeatApp\Client\Model\Body3 | Customers product object that should be created.
 
 try {
     $result = $apiInstance->updateCustomerProduct($number, $product_number, $body);
@@ -501,11 +501,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Customer number |
  **product_number** | **string**| Product number |
- **body** | [**\Swagger\Client\Model\Body3**](../Model/Body3.md)| Customers product object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\Body3**](../Model/Body3.md)| Customers product object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerProduct**](../Model/CustomerProduct.md)
+[**\RackbeatApp\Client\Model\CustomerProduct**](../Model/CustomerProduct.md)
 
 ### Authorization
 

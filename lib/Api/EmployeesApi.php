@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * EmployeesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class EmployeesApi
      *
      * @param  string $number Employee number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class EmployeesApi
      *
      * @param  string $number Employee number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -315,9 +315,9 @@ class EmployeesApi
      *
      * @param  string $name Filter by employee name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\EmployeeList
+     * @return \RackbeatApp\Client\Model\EmployeeList
      */
     public function indexEmployees($name = null)
     {
@@ -332,14 +332,14 @@ class EmployeesApi
      *
      * @param  string $name Filter by employee name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\EmployeeList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\EmployeeList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexEmployeesWithHttpInfo($name = null)
     {
-        $returnType = '\Swagger\Client\Model\EmployeeList';
-        $request = $this->indexEmployeesRequest($name);
+        $returnType = '\RackbeatApp\Client\Model\EmployeeList';
+        $request    = $this->indexEmployeesRequest($name);
 
         try {
             $options = $this->createHttpClientOption();
@@ -390,7 +390,7 @@ class EmployeesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EmployeeList',
+                        '\RackbeatApp\Client\Model\EmployeeList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -432,8 +432,8 @@ class EmployeesApi
      */
     public function indexEmployeesAsyncWithHttpInfo($name = null)
     {
-        $returnType = '\Swagger\Client\Model\EmployeeList';
-        $request = $this->indexEmployeesRequest($name);
+        $returnType = '\RackbeatApp\Client\Model\EmployeeList';
+        $request    = $this->indexEmployeesRequest($name);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -567,9 +567,9 @@ class EmployeesApi
      *
      * @param  string $number Employee number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Employee
+     * @return \RackbeatApp\Client\Model\Employee
      */
     public function showEmployee($number)
     {
@@ -584,14 +584,14 @@ class EmployeesApi
      *
      * @param  string $number Employee number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Employee, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Employee, HTTP status code, HTTP response headers (array of strings)
      */
     public function showEmployeeWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Employee';
-        $request = $this->showEmployeeRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Employee';
+        $request    = $this->showEmployeeRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -642,7 +642,7 @@ class EmployeesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Employee',
+                        '\RackbeatApp\Client\Model\Employee',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -684,8 +684,8 @@ class EmployeesApi
      */
     public function showEmployeeAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Employee';
-        $request = $this->showEmployeeRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Employee';
+        $request    = $this->showEmployeeRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -827,11 +827,11 @@ class EmployeesApi
      *
      * Create new employee
      *
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body Employee object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Employee
+     * @return \RackbeatApp\Client\Model\Employee
      */
     public function storeEmployee($body)
     {
@@ -844,16 +844,16 @@ class EmployeesApi
      *
      * Create new employee
      *
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body Employee object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Employee, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Employee, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeEmployeeWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Employee';
-        $request = $this->storeEmployeeRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Employee';
+        $request    = $this->storeEmployeeRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -904,7 +904,7 @@ class EmployeesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Employee',
+                        '\RackbeatApp\Client\Model\Employee',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -919,7 +919,7 @@ class EmployeesApi
      *
      * Create new employee
      *
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body Employee object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -939,15 +939,15 @@ class EmployeesApi
      *
      * Create new employee
      *
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body Employee object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeEmployeeAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Employee';
-        $request = $this->storeEmployeeRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Employee';
+        $request    = $this->storeEmployeeRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -989,7 +989,7 @@ class EmployeesApi
     /**
      * Create request for operation 'storeEmployee'
      *
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body Employee object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1084,12 +1084,12 @@ class EmployeesApi
      *
      * Update existing employee
      *
-     * @param  string $number Employee number (required)
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be updated. (required)
+     * @param  string                                 $number Employee number (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body   Employee object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Employee
+     * @return \RackbeatApp\Client\Model\Employee
      */
     public function updateEmployee($number, $body)
     {
@@ -1102,17 +1102,17 @@ class EmployeesApi
      *
      * Update existing employee
      *
-     * @param  string $number Employee number (required)
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be updated. (required)
+     * @param  string                                 $number Employee number (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body   Employee object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Employee, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Employee, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateEmployeeWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Employee';
-        $request = $this->updateEmployeeRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Employee';
+        $request    = $this->updateEmployeeRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1163,7 +1163,7 @@ class EmployeesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Employee',
+                        '\RackbeatApp\Client\Model\Employee',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1178,8 +1178,8 @@ class EmployeesApi
      *
      * Update existing employee
      *
-     * @param  string $number Employee number (required)
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be updated. (required)
+     * @param  string                                 $number Employee number (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body   Employee object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1199,16 +1199,16 @@ class EmployeesApi
      *
      * Update existing employee
      *
-     * @param  string $number Employee number (required)
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be updated. (required)
+     * @param  string                                 $number Employee number (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body   Employee object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateEmployeeAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Employee';
-        $request = $this->updateEmployeeRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Employee';
+        $request    = $this->updateEmployeeRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1250,8 +1250,8 @@ class EmployeesApi
     /**
      * Create request for operation 'updateEmployee'
      *
-     * @param  string $number Employee number (required)
-     * @param  \Swagger\Client\Model\EmployeeForm $body Employee object that should be updated. (required)
+     * @param  string                                 $number Employee number (required)
+     * @param  \RackbeatApp\Client\Model\EmployeeForm $body   Employee object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

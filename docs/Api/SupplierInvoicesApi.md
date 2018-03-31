@@ -1,4 +1,4 @@
-# Swagger\Client\SupplierInvoicesApi
+# RackbeatApp\Client\SupplierInvoicesApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 
 # **bookSupplierInvoice**
-> \Swagger\Client\Model\InlineResponse2001 bookSupplierInvoice($number)
+> \RackbeatApp\Client\Model\InlineResponse2001 bookSupplierInvoice($number)
 
 Book supplier invoice
 
@@ -36,7 +36,7 @@ Book supplier invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\RackbeatApp\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -85,7 +85,7 @@ Delete existing supplier invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -133,7 +133,7 @@ Delete existing supplier invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ Delete existing supplier invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -222,7 +222,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **draftSupplierInvoice**
-> \Swagger\Client\Model\InlineResponse2001 draftSupplierInvoice($body)
+> \RackbeatApp\Client\Model\InlineResponse2001 draftSupplierInvoice($body)
 
 Create supplier invoice draft
 
@@ -233,12 +233,12 @@ Create supplier invoice draft
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Body2(); // \Swagger\Client\Model\Body2 | Supplier invoice object that should be drafted.
+$body = new \RackbeatApp\Client\Model\Body2(); // \RackbeatApp\Client\Model\Body2 | Supplier invoice object that should be drafted.
 
 try {
     $result = $apiInstance->draftSupplierInvoice($body);
@@ -253,11 +253,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Body2**](../Model/Body2.md)| Supplier invoice object that should be drafted. |
+ **body** | [**\RackbeatApp\Client\Model\Body2**](../Model/Body2.md)| Supplier invoice object that should be drafted. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\RackbeatApp\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexSupplierInvoicePayments**
-> \Swagger\Client\Model\SupplierInvoicePaymentList indexSupplierInvoicePayments($number)
+> \RackbeatApp\Client\Model\SupplierInvoicePaymentList indexSupplierInvoicePayments($number)
 
 Index supplier invoice payments
 
@@ -282,7 +282,7 @@ Index supplier invoice payments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierInvoicePaymentList**](../Model/SupplierInvoicePaymentList.md)
+[**\RackbeatApp\Client\Model\SupplierInvoicePaymentList**](../Model/SupplierInvoicePaymentList.md)
 
 ### Authorization
 
@@ -320,7 +320,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexSupplierInvoices**
-> \Swagger\Client\Model\InlineResponse2061 indexSupplierInvoices($is_paid, $is_booked, $search, $supplier_number, $purchase_order_number)
+> \RackbeatApp\Client\Model\InlineResponse2061 indexSupplierInvoices($is_paid, $is_booked, $search, $supplier_number, $purchase_order_number)
 
 Index supplier invoices
 
@@ -331,7 +331,7 @@ Index supplier invoices
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -363,7 +363,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2061**](../Model/InlineResponse2061.md)
+[**\RackbeatApp\Client\Model\InlineResponse2061**](../Model/InlineResponse2061.md)
 
 ### Authorization
 
@@ -377,7 +377,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexSupplierInvoicesNotes**
-> \Swagger\Client\Model\NoteList indexSupplierInvoicesNotes($number)
+> \RackbeatApp\Client\Model\NoteList indexSupplierInvoicesNotes($number)
 
 Index supplier invoices notes
 
@@ -388,7 +388,7 @@ Index supplier invoices notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -412,7 +412,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\NoteList**](../Model/NoteList.md)
+[**\RackbeatApp\Client\Model\NoteList**](../Model/NoteList.md)
 
 ### Authorization
 
@@ -426,7 +426,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showSupplierInvoice**
-> \Swagger\Client\Model\InlineResponse2001 showSupplierInvoice($number)
+> \RackbeatApp\Client\Model\InlineResponse2001 showSupplierInvoice($number)
 
 Show single supplier invoice
 
@@ -437,7 +437,7 @@ Show single supplier invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -461,7 +461,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\RackbeatApp\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -475,7 +475,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showSupplierInvoiceNote**
-> \Swagger\Client\Model\Note showSupplierInvoiceNote($number, $note_id)
+> \RackbeatApp\Client\Model\Note showSupplierInvoiceNote($number, $note_id)
 
 Show single supplier invoice note
 
@@ -486,7 +486,7 @@ Show single supplier invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -512,7 +512,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -526,7 +526,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showSupplierInvoicePayment**
-> \Swagger\Client\Model\SupplierInvoicePayment showSupplierInvoicePayment($number, $payment_number)
+> \RackbeatApp\Client\Model\SupplierInvoicePayment showSupplierInvoicePayment($number, $payment_number)
 
 Show single supplier invoice payment
 
@@ -537,7 +537,7 @@ Show single supplier invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -563,7 +563,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierInvoicePayment**](../Model/SupplierInvoicePayment.md)
+[**\RackbeatApp\Client\Model\SupplierInvoicePayment**](../Model/SupplierInvoicePayment.md)
 
 ### Authorization
 
@@ -577,7 +577,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeSupplierInvoice**
-> \Swagger\Client\Model\InlineResponse2001 storeSupplierInvoice($body)
+> \RackbeatApp\Client\Model\InlineResponse2001 storeSupplierInvoice($body)
 
 Create new supplier invoice
 
@@ -588,12 +588,12 @@ Create new supplier invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Body2(); // \Swagger\Client\Model\Body2 | Supplier invoice object that should be created.
+$body = new \RackbeatApp\Client\Model\Body2(); // \RackbeatApp\Client\Model\Body2 | Supplier invoice object that should be created.
 
 try {
     $result = $apiInstance->storeSupplierInvoice($body);
@@ -608,11 +608,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Body2**](../Model/Body2.md)| Supplier invoice object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\Body2**](../Model/Body2.md)| Supplier invoice object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\RackbeatApp\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -626,7 +626,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeSupplierInvoiceNote**
-> \Swagger\Client\Model\Note storeSupplierInvoiceNote($number, $body)
+> \RackbeatApp\Client\Model\Note storeSupplierInvoiceNote($number, $body)
 
 Create new supplier invoice note
 
@@ -637,13 +637,13 @@ Create new supplier invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Supplier invoice number
-$body = new \Swagger\Client\Model\NoteForm(); // \Swagger\Client\Model\NoteForm | Supplier invoice object that should be created.
+$body = new \RackbeatApp\Client\Model\NoteForm(); // \RackbeatApp\Client\Model\NoteForm | Supplier invoice object that should be created.
 
 try {
     $result = $apiInstance->storeSupplierInvoiceNote($number, $body);
@@ -659,11 +659,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Supplier invoice number |
- **body** | [**\Swagger\Client\Model\NoteForm**](../Model/NoteForm.md)| Supplier invoice object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\NoteForm**](../Model/NoteForm.md)| Supplier invoice object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -677,7 +677,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeSupplierInvoicePayment**
-> \Swagger\Client\Model\SupplierInvoicePayment storeSupplierInvoicePayment($number, $body)
+> \RackbeatApp\Client\Model\SupplierInvoicePayment storeSupplierInvoicePayment($number, $body)
 
 Create new supplier invoice payment
 
@@ -688,13 +688,13 @@ Create new supplier invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Supplier invoice number
-$body = new \Swagger\Client\Model\SupplierInvoicePaymentForm(); // \Swagger\Client\Model\SupplierInvoicePaymentForm | Supplier invoice payment object that should be created.
+$body = new \RackbeatApp\Client\Model\SupplierInvoicePaymentForm(); // \RackbeatApp\Client\Model\SupplierInvoicePaymentForm | Supplier invoice payment object that should be created.
 
 try {
     $result = $apiInstance->storeSupplierInvoicePayment($number, $body);
@@ -710,11 +710,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Supplier invoice number |
- **body** | [**\Swagger\Client\Model\SupplierInvoicePaymentForm**](../Model/SupplierInvoicePaymentForm.md)| Supplier invoice payment object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\SupplierInvoicePaymentForm**](../Model/SupplierInvoicePaymentForm.md)| Supplier invoice payment object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierInvoicePayment**](../Model/SupplierInvoicePayment.md)
+[**\RackbeatApp\Client\Model\SupplierInvoicePayment**](../Model/SupplierInvoicePayment.md)
 
 ### Authorization
 
@@ -728,7 +728,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **unbookSupplierInvoice**
-> \Swagger\Client\Model\InlineResponse2001 unbookSupplierInvoice($number)
+> \RackbeatApp\Client\Model\InlineResponse2001 unbookSupplierInvoice($number)
 
 Unbook supplier invoice
 
@@ -739,7 +739,7 @@ Unbook supplier invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -763,7 +763,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\RackbeatApp\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -777,7 +777,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSupplierInvoice**
-> \Swagger\Client\Model\InlineResponse2001 updateSupplierInvoice($number, $body)
+> \RackbeatApp\Client\Model\InlineResponse2001 updateSupplierInvoice($number, $body)
 
 Update existing supplier invoice
 
@@ -788,13 +788,13 @@ Update existing supplier invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Supplier invoice number
-$body = new \Swagger\Client\Model\Body2(); // \Swagger\Client\Model\Body2 | Supplier invoice object that should be updated.
+$body = new \RackbeatApp\Client\Model\Body2(); // \RackbeatApp\Client\Model\Body2 | Supplier invoice object that should be updated.
 
 try {
     $result = $apiInstance->updateSupplierInvoice($number, $body);
@@ -810,11 +810,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Supplier invoice number |
- **body** | [**\Swagger\Client\Model\Body2**](../Model/Body2.md)| Supplier invoice object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\Body2**](../Model/Body2.md)| Supplier invoice object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\RackbeatApp\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -828,7 +828,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSupplierInvoiceNote**
-> \Swagger\Client\Model\Note updateSupplierInvoiceNote($number, $note_id, $body)
+> \RackbeatApp\Client\Model\Note updateSupplierInvoiceNote($number, $note_id, $body)
 
 Update existing supplier invoice note
 
@@ -839,14 +839,14 @@ Update existing supplier invoice note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Supplier invoice number
 $note_id = "note_id_example"; // string | Supplier invoice id
-$body = new \Swagger\Client\Model\NoteForm(); // \Swagger\Client\Model\NoteForm | Supplier invoice object that should be updated.
+$body = new \RackbeatApp\Client\Model\NoteForm(); // \RackbeatApp\Client\Model\NoteForm | Supplier invoice object that should be updated.
 
 try {
     $result = $apiInstance->updateSupplierInvoiceNote($number, $note_id, $body);
@@ -863,11 +863,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Supplier invoice number |
  **note_id** | **string**| Supplier invoice id |
- **body** | [**\Swagger\Client\Model\NoteForm**](../Model/NoteForm.md)| Supplier invoice object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\NoteForm**](../Model/NoteForm.md)| Supplier invoice object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -881,7 +881,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSupplierInvoicePayment**
-> \Swagger\Client\Model\SupplierInvoicePayment updateSupplierInvoicePayment($number, $payment_number, $body)
+> \RackbeatApp\Client\Model\SupplierInvoicePayment updateSupplierInvoicePayment($number, $payment_number, $body)
 
 Update existing supplier invoice payment
 
@@ -892,14 +892,14 @@ Update existing supplier invoice payment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierInvoicesApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Supplier invoice number
 $payment_number = "payment_number_example"; // string | Supplier invoice payment number
-$body = new \Swagger\Client\Model\SupplierInvoicePaymentForm(); // \Swagger\Client\Model\SupplierInvoicePaymentForm | Supplier invoice payment object that should be updated.
+$body = new \RackbeatApp\Client\Model\SupplierInvoicePaymentForm(); // \RackbeatApp\Client\Model\SupplierInvoicePaymentForm | Supplier invoice payment object that should be updated.
 
 try {
     $result = $apiInstance->updateSupplierInvoicePayment($number, $payment_number, $body);
@@ -916,11 +916,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Supplier invoice number |
  **payment_number** | **string**| Supplier invoice payment number |
- **body** | [**\Swagger\Client\Model\SupplierInvoicePaymentForm**](../Model/SupplierInvoicePaymentForm.md)| Supplier invoice payment object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\SupplierInvoicePaymentForm**](../Model/SupplierInvoicePaymentForm.md)| Supplier invoice payment object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierInvoicePayment**](../Model/SupplierInvoicePayment.md)
+[**\RackbeatApp\Client\Model\SupplierInvoicePayment**](../Model/SupplierInvoicePayment.md)
 
 ### Authorization
 

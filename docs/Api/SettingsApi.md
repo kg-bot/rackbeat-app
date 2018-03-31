@@ -1,4 +1,4 @@
-# Swagger\Client\SettingsApi
+# RackbeatApp\Client\SettingsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **indexKeyValueSettings**
-> \Swagger\Client\Model\UserAccountSettings indexKeyValueSettings()
+> \RackbeatApp\Client\Model\UserAccountSettings indexKeyValueSettings()
 
 Index of key-value settings
 
@@ -22,7 +22,7 @@ Custom structured key-value response
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SettingsApi(
+$apiInstance = new RackbeatApp\Client\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -42,7 +42,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\UserAccountSettings**](../Model/UserAccountSettings.md)
+[**\RackbeatApp\Client\Model\UserAccountSettings**](../Model/UserAccountSettings.md)
 
 ### Authorization
 
@@ -56,7 +56,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexSettings**
-> \Swagger\Client\Model\SettingsList indexSettings()
+> \RackbeatApp\Client\Model\SettingsList indexSettings()
 
 Index settings
 
@@ -67,7 +67,7 @@ Index settings
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SettingsApi(
+$apiInstance = new RackbeatApp\Client\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -87,7 +87,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\SettingsList**](../Model/SettingsList.md)
+[**\RackbeatApp\Client\Model\SettingsList**](../Model/SettingsList.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showSettings**
-> \Swagger\Client\Model\Setting showSettings($user_account_setting)
+> \RackbeatApp\Client\Model\Setting showSettings($user_account_setting)
 
 Show existing setting
 
@@ -112,7 +112,7 @@ Show existing setting
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SettingsApi(
+$apiInstance = new RackbeatApp\Client\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Setting**](../Model/Setting.md)
+[**\RackbeatApp\Client\Model\Setting**](../Model/Setting.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSetting**
-> \Swagger\Client\Model\Setting updateSetting($user_account_setting, $body)
+> \RackbeatApp\Client\Model\Setting updateSetting($user_account_setting, $body)
 
 Update existing settings
 
@@ -161,13 +161,13 @@ Update existing settings
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SettingsApi(
+$apiInstance = new RackbeatApp\Client\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_account_setting = "user_account_setting_example"; // string | Setting identity
-$body = new \Swagger\Client\Model\Setting(); // \Swagger\Client\Model\Setting | Values to update.
+$body = new \RackbeatApp\Client\Model\Setting(); // \RackbeatApp\Client\Model\Setting | Values to update.
 
 try {
     $result = $apiInstance->updateSetting($user_account_setting, $body);
@@ -183,11 +183,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_account_setting** | **string**| Setting identity |
- **body** | [**\Swagger\Client\Model\Setting**](../Model/Setting.md)| Values to update. |
+ **body** | [**\RackbeatApp\Client\Model\Setting**](../Model/Setting.md)| Values to update. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Setting**](../Model/Setting.md)
+[**\RackbeatApp\Client\Model\Setting**](../Model/Setting.md)
 
 ### Authorization
 

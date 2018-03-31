@@ -1,4 +1,4 @@
-# Swagger\Client\VatInfoApi
+# RackbeatApp\Client\VatInfoApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **indexVatInfo**
-> \Swagger\Client\Model\InlineResponse2009 indexVatInfo($country, $vat)
+> \RackbeatApp\Client\Model\InlineResponse2009 indexVatInfo($country, $vat)
 
 Index vat-info
 
@@ -19,7 +19,7 @@ Index vat-info
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\VatInfoApi(
+$apiInstance = new RackbeatApp\Client\Api\VatInfoApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
+[**\RackbeatApp\Client\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
 
 ### Authorization
 

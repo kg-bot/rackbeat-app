@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SettingsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -89,9 +89,9 @@ class SettingsApi
      * Index of key-value settings
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserAccountSettings
+     * @return \RackbeatApp\Client\Model\UserAccountSettings
      */
     public function indexKeyValueSettings()
     {
@@ -105,14 +105,14 @@ class SettingsApi
      * Index of key-value settings
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserAccountSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\UserAccountSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexKeyValueSettingsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\UserAccountSettings';
-        $request = $this->indexKeyValueSettingsRequest();
+        $returnType = '\RackbeatApp\Client\Model\UserAccountSettings';
+        $request    = $this->indexKeyValueSettingsRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -163,7 +163,7 @@ class SettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserAccountSettings',
+                        '\RackbeatApp\Client\Model\UserAccountSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -203,8 +203,8 @@ class SettingsApi
      */
     public function indexKeyValueSettingsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\UserAccountSettings';
-        $request = $this->indexKeyValueSettingsRequest();
+        $returnType = '\RackbeatApp\Client\Model\UserAccountSettings';
+        $request    = $this->indexKeyValueSettingsRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -332,9 +332,9 @@ class SettingsApi
      * Index settings
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SettingsList
+     * @return \RackbeatApp\Client\Model\SettingsList
      */
     public function indexSettings()
     {
@@ -348,14 +348,14 @@ class SettingsApi
      * Index settings
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SettingsList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\SettingsList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexSettingsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\SettingsList';
-        $request = $this->indexSettingsRequest();
+        $returnType = '\RackbeatApp\Client\Model\SettingsList';
+        $request    = $this->indexSettingsRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -406,7 +406,7 @@ class SettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SettingsList',
+                        '\RackbeatApp\Client\Model\SettingsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -446,8 +446,8 @@ class SettingsApi
      */
     public function indexSettingsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\SettingsList';
-        $request = $this->indexSettingsRequest();
+        $returnType = '\RackbeatApp\Client\Model\SettingsList';
+        $request    = $this->indexSettingsRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -576,9 +576,9 @@ class SettingsApi
      *
      * @param  string $user_account_setting Setting identity (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Setting
+     * @return \RackbeatApp\Client\Model\Setting
      */
     public function showSettings($user_account_setting)
     {
@@ -593,14 +593,14 @@ class SettingsApi
      *
      * @param  string $user_account_setting Setting identity (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Setting, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Setting, HTTP status code, HTTP response headers (array of strings)
      */
     public function showSettingsWithHttpInfo($user_account_setting)
     {
-        $returnType = '\Swagger\Client\Model\Setting';
-        $request = $this->showSettingsRequest($user_account_setting);
+        $returnType = '\RackbeatApp\Client\Model\Setting';
+        $request    = $this->showSettingsRequest($user_account_setting);
 
         try {
             $options = $this->createHttpClientOption();
@@ -651,7 +651,7 @@ class SettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Setting',
+                        '\RackbeatApp\Client\Model\Setting',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -693,8 +693,8 @@ class SettingsApi
      */
     public function showSettingsAsyncWithHttpInfo($user_account_setting)
     {
-        $returnType = '\Swagger\Client\Model\Setting';
-        $request = $this->showSettingsRequest($user_account_setting);
+        $returnType = '\RackbeatApp\Client\Model\Setting';
+        $request    = $this->showSettingsRequest($user_account_setting);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -836,12 +836,12 @@ class SettingsApi
      *
      * Update existing settings
      *
-     * @param  string $user_account_setting Setting identity (required)
-     * @param  \Swagger\Client\Model\Setting $body Values to update. (required)
+     * @param  string                            $user_account_setting Setting identity (required)
+     * @param  \RackbeatApp\Client\Model\Setting $body                 Values to update. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Setting
+     * @return \RackbeatApp\Client\Model\Setting
      */
     public function updateSetting($user_account_setting, $body)
     {
@@ -854,17 +854,17 @@ class SettingsApi
      *
      * Update existing settings
      *
-     * @param  string $user_account_setting Setting identity (required)
-     * @param  \Swagger\Client\Model\Setting $body Values to update. (required)
+     * @param  string                            $user_account_setting Setting identity (required)
+     * @param  \RackbeatApp\Client\Model\Setting $body                 Values to update. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Setting, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Setting, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateSettingWithHttpInfo($user_account_setting, $body)
     {
-        $returnType = '\Swagger\Client\Model\Setting';
-        $request = $this->updateSettingRequest($user_account_setting, $body);
+        $returnType = '\RackbeatApp\Client\Model\Setting';
+        $request    = $this->updateSettingRequest($user_account_setting, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -915,7 +915,7 @@ class SettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Setting',
+                        '\RackbeatApp\Client\Model\Setting',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -930,8 +930,8 @@ class SettingsApi
      *
      * Update existing settings
      *
-     * @param  string $user_account_setting Setting identity (required)
-     * @param  \Swagger\Client\Model\Setting $body Values to update. (required)
+     * @param  string                            $user_account_setting Setting identity (required)
+     * @param  \RackbeatApp\Client\Model\Setting $body                 Values to update. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -951,16 +951,16 @@ class SettingsApi
      *
      * Update existing settings
      *
-     * @param  string $user_account_setting Setting identity (required)
-     * @param  \Swagger\Client\Model\Setting $body Values to update. (required)
+     * @param  string                            $user_account_setting Setting identity (required)
+     * @param  \RackbeatApp\Client\Model\Setting $body                 Values to update. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateSettingAsyncWithHttpInfo($user_account_setting, $body)
     {
-        $returnType = '\Swagger\Client\Model\Setting';
-        $request = $this->updateSettingRequest($user_account_setting, $body);
+        $returnType = '\RackbeatApp\Client\Model\Setting';
+        $request    = $this->updateSettingRequest($user_account_setting, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1002,8 +1002,8 @@ class SettingsApi
     /**
      * Create request for operation 'updateSetting'
      *
-     * @param  string $user_account_setting Setting identity (required)
-     * @param  \Swagger\Client\Model\Setting $body Values to update. (required)
+     * @param  string                            $user_account_setting Setting identity (required)
+     * @param  \RackbeatApp\Client\Model\Setting $body                 Values to update. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

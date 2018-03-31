@@ -1,4 +1,4 @@
-# Swagger\Client\LocationsApi
+# RackbeatApp\Client\LocationsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -26,7 +26,7 @@ Delete existing location
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -63,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexLocation**
-> \Swagger\Client\Model\LocationList indexLocation($is_draft, $parent_id, $search, $is_default)
+> \RackbeatApp\Client\Model\LocationList indexLocation($is_draft, $parent_id, $search, $is_default)
 
 Index location
 
@@ -74,7 +74,7 @@ Index location
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LocationList**](../Model/LocationList.md)
+[**\RackbeatApp\Client\Model\LocationList**](../Model/LocationList.md)
 
 ### Authorization
 
@@ -118,7 +118,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **locationFlat**
-> \Swagger\Client\Model\InlineResponse2006 locationFlat($is_draft, $parent_id, $search, $is_default)
+> \RackbeatApp\Client\Model\InlineResponse2006 locationFlat($is_draft, $parent_id, $search, $is_default)
 
 Location flat
 
@@ -129,7 +129,7 @@ Location flat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
+[**\RackbeatApp\Client\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **locationsChildren**
-> \Swagger\Client\Model\LocationList locationsChildren($number)
+> \RackbeatApp\Client\Model\LocationList locationsChildren($number)
 
 Location children
 
@@ -184,7 +184,7 @@ Location children
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LocationList**](../Model/LocationList.md)
+[**\RackbeatApp\Client\Model\LocationList**](../Model/LocationList.md)
 
 ### Authorization
 
@@ -222,7 +222,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **locationsGetLineableStock**
-> \Swagger\Client\Model\InlineResponse2007 locationsGetLineableStock($number, $lineable_number)
+> \RackbeatApp\Client\Model\InlineResponse2007 locationsGetLineableStock($number, $lineable_number)
 
 Location get lineable stock
 
@@ -233,7 +233,7 @@ Location get lineable stock
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
+[**\RackbeatApp\Client\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showLocation**
-> \Swagger\Client\Model\Location showLocation($number)
+> \RackbeatApp\Client\Model\Location showLocation($number)
 
 Show single location
 
@@ -284,7 +284,7 @@ Show single location
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Location**](../Model/Location.md)
+[**\RackbeatApp\Client\Model\Location**](../Model/Location.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeLocation**
-> \Swagger\Client\Model\Location storeLocation($body)
+> \RackbeatApp\Client\Model\Location storeLocation($body)
 
 Create new location
 
@@ -333,12 +333,12 @@ Create new location
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LocationForm(); // \Swagger\Client\Model\LocationForm | Location object that should be created.
+$body = new \RackbeatApp\Client\Model\LocationForm(); // \RackbeatApp\Client\Model\LocationForm | Location object that should be created.
 
 try {
     $result = $apiInstance->storeLocation($body);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LocationForm**](../Model/LocationForm.md)| Location object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\LocationForm**](../Model/LocationForm.md)| Location object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Location**](../Model/Location.md)
+[**\RackbeatApp\Client\Model\Location**](../Model/Location.md)
 
 ### Authorization
 
@@ -371,7 +371,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLocation**
-> \Swagger\Client\Model\Location updateLocation($number, $body)
+> \RackbeatApp\Client\Model\Location updateLocation($number, $body)
 
 Update existing location
 
@@ -382,13 +382,13 @@ Update existing location
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LocationsApi(
+$apiInstance = new RackbeatApp\Client\Api\LocationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Location number
-$body = new \Swagger\Client\Model\LocationForm(); // \Swagger\Client\Model\LocationForm | Location object that should be created.
+$body = new \RackbeatApp\Client\Model\LocationForm(); // \RackbeatApp\Client\Model\LocationForm | Location object that should be created.
 
 try {
     $result = $apiInstance->updateLocation($number, $body);
@@ -404,11 +404,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Location number |
- **body** | [**\Swagger\Client\Model\LocationForm**](../Model/LocationForm.md)| Location object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\LocationForm**](../Model/LocationForm.md)| Location object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Location**](../Model/Location.md)
+[**\RackbeatApp\Client\Model\Location**](../Model/Location.md)
 
 ### Authorization
 

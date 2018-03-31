@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * ProductsDraftList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class ProductsDraftList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'products_drafts' => '\Swagger\Client\Model\Product[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'products_drafts' => '\RackbeatApp\Client\Model\Product[]',
+        'total'           => 'int',
+        'pages'           => 'int',
+        'limit'           => 'int',
+        'page'            => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class ProductsDraftList implements ModelInterface, ArrayAccess
     /**
      * Gets products_drafts
      *
-     * @return \Swagger\Client\Model\Product[]
+     * @return \RackbeatApp\Client\Model\Product[]
      */
     public function getProductsDrafts()
     {
@@ -241,7 +241,7 @@ class ProductsDraftList implements ModelInterface, ArrayAccess
     /**
      * Sets products_drafts
      *
-     * @param \Swagger\Client\Model\Product[] $products_drafts products_drafts
+     * @param \RackbeatApp\Client\Model\Product[] $products_drafts products_drafts
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * OrdersList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class OrdersList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'orders' => '\Swagger\Client\Model\Order[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'orders' => '\RackbeatApp\Client\Model\Order[]',
+        'total'  => 'int',
+        'pages'  => 'int',
+        'limit'  => 'int',
+        'page'   => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class OrdersList implements ModelInterface, ArrayAccess
     /**
      * Gets orders
      *
-     * @return \Swagger\Client\Model\Order[]
+     * @return \RackbeatApp\Client\Model\Order[]
      */
     public function getOrders()
     {
@@ -241,7 +241,7 @@ class OrdersList implements ModelInterface, ArrayAccess
     /**
      * Sets orders
      *
-     * @param \Swagger\Client\Model\Order[] $orders orders
+     * @param \RackbeatApp\Client\Model\Order[] $orders orders
      *
      * @return $this
      */

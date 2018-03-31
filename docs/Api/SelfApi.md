@@ -1,4 +1,4 @@
-# Swagger\Client\SelfApi
+# RackbeatApp\Client\SelfApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getUserAccount**
-> \Swagger\Client\Model\Self getUserAccount()
+> \RackbeatApp\Client\Model\Self getUserAccount()
 
 Get user account
 
@@ -19,7 +19,7 @@ Get user account
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SelfApi(
+$apiInstance = new RackbeatApp\Client\Api\SelfApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -39,7 +39,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Self**](../Model/Self.md)
+[**\RackbeatApp\Client\Model\Self**](../Model/Self.md)
 
 ### Authorization
 

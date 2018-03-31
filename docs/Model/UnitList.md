@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**units** | [**\Swagger\Client\Model\Unit[]**](Unit.md) |  | [optional] 
+**units** | [**\RackbeatApp\Client\Model\Unit[]**](Unit.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

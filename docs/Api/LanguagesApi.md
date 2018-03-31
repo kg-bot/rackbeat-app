@@ -1,4 +1,4 @@
-# Swagger\Client\LanguagesApi
+# RackbeatApp\Client\LanguagesApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing language
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LanguagesApi(
+$apiInstance = new RackbeatApp\Client\Api\LanguagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexLanguages**
-> \Swagger\Client\Model\LanguageList indexLanguages($name, $number)
+> \RackbeatApp\Client\Model\LanguageList indexLanguages($name, $number)
 
 Index languages
 
@@ -71,7 +71,7 @@ Index languages
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LanguagesApi(
+$apiInstance = new RackbeatApp\Client\Api\LanguagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\LanguageList**](../Model/LanguageList.md)
+[**\RackbeatApp\Client\Model\LanguageList**](../Model/LanguageList.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showLanguage**
-> \Swagger\Client\Model\Language showLanguage($number)
+> \RackbeatApp\Client\Model\Language showLanguage($number)
 
 Show single language
 
@@ -122,7 +122,7 @@ Show single language
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LanguagesApi(
+$apiInstance = new RackbeatApp\Client\Api\LanguagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Language**](../Model/Language.md)
+[**\RackbeatApp\Client\Model\Language**](../Model/Language.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeLanguage**
-> \Swagger\Client\Model\Language storeLanguage($body)
+> \RackbeatApp\Client\Model\Language storeLanguage($body)
 
 Create new language
 
@@ -171,12 +171,12 @@ Create new language
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LanguagesApi(
+$apiInstance = new RackbeatApp\Client\Api\LanguagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LanguageForm(); // \Swagger\Client\Model\LanguageForm | Language object that should be created.
+$body = new \RackbeatApp\Client\Model\LanguageForm(); // \RackbeatApp\Client\Model\LanguageForm | Language object that should be created.
 
 try {
     $result = $apiInstance->storeLanguage($body);
@@ -191,11 +191,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LanguageForm**](../Model/LanguageForm.md)| Language object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\LanguageForm**](../Model/LanguageForm.md)| Language object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Language**](../Model/Language.md)
+[**\RackbeatApp\Client\Model\Language**](../Model/Language.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLanguage**
-> \Swagger\Client\Model\Language updateLanguage($number, $body)
+> \RackbeatApp\Client\Model\Language updateLanguage($number, $body)
 
 Update existing language
 
@@ -220,13 +220,13 @@ Update existing language
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LanguagesApi(
+$apiInstance = new RackbeatApp\Client\Api\LanguagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Language number
-$body = new \Swagger\Client\Model\LanguageForm(); // \Swagger\Client\Model\LanguageForm | Language object that should be updated.
+$body = new \RackbeatApp\Client\Model\LanguageForm(); // \RackbeatApp\Client\Model\LanguageForm | Language object that should be updated.
 
 try {
     $result = $apiInstance->updateLanguage($number, $body);
@@ -242,11 +242,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Language number |
- **body** | [**\Swagger\Client\Model\LanguageForm**](../Model/LanguageForm.md)| Language object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\LanguageForm**](../Model/LanguageForm.md)| Language object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Language**](../Model/Language.md)
+[**\RackbeatApp\Client\Model\Language**](../Model/Language.md)
 
 ### Authorization
 

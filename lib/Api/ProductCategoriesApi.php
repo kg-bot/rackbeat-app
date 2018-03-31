@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * ProductCategoriesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class ProductCategoriesApi
      *
      * @param  string $number Product Category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class ProductCategoriesApi
      *
      * @param  string $number Product Category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -315,7 +315,7 @@ class ProductCategoriesApi
      *
      * @param  string $number Product category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -331,7 +331,7 @@ class ProductCategoriesApi
      *
      * @param  string $number Product category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -539,9 +539,9 @@ class ProductCategoriesApi
      * Index product category
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductCategoryList
+     * @return \RackbeatApp\Client\Model\ProductCategoryList
      */
     public function indexProductCategory()
     {
@@ -555,14 +555,14 @@ class ProductCategoriesApi
      * Index product category
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductCategoryList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductCategoryList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexProductCategoryWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ProductCategoryList';
-        $request = $this->indexProductCategoryRequest();
+        $returnType = '\RackbeatApp\Client\Model\ProductCategoryList';
+        $request    = $this->indexProductCategoryRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -613,7 +613,7 @@ class ProductCategoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductCategoryList',
+                        '\RackbeatApp\Client\Model\ProductCategoryList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -653,8 +653,8 @@ class ProductCategoriesApi
      */
     public function indexProductCategoryAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\ProductCategoryList';
-        $request = $this->indexProductCategoryRequest();
+        $returnType = '\RackbeatApp\Client\Model\ProductCategoryList';
+        $request    = $this->indexProductCategoryRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -783,9 +783,9 @@ class ProductCategoriesApi
      *
      * @param  string $number Product category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductList
+     * @return \RackbeatApp\Client\Model\ProductList
      */
     public function indexProductCategoryProducts($number)
     {
@@ -800,14 +800,14 @@ class ProductCategoriesApi
      *
      * @param  string $number Product category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexProductCategoryProductsWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\ProductList';
-        $request = $this->indexProductCategoryProductsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\ProductList';
+        $request    = $this->indexProductCategoryProductsRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -858,7 +858,7 @@ class ProductCategoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductList',
+                        '\RackbeatApp\Client\Model\ProductList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,8 +900,8 @@ class ProductCategoriesApi
      */
     public function indexProductCategoryProductsAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\ProductList';
-        $request = $this->indexProductCategoryProductsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\ProductList';
+        $request    = $this->indexProductCategoryProductsRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1045,9 +1045,9 @@ class ProductCategoriesApi
      *
      * @param  string $number Product Category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductCategory
+     * @return \RackbeatApp\Client\Model\ProductCategory
      */
     public function showProductCategory($number)
     {
@@ -1062,14 +1062,14 @@ class ProductCategoriesApi
      *
      * @param  string $number Product Category number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductCategory, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductCategory, HTTP status code, HTTP response headers (array of strings)
      */
     public function showProductCategoryWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\ProductCategory';
-        $request = $this->showProductCategoryRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\ProductCategory';
+        $request    = $this->showProductCategoryRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1120,7 +1120,7 @@ class ProductCategoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductCategory',
+                        '\RackbeatApp\Client\Model\ProductCategory',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1162,8 +1162,8 @@ class ProductCategoriesApi
      */
     public function showProductCategoryAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\ProductCategory';
-        $request = $this->showProductCategoryRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\ProductCategory';
+        $request    = $this->showProductCategoryRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1305,11 +1305,11 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductCategory
+     * @return \RackbeatApp\Client\Model\ProductCategory
      */
     public function storeProductCategory($body)
     {
@@ -1322,16 +1322,16 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductCategory, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductCategory, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeProductCategoryWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\ProductCategory';
-        $request = $this->storeProductCategoryRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\ProductCategory';
+        $request    = $this->storeProductCategoryRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1382,7 +1382,7 @@ class ProductCategoriesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductCategory',
+                        '\RackbeatApp\Client\Model\ProductCategory',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1397,7 +1397,7 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1417,15 +1417,15 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeProductCategoryAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\ProductCategory';
-        $request = $this->storeProductCategoryRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\ProductCategory';
+        $request    = $this->storeProductCategoryRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1467,7 +1467,7 @@ class ProductCategoriesApi
     /**
      * Create request for operation 'storeProductCategory'
      *
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1562,12 +1562,12 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  string $number Product category number (required)
-     * @param  \Swagger\Client\Model\Body7 $body Product category object that should be created. (required)
+     * @param  string                          $number Product category number (required)
+     * @param  \RackbeatApp\Client\Model\Body7 $body   Product category object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Product
+     * @return \RackbeatApp\Client\Model\Product
      */
     public function storeProductCategoryProduct($number, $body)
     {
@@ -1580,17 +1580,17 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  string $number Product category number (required)
-     * @param  \Swagger\Client\Model\Body7 $body Product category object that should be created. (required)
+     * @param  string                          $number Product category number (required)
+     * @param  \RackbeatApp\Client\Model\Body7 $body   Product category object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Product, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeProductCategoryProductWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->storeProductCategoryProductRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->storeProductCategoryProductRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1641,7 +1641,7 @@ class ProductCategoriesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Product',
+                        '\RackbeatApp\Client\Model\Product',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1656,8 +1656,8 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  string $number Product category number (required)
-     * @param  \Swagger\Client\Model\Body7 $body Product category object that should be created. (required)
+     * @param  string                          $number Product category number (required)
+     * @param  \RackbeatApp\Client\Model\Body7 $body   Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1677,16 +1677,16 @@ class ProductCategoriesApi
      *
      * Create new product category
      *
-     * @param  string $number Product category number (required)
-     * @param  \Swagger\Client\Model\Body7 $body Product category object that should be created. (required)
+     * @param  string                          $number Product category number (required)
+     * @param  \RackbeatApp\Client\Model\Body7 $body   Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeProductCategoryProductAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Product';
-        $request = $this->storeProductCategoryProductRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Product';
+        $request    = $this->storeProductCategoryProductRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1728,8 +1728,8 @@ class ProductCategoriesApi
     /**
      * Create request for operation 'storeProductCategoryProduct'
      *
-     * @param  string $number Product category number (required)
-     * @param  \Swagger\Client\Model\Body7 $body Product category object that should be created. (required)
+     * @param  string                          $number Product category number (required)
+     * @param  \RackbeatApp\Client\Model\Body7 $body   Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1838,12 +1838,12 @@ class ProductCategoriesApi
      *
      * Update existing product category
      *
-     * @param  string $number Product Category number (required)
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  string                                        $number Product Category number (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body   Product category object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ProductCategory
+     * @return \RackbeatApp\Client\Model\ProductCategory
      */
     public function updateProductCategory($number, $body)
     {
@@ -1856,17 +1856,17 @@ class ProductCategoriesApi
      *
      * Update existing product category
      *
-     * @param  string $number Product Category number (required)
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  string                                        $number Product Category number (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body   Product category object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ProductCategory, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\ProductCategory, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateProductCategoryWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductCategory';
-        $request = $this->updateProductCategoryRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductCategory';
+        $request    = $this->updateProductCategoryRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1917,7 +1917,7 @@ class ProductCategoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ProductCategory',
+                        '\RackbeatApp\Client\Model\ProductCategory',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1932,8 +1932,8 @@ class ProductCategoriesApi
      *
      * Update existing product category
      *
-     * @param  string $number Product Category number (required)
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  string                                        $number Product Category number (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body   Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1953,16 +1953,16 @@ class ProductCategoriesApi
      *
      * Update existing product category
      *
-     * @param  string $number Product Category number (required)
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  string                                        $number Product Category number (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body   Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateProductCategoryAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\ProductCategory';
-        $request = $this->updateProductCategoryRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\ProductCategory';
+        $request    = $this->updateProductCategoryRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2004,8 +2004,8 @@ class ProductCategoriesApi
     /**
      * Create request for operation 'updateProductCategory'
      *
-     * @param  string $number Product Category number (required)
-     * @param  \Swagger\Client\Model\ProductCategoryForm $body Product category object that should be created. (required)
+     * @param  string                                        $number Product Category number (required)
+     * @param  \RackbeatApp\Client\Model\ProductCategoryForm $body   Product category object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

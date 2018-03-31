@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * WebhookList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class WebhookList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'webhooks' => '\Swagger\Client\Model\Webhook[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'webhooks' => '\RackbeatApp\Client\Model\Webhook[]',
+        'total'    => 'int',
+        'pages'    => 'int',
+        'limit'    => 'int',
+        'page'     => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class WebhookList implements ModelInterface, ArrayAccess
     /**
      * Gets webhooks
      *
-     * @return \Swagger\Client\Model\Webhook[]
+     * @return \RackbeatApp\Client\Model\Webhook[]
      */
     public function getWebhooks()
     {
@@ -241,7 +241,7 @@ class WebhookList implements ModelInterface, ArrayAccess
     /**
      * Sets webhooks
      *
-     * @param \Swagger\Client\Model\Webhook[] $webhooks webhooks
+     * @param \RackbeatApp\Client\Model\Webhook[] $webhooks webhooks
      *
      * @return $this
      */

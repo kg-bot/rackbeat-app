@@ -1,4 +1,4 @@
-# Swagger\Client\ProductsApi
+# RackbeatApp\Client\ProductsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -36,7 +36,7 @@ Method | HTTP request | Description
 
 
 # **addProductImage**
-> \Swagger\Client\Model\Product addProductImage($number, $media)
+> \RackbeatApp\Client\Model\Product addProductImage($number, $media)
 
 Add product image
 
@@ -47,7 +47,7 @@ Add product image
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Product**](../Model/Product.md)
+[**\RackbeatApp\Client\Model\Product**](../Model/Product.md)
 
 ### Authorization
 
@@ -98,7 +98,7 @@ Delete existing product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ Delete product image
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -194,7 +194,7 @@ Delete existing product variation option
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -246,7 +246,7 @@ Delete existing products variation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -296,7 +296,7 @@ Delete existing products variation type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -335,7 +335,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProductsTranslation**
-> \Swagger\Client\Model\Translation getProductsTranslation($number, $locale)
+> \RackbeatApp\Client\Model\Translation getProductsTranslation($number, $locale)
 
 Get product translation
 
@@ -346,7 +346,7 @@ Get product translation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -372,7 +372,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Translation**](../Model/Translation.md)
+[**\RackbeatApp\Client\Model\Translation**](../Model/Translation.md)
 
 ### Authorization
 
@@ -386,7 +386,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProductsTranslations**
-> \Swagger\Client\Model\Translation[] getProductsTranslations($number)
+> \RackbeatApp\Client\Model\Translation[] getProductsTranslations($number)
 
 Get product translation
 
@@ -397,7 +397,7 @@ Get product translation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -421,7 +421,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Translation[]**](../Model/Translation.md)
+[**\RackbeatApp\Client\Model\Translation[]**](../Model/Translation.md)
 
 ### Authorization
 
@@ -446,7 +446,7 @@ Get product variation matrix
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -486,7 +486,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProduct**
-> \Swagger\Client\Model\InlineResponse206 indexProduct()
+> \RackbeatApp\Client\Model\InlineResponse206 indexProduct()
 
 Index products.
 
@@ -497,7 +497,7 @@ Index products.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -517,7 +517,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse206**](../Model/InlineResponse206.md)
+[**\RackbeatApp\Client\Model\InlineResponse206**](../Model/InlineResponse206.md)
 
 ### Authorization
 
@@ -531,7 +531,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProductVariationOption**
-> \Swagger\Client\Model\ProductVariationOption[] indexProductVariationOption($number, $variation_type)
+> \RackbeatApp\Client\Model\ProductVariationOption[] indexProductVariationOption($number, $variation_type)
 
 Index product variation option
 
@@ -542,7 +542,7 @@ Index product variation option
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -568,7 +568,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationOption[]**](../Model/ProductVariationOption.md)
+[**\RackbeatApp\Client\Model\ProductVariationOption[]**](../Model/ProductVariationOption.md)
 
 ### Authorization
 
@@ -582,7 +582,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProductsDraft**
-> \Swagger\Client\Model\ProductsDraftList indexProductsDraft($is_draft, $number, $search)
+> \RackbeatApp\Client\Model\ProductsDraftList indexProductsDraft($is_draft, $number, $search)
 
 Index products draft
 
@@ -593,7 +593,7 @@ Index products draft
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -621,7 +621,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductsDraftList**](../Model/ProductsDraftList.md)
+[**\RackbeatApp\Client\Model\ProductsDraftList**](../Model/ProductsDraftList.md)
 
 ### Authorization
 
@@ -635,7 +635,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProductsVariation**
-> \Swagger\Client\Model\Product[] indexProductsVariation($number)
+> \RackbeatApp\Client\Model\Product[] indexProductsVariation($number)
 
 Index products variation
 
@@ -646,7 +646,7 @@ Index products variation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -670,7 +670,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Product[]**](../Model/Product.md)
+[**\RackbeatApp\Client\Model\Product[]**](../Model/Product.md)
 
 ### Authorization
 
@@ -684,7 +684,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProductsVariationType**
-> \Swagger\Client\Model\ProductVariationType[] indexProductsVariationType($number)
+> \RackbeatApp\Client\Model\ProductVariationType[] indexProductsVariationType($number)
 
 Index products variation type
 
@@ -695,7 +695,7 @@ Index products variation type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -719,7 +719,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationType[]**](../Model/ProductVariationType.md)
+[**\RackbeatApp\Client\Model\ProductVariationType[]**](../Model/ProductVariationType.md)
 
 ### Authorization
 
@@ -733,7 +733,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **publishProduct**
-> \Swagger\Client\Model\Product publishProduct($number)
+> \RackbeatApp\Client\Model\Product publishProduct($number)
 
 Publish product
 
@@ -744,7 +744,7 @@ Publish product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -768,7 +768,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Product**](../Model/Product.md)
+[**\RackbeatApp\Client\Model\Product**](../Model/Product.md)
 
 ### Authorization
 
@@ -782,7 +782,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showProduct**
-> \Swagger\Client\Model\InlineResponse200 showProduct($number)
+> \RackbeatApp\Client\Model\InlineResponse200 showProduct($number)
 
 Show existing product
 
@@ -793,7 +793,7 @@ Show existing product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -817,7 +817,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\RackbeatApp\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -831,7 +831,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showProductVariationOption**
-> \Swagger\Client\Model\ProductVariationOption showProductVariationOption($number, $variation_type, $option_number)
+> \RackbeatApp\Client\Model\ProductVariationOption showProductVariationOption($number, $variation_type, $option_number)
 
 Show single product variation option
 
@@ -842,7 +842,7 @@ Show single product variation option
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -870,7 +870,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationOption**](../Model/ProductVariationOption.md)
+[**\RackbeatApp\Client\Model\ProductVariationOption**](../Model/ProductVariationOption.md)
 
 ### Authorization
 
@@ -884,7 +884,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showProductsVariation**
-> \Swagger\Client\Model\ProductVariation showProductsVariation($number, $variation_number, $body)
+> \RackbeatApp\Client\Model\ProductVariation showProductsVariation($number, $variation_number, $body)
 
 Show single products variation
 
@@ -895,14 +895,14 @@ Show single products variation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product number
 $variation_number = "variation_number_example"; // string | Products Variation number
-$body = new \Swagger\Client\Model\ProductVariationForm(); // \Swagger\Client\Model\ProductVariationForm | Products variation object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductVariationForm(); // \RackbeatApp\Client\Model\ProductVariationForm | Products variation object that should be created.
 
 try {
     $result = $apiInstance->showProductsVariation($number, $variation_number, $body);
@@ -919,11 +919,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product number |
  **variation_number** | **string**| Products Variation number |
- **body** | [**\Swagger\Client\Model\ProductVariationForm**](../Model/ProductVariationForm.md)| Products variation object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductVariationForm**](../Model/ProductVariationForm.md)| Products variation object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariation**](../Model/ProductVariation.md)
+[**\RackbeatApp\Client\Model\ProductVariation**](../Model/ProductVariation.md)
 
 ### Authorization
 
@@ -937,7 +937,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showProductsVariationType**
-> \Swagger\Client\Model\ProductVariationType showProductsVariationType($number, $variation_type_number)
+> \RackbeatApp\Client\Model\ProductVariationType showProductsVariationType($number, $variation_type_number)
 
 Show single products variation type
 
@@ -948,7 +948,7 @@ Show single products variation type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -974,7 +974,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationType**](../Model/ProductVariationType.md)
+[**\RackbeatApp\Client\Model\ProductVariationType**](../Model/ProductVariationType.md)
 
 ### Authorization
 
@@ -988,7 +988,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProduct**
-> \Swagger\Client\Model\InlineResponse200 storeProduct($body)
+> \RackbeatApp\Client\Model\InlineResponse200 storeProduct($body)
 
 Create a new product
 
@@ -999,12 +999,12 @@ Create a new product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\Body(); // \Swagger\Client\Model\Body | Product object that should be created.
+$body = new \RackbeatApp\Client\Model\Body(); // \RackbeatApp\Client\Model\Body | Product object that should be created.
 
 try {
     $result = $apiInstance->storeProduct($body);
@@ -1019,11 +1019,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Body**](../Model/Body.md)| Product object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\Body**](../Model/Body.md)| Product object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\RackbeatApp\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -1037,7 +1037,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProductVariationOption**
-> \Swagger\Client\Model\ProductVariationOption storeProductVariationOption($number, $variation_type, $body)
+> \RackbeatApp\Client\Model\ProductVariationOption storeProductVariationOption($number, $variation_type, $body)
 
 Create new product variation option
 
@@ -1048,14 +1048,14 @@ Create new product variation option
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product number
 $variation_type = "variation_type_example"; // string | Variation type number
-$body = new \Swagger\Client\Model\ProductVariationOptionForm(); // \Swagger\Client\Model\ProductVariationOptionForm | Product variation option object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductVariationOptionForm(); // \RackbeatApp\Client\Model\ProductVariationOptionForm | Product variation option object that should be created.
 
 try {
     $result = $apiInstance->storeProductVariationOption($number, $variation_type, $body);
@@ -1072,11 +1072,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product number |
  **variation_type** | **string**| Variation type number |
- **body** | [**\Swagger\Client\Model\ProductVariationOptionForm**](../Model/ProductVariationOptionForm.md)| Product variation option object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductVariationOptionForm**](../Model/ProductVariationOptionForm.md)| Product variation option object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationOption**](../Model/ProductVariationOption.md)
+[**\RackbeatApp\Client\Model\ProductVariationOption**](../Model/ProductVariationOption.md)
 
 ### Authorization
 
@@ -1090,7 +1090,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProductsDraft**
-> \Swagger\Client\Model\Product storeProductsDraft($body)
+> \RackbeatApp\Client\Model\Product storeProductsDraft($body)
 
 Create new products draft
 
@@ -1101,12 +1101,12 @@ Create new products draft
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ProductForm(); // \Swagger\Client\Model\ProductForm | Products draft object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductForm(); // \RackbeatApp\Client\Model\ProductForm | Products draft object that should be created.
 
 try {
     $result = $apiInstance->storeProductsDraft($body);
@@ -1121,11 +1121,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProductForm**](../Model/ProductForm.md)| Products draft object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductForm**](../Model/ProductForm.md)| Products draft object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Product**](../Model/Product.md)
+[**\RackbeatApp\Client\Model\Product**](../Model/Product.md)
 
 ### Authorization
 
@@ -1139,7 +1139,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProductsVariation**
-> \Swagger\Client\Model\ProductVariation storeProductsVariation($number, $body)
+> \RackbeatApp\Client\Model\ProductVariation storeProductsVariation($number, $body)
 
 Create new products variation
 
@@ -1150,13 +1150,13 @@ Create new products variation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product number
-$body = new \Swagger\Client\Model\ProductVariationForm(); // \Swagger\Client\Model\ProductVariationForm | Products variation object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductVariationForm(); // \RackbeatApp\Client\Model\ProductVariationForm | Products variation object that should be created.
 
 try {
     $result = $apiInstance->storeProductsVariation($number, $body);
@@ -1172,11 +1172,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product number |
- **body** | [**\Swagger\Client\Model\ProductVariationForm**](../Model/ProductVariationForm.md)| Products variation object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductVariationForm**](../Model/ProductVariationForm.md)| Products variation object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariation**](../Model/ProductVariation.md)
+[**\RackbeatApp\Client\Model\ProductVariation**](../Model/ProductVariation.md)
 
 ### Authorization
 
@@ -1190,7 +1190,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProductsVariationType**
-> \Swagger\Client\Model\ProductVariationType storeProductsVariationType($number, $body)
+> \RackbeatApp\Client\Model\ProductVariationType storeProductsVariationType($number, $body)
 
 Create new products variation type
 
@@ -1201,13 +1201,13 @@ Create new products variation type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product number
-$body = new \Swagger\Client\Model\ProductVariationTypeForm(); // \Swagger\Client\Model\ProductVariationTypeForm | Products variation type object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductVariationTypeForm(); // \RackbeatApp\Client\Model\ProductVariationTypeForm | Products variation type object that should be created.
 
 try {
     $result = $apiInstance->storeProductsVariationType($number, $body);
@@ -1223,11 +1223,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product number |
- **body** | [**\Swagger\Client\Model\ProductVariationTypeForm**](../Model/ProductVariationTypeForm.md)| Products variation type object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductVariationTypeForm**](../Model/ProductVariationTypeForm.md)| Products variation type object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationType**](../Model/ProductVariationType.md)
+[**\RackbeatApp\Client\Model\ProductVariationType**](../Model/ProductVariationType.md)
 
 ### Authorization
 
@@ -1241,7 +1241,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProduct**
-> \Swagger\Client\Model\InlineResponse200 updateProduct($number, $body)
+> \RackbeatApp\Client\Model\InlineResponse200 updateProduct($number, $body)
 
 Update existing product
 
@@ -1252,13 +1252,13 @@ Update existing product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product number
-$body = new \Swagger\Client\Model\Body1(); // \Swagger\Client\Model\Body1 | Values to update.
+$body = new \RackbeatApp\Client\Model\Body1(); // \RackbeatApp\Client\Model\Body1 | Values to update.
 
 try {
     $result = $apiInstance->updateProduct($number, $body);
@@ -1274,11 +1274,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product number |
- **body** | [**\Swagger\Client\Model\Body1**](../Model/Body1.md)| Values to update. |
+ **body** | [**\RackbeatApp\Client\Model\Body1**](../Model/Body1.md)| Values to update. |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\RackbeatApp\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -1292,7 +1292,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProductVariationOption**
-> \Swagger\Client\Model\ProductVariationOption updateProductVariationOption($number, $variation_type, $option_number)
+> \RackbeatApp\Client\Model\ProductVariationOption updateProductVariationOption($number, $variation_type, $option_number)
 
 Update existing product variation option
 
@@ -1303,7 +1303,7 @@ Update existing product variation option
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1331,7 +1331,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationOption**](../Model/ProductVariationOption.md)
+[**\RackbeatApp\Client\Model\ProductVariationOption**](../Model/ProductVariationOption.md)
 
 ### Authorization
 
@@ -1345,7 +1345,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProductsTranslations**
-> \Swagger\Client\Model\Translation updateProductsTranslations($number, $locale, $body)
+> \RackbeatApp\Client\Model\Translation updateProductsTranslations($number, $locale, $body)
 
 Update product translation
 
@@ -1356,14 +1356,14 @@ Update product translation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product number
 $locale = "locale_example"; // string | Locale number
-$body = new \Swagger\Client\Model\Body6(); // \Swagger\Client\Model\Body6 | Translation data to update
+$body = new \RackbeatApp\Client\Model\Body6(); // \RackbeatApp\Client\Model\Body6 | Translation data to update
 
 try {
     $result = $apiInstance->updateProductsTranslations($number, $locale, $body);
@@ -1380,11 +1380,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product number |
  **locale** | **string**| Locale number |
- **body** | [**\Swagger\Client\Model\Body6**](../Model/Body6.md)| Translation data to update | [optional]
+ **body** | [**\RackbeatApp\Client\Model\Body6**](../Model/Body6.md)| Translation data to update | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Translation**](../Model/Translation.md)
+[**\RackbeatApp\Client\Model\Translation**](../Model/Translation.md)
 
 ### Authorization
 
@@ -1398,7 +1398,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProductsVariation**
-> \Swagger\Client\Model\ProductVariation updateProductsVariation($number, $variation_number)
+> \RackbeatApp\Client\Model\ProductVariation updateProductsVariation($number, $variation_number)
 
 Update existing products variation
 
@@ -1409,7 +1409,7 @@ Update existing products variation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1435,7 +1435,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariation**](../Model/ProductVariation.md)
+[**\RackbeatApp\Client\Model\ProductVariation**](../Model/ProductVariation.md)
 
 ### Authorization
 
@@ -1449,7 +1449,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProductsVariationType**
-> \Swagger\Client\Model\ProductVariationType updateProductsVariationType($number, $variation_type_number)
+> \RackbeatApp\Client\Model\ProductVariationType updateProductsVariationType($number, $variation_type_number)
 
 Update existing products variation type
 
@@ -1460,7 +1460,7 @@ Update existing products variation type
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1486,7 +1486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductVariationType**](../Model/ProductVariationType.md)
+[**\RackbeatApp\Client\Model\ProductVariationType**](../Model/ProductVariationType.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CurrenciesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -89,9 +89,9 @@ class CurrenciesApi
      * Index currencies
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CurrencyRateList
+     * @return \RackbeatApp\Client\Model\CurrencyRateList
      */
     public function indexCurrencies()
     {
@@ -105,14 +105,14 @@ class CurrenciesApi
      * Index currencies
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CurrencyRateList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CurrencyRateList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCurrenciesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRateList';
-        $request = $this->indexCurrenciesRequest();
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRateList';
+        $request    = $this->indexCurrenciesRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -163,7 +163,7 @@ class CurrenciesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CurrencyRateList',
+                        '\RackbeatApp\Client\Model\CurrencyRateList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -203,8 +203,8 @@ class CurrenciesApi
      */
     public function indexCurrenciesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRateList';
-        $request = $this->indexCurrenciesRequest();
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRateList';
+        $request    = $this->indexCurrenciesRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -333,9 +333,9 @@ class CurrenciesApi
      *
      * @param  string $currency_code Currency code (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CurrencyRate
+     * @return \RackbeatApp\Client\Model\CurrencyRate
      */
     public function resetCurrency($currency_code)
     {
@@ -350,14 +350,14 @@ class CurrenciesApi
      *
      * @param  string $currency_code Currency code (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CurrencyRate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CurrencyRate, HTTP status code, HTTP response headers (array of strings)
      */
     public function resetCurrencyWithHttpInfo($currency_code)
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRate';
-        $request = $this->resetCurrencyRequest($currency_code);
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRate';
+        $request    = $this->resetCurrencyRequest($currency_code);
 
         try {
             $options = $this->createHttpClientOption();
@@ -408,7 +408,7 @@ class CurrenciesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CurrencyRate',
+                        '\RackbeatApp\Client\Model\CurrencyRate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -450,8 +450,8 @@ class CurrenciesApi
      */
     public function resetCurrencyAsyncWithHttpInfo($currency_code)
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRate';
-        $request = $this->resetCurrencyRequest($currency_code);
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRate';
+        $request    = $this->resetCurrencyRequest($currency_code);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -595,9 +595,9 @@ class CurrenciesApi
      *
      * @param  string $currency_code Currency code (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CurrencyRate
+     * @return \RackbeatApp\Client\Model\CurrencyRate
      */
     public function showCurrency($currency_code)
     {
@@ -612,14 +612,14 @@ class CurrenciesApi
      *
      * @param  string $currency_code Currency code (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CurrencyRate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CurrencyRate, HTTP status code, HTTP response headers (array of strings)
      */
     public function showCurrencyWithHttpInfo($currency_code)
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRate';
-        $request = $this->showCurrencyRequest($currency_code);
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRate';
+        $request    = $this->showCurrencyRequest($currency_code);
 
         try {
             $options = $this->createHttpClientOption();
@@ -670,7 +670,7 @@ class CurrenciesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CurrencyRate',
+                        '\RackbeatApp\Client\Model\CurrencyRate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -712,8 +712,8 @@ class CurrenciesApi
      */
     public function showCurrencyAsyncWithHttpInfo($currency_code)
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRate';
-        $request = $this->showCurrencyRequest($currency_code);
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRate';
+        $request    = $this->showCurrencyRequest($currency_code);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -855,12 +855,12 @@ class CurrenciesApi
      *
      * Update existing currency
      *
-     * @param  string $currency_code Currency code (required)
-     * @param  \Swagger\Client\Model\CurrencyRateForm $body Currency object that should be updated. (required)
+     * @param  string                                     $currency_code Currency code (required)
+     * @param  \RackbeatApp\Client\Model\CurrencyRateForm $body          Currency object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CurrencyRate
+     * @return \RackbeatApp\Client\Model\CurrencyRate
      */
     public function updateCurrency($currency_code, $body)
     {
@@ -873,17 +873,17 @@ class CurrenciesApi
      *
      * Update existing currency
      *
-     * @param  string $currency_code Currency code (required)
-     * @param  \Swagger\Client\Model\CurrencyRateForm $body Currency object that should be updated. (required)
+     * @param  string                                     $currency_code Currency code (required)
+     * @param  \RackbeatApp\Client\Model\CurrencyRateForm $body          Currency object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CurrencyRate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CurrencyRate, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCurrencyWithHttpInfo($currency_code, $body)
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRate';
-        $request = $this->updateCurrencyRequest($currency_code, $body);
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRate';
+        $request    = $this->updateCurrencyRequest($currency_code, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -934,7 +934,7 @@ class CurrenciesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CurrencyRate',
+                        '\RackbeatApp\Client\Model\CurrencyRate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -949,8 +949,8 @@ class CurrenciesApi
      *
      * Update existing currency
      *
-     * @param  string $currency_code Currency code (required)
-     * @param  \Swagger\Client\Model\CurrencyRateForm $body Currency object that should be updated. (required)
+     * @param  string                                     $currency_code Currency code (required)
+     * @param  \RackbeatApp\Client\Model\CurrencyRateForm $body          Currency object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -970,16 +970,16 @@ class CurrenciesApi
      *
      * Update existing currency
      *
-     * @param  string $currency_code Currency code (required)
-     * @param  \Swagger\Client\Model\CurrencyRateForm $body Currency object that should be updated. (required)
+     * @param  string                                     $currency_code Currency code (required)
+     * @param  \RackbeatApp\Client\Model\CurrencyRateForm $body          Currency object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCurrencyAsyncWithHttpInfo($currency_code, $body)
     {
-        $returnType = '\Swagger\Client\Model\CurrencyRate';
-        $request = $this->updateCurrencyRequest($currency_code, $body);
+        $returnType = '\RackbeatApp\Client\Model\CurrencyRate';
+        $request    = $this->updateCurrencyRequest($currency_code, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1021,8 +1021,8 @@ class CurrenciesApi
     /**
      * Create request for operation 'updateCurrency'
      *
-     * @param  string $currency_code Currency code (required)
-     * @param  \Swagger\Client\Model\CurrencyRateForm $body Currency object that should be updated. (required)
+     * @param  string                                     $currency_code Currency code (required)
+     * @param  \RackbeatApp\Client\Model\CurrencyRateForm $body          Currency object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

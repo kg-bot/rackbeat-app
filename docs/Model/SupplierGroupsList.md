@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**supplier_groups** | [**\Swagger\Client\Model\SupplierGroup[]**](SupplierGroup.md) |  | [optional] 
+**supplier_groups** | [**\RackbeatApp\Client\Model\SupplierGroup[]**](SupplierGroup.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

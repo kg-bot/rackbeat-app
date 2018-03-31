@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InventoryRegulationApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -88,11 +88,11 @@ class InventoryRegulationApi
      *
      * Create new inventory adhustment
      *
-     * @param  \Swagger\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InventoryRegulation
+     * @return \RackbeatApp\Client\Model\InventoryRegulation
      */
     public function storeInventoryAdhustment($body)
     {
@@ -105,16 +105,16 @@ class InventoryRegulationApi
      *
      * Create new inventory adhustment
      *
-     * @param  \Swagger\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InventoryRegulation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InventoryRegulation, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeInventoryAdhustmentWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryRegulation';
-        $request = $this->storeInventoryAdhustmentRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryRegulation';
+        $request    = $this->storeInventoryAdhustmentRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -165,7 +165,7 @@ class InventoryRegulationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InventoryRegulation',
+                        '\RackbeatApp\Client\Model\InventoryRegulation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class InventoryRegulationApi
      *
      * Create new inventory adhustment
      *
-     * @param  \Swagger\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -200,15 +200,15 @@ class InventoryRegulationApi
      *
      * Create new inventory adhustment
      *
-     * @param  \Swagger\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeInventoryAdhustmentAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryRegulation';
-        $request = $this->storeInventoryAdhustmentRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryRegulation';
+        $request    = $this->storeInventoryAdhustmentRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -250,7 +250,7 @@ class InventoryRegulationApi
     /**
      * Create request for operation 'storeInventoryAdhustment'
      *
-     * @param  \Swagger\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryAdjustmentForm $body Inventory adhustment object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -345,11 +345,11 @@ class InventoryRegulationApi
      *
      * Create new inventory regulation
      *
-     * @param  \Swagger\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InventoryRegulation
+     * @return \RackbeatApp\Client\Model\InventoryRegulation
      */
     public function storeInventoryRegulation($body)
     {
@@ -362,16 +362,16 @@ class InventoryRegulationApi
      *
      * Create new inventory regulation
      *
-     * @param  \Swagger\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InventoryRegulation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InventoryRegulation, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeInventoryRegulationWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryRegulation';
-        $request = $this->storeInventoryRegulationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryRegulation';
+        $request    = $this->storeInventoryRegulationRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -422,7 +422,7 @@ class InventoryRegulationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InventoryRegulation',
+                        '\RackbeatApp\Client\Model\InventoryRegulation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -437,7 +437,7 @@ class InventoryRegulationApi
      *
      * Create new inventory regulation
      *
-     * @param  \Swagger\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -457,15 +457,15 @@ class InventoryRegulationApi
      *
      * Create new inventory regulation
      *
-     * @param  \Swagger\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeInventoryRegulationAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryRegulation';
-        $request = $this->storeInventoryRegulationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryRegulation';
+        $request    = $this->storeInventoryRegulationRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -507,7 +507,7 @@ class InventoryRegulationApi
     /**
      * Create request for operation 'storeInventoryRegulation'
      *
-     * @param  \Swagger\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\InventoryRegulationForm $body Inventory regulation object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

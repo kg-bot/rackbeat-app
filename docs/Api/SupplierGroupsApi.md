@@ -1,4 +1,4 @@
-# Swagger\Client\SupplierGroupsApi
+# RackbeatApp\Client\SupplierGroupsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing supplier group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexSupplierGroups**
-> \Swagger\Client\Model\SupplierGroupsList indexSupplierGroups($name)
+> \RackbeatApp\Client\Model\SupplierGroupsList indexSupplierGroups($name)
 
 Index supplier groups
 
@@ -71,7 +71,7 @@ Index supplier groups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierGroupsList**](../Model/SupplierGroupsList.md)
+[**\RackbeatApp\Client\Model\SupplierGroupsList**](../Model/SupplierGroupsList.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showSupplierGroup**
-> \Swagger\Client\Model\SupplierGroup showSupplierGroup($number)
+> \RackbeatApp\Client\Model\SupplierGroup showSupplierGroup($number)
 
 Show single supplier group
 
@@ -120,7 +120,7 @@ Show single supplier group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierGroup**](../Model/SupplierGroup.md)
+[**\RackbeatApp\Client\Model\SupplierGroup**](../Model/SupplierGroup.md)
 
 ### Authorization
 
@@ -158,7 +158,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeSupplierGroup**
-> \Swagger\Client\Model\SupplierGroup storeSupplierGroup($body)
+> \RackbeatApp\Client\Model\SupplierGroup storeSupplierGroup($body)
 
 Create new supplier group
 
@@ -169,12 +169,12 @@ Create new supplier group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\SupplierGroupForm(); // \Swagger\Client\Model\SupplierGroupForm | Supplier group object that should be created.
+$body = new \RackbeatApp\Client\Model\SupplierGroupForm(); // \RackbeatApp\Client\Model\SupplierGroupForm | Supplier group object that should be created.
 
 try {
     $result = $apiInstance->storeSupplierGroup($body);
@@ -189,11 +189,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SupplierGroupForm**](../Model/SupplierGroupForm.md)| Supplier group object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\SupplierGroupForm**](../Model/SupplierGroupForm.md)| Supplier group object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierGroup**](../Model/SupplierGroup.md)
+[**\RackbeatApp\Client\Model\SupplierGroup**](../Model/SupplierGroup.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSupplierGroup**
-> \Swagger\Client\Model\SupplierGroupForm updateSupplierGroup($number, $body)
+> \RackbeatApp\Client\Model\SupplierGroupForm updateSupplierGroup($number, $body)
 
 Update existing supplier group
 
@@ -218,13 +218,13 @@ Update existing supplier group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SupplierGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\SupplierGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Supplier group number
-$body = new \Swagger\Client\Model\SupplierGroupForm(); // \Swagger\Client\Model\SupplierGroupForm | Supplier group object that should be updated.
+$body = new \RackbeatApp\Client\Model\SupplierGroupForm(); // \RackbeatApp\Client\Model\SupplierGroupForm | Supplier group object that should be updated.
 
 try {
     $result = $apiInstance->updateSupplierGroup($number, $body);
@@ -240,11 +240,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Supplier group number |
- **body** | [**\Swagger\Client\Model\SupplierGroupForm**](../Model/SupplierGroupForm.md)| Supplier group object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\SupplierGroupForm**](../Model/SupplierGroupForm.md)| Supplier group object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\SupplierGroupForm**](../Model/SupplierGroupForm.md)
+[**\RackbeatApp\Client\Model\SupplierGroupForm**](../Model/SupplierGroupForm.md)
 
 ### Authorization
 

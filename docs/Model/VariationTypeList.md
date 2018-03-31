@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**variation_types** | [**\Swagger\Client\Model\VariationType[]**](VariationType.md) |  | [optional] 
+**variation_types** | [**\RackbeatApp\Client\Model\VariationType[]**](VariationType.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Stats Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,9 +56,9 @@ class Stats implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'count' => '\Swagger\Client\Model\StatsCount',
-        'inventory' => '\Swagger\Client\Model\StatsInventory',
-        'average' => '\Swagger\Client\Model\StatsAverage'
+        'count'     => '\RackbeatApp\Client\Model\StatsCount',
+        'inventory' => '\RackbeatApp\Client\Model\StatsInventory',
+        'average'   => '\RackbeatApp\Client\Model\StatsAverage',
     ];
 
     /**
@@ -219,7 +219,7 @@ class Stats implements ModelInterface, ArrayAccess
     /**
      * Gets count
      *
-     * @return \Swagger\Client\Model\StatsCount
+     * @return \RackbeatApp\Client\Model\StatsCount
      */
     public function getCount()
     {
@@ -229,7 +229,7 @@ class Stats implements ModelInterface, ArrayAccess
     /**
      * Sets count
      *
-     * @param \Swagger\Client\Model\StatsCount $count count
+     * @param \RackbeatApp\Client\Model\StatsCount $count count
      *
      * @return $this
      */
@@ -243,7 +243,7 @@ class Stats implements ModelInterface, ArrayAccess
     /**
      * Gets inventory
      *
-     * @return \Swagger\Client\Model\StatsInventory
+     * @return \RackbeatApp\Client\Model\StatsInventory
      */
     public function getInventory()
     {
@@ -253,7 +253,7 @@ class Stats implements ModelInterface, ArrayAccess
     /**
      * Sets inventory
      *
-     * @param \Swagger\Client\Model\StatsInventory $inventory inventory
+     * @param \RackbeatApp\Client\Model\StatsInventory $inventory inventory
      *
      * @return $this
      */
@@ -267,7 +267,7 @@ class Stats implements ModelInterface, ArrayAccess
     /**
      * Gets average
      *
-     * @return \Swagger\Client\Model\StatsAverage
+     * @return \RackbeatApp\Client\Model\StatsAverage
      */
     public function getAverage()
     {
@@ -277,7 +277,7 @@ class Stats implements ModelInterface, ArrayAccess
     /**
      * Sets average
      *
-     * @param \Swagger\Client\Model\StatsAverage $average average
+     * @param \RackbeatApp\Client\Model\StatsAverage $average average
      *
      * @return $this
      */

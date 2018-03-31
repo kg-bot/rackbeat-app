@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**locations** | [**\Swagger\Client\Model\Location[]**](Location.md) |  | [optional] 
+**locations** | [**\RackbeatApp\Client\Model\Location[]**](Location.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

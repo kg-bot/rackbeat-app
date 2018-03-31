@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SupplierProductList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class SupplierProductList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'orders' => '\Swagger\Client\Model\SupplierProduct[]'
+        'orders' => '\RackbeatApp\Client\Model\SupplierProduct[]',
     ];
 
     /**
@@ -207,7 +207,7 @@ class SupplierProductList implements ModelInterface, ArrayAccess
     /**
      * Gets orders
      *
-     * @return \Swagger\Client\Model\SupplierProduct[]
+     * @return \RackbeatApp\Client\Model\SupplierProduct[]
      */
     public function getOrders()
     {
@@ -217,7 +217,7 @@ class SupplierProductList implements ModelInterface, ArrayAccess
     /**
      * Sets orders
      *
-     * @param \Swagger\Client\Model\SupplierProduct[] $orders orders
+     * @param \RackbeatApp\Client\Model\SupplierProduct[] $orders orders
      *
      * @return $this
      */

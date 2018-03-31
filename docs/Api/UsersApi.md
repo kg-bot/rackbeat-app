@@ -1,4 +1,4 @@
-# Swagger\Client\UsersApi
+# RackbeatApp\Client\UsersApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UsersApi(
+$apiInstance = new RackbeatApp\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexUser**
-> \Swagger\Client\Model\UserList indexUser()
+> \RackbeatApp\Client\Model\UserList indexUser()
 
 Index user
 
@@ -71,7 +71,7 @@ Index user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UsersApi(
+$apiInstance = new RackbeatApp\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\UserList**](../Model/UserList.md)
+[**\RackbeatApp\Client\Model\UserList**](../Model/UserList.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showUser**
-> \Swagger\Client\Model\User showUser($number)
+> \RackbeatApp\Client\Model\User showUser($number)
 
 Show single user
 
@@ -116,7 +116,7 @@ Show single user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UsersApi(
+$apiInstance = new RackbeatApp\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\RackbeatApp\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeUser**
-> \Swagger\Client\Model\User storeUser($body)
+> \RackbeatApp\Client\Model\User storeUser($body)
 
 Create new user
 
@@ -165,12 +165,12 @@ Create new user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UsersApi(
+$apiInstance = new RackbeatApp\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\UserForm(); // \Swagger\Client\Model\UserForm | User object that should be created.
+$body = new \RackbeatApp\Client\Model\UserForm(); // \RackbeatApp\Client\Model\UserForm | User object that should be created.
 
 try {
     $result = $apiInstance->storeUser($body);
@@ -185,11 +185,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\UserForm**](../Model/UserForm.md)| User object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\UserForm**](../Model/UserForm.md)| User object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\RackbeatApp\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUser**
-> \Swagger\Client\Model\User updateUser($number, $body)
+> \RackbeatApp\Client\Model\User updateUser($number, $body)
 
 Update existing user
 
@@ -214,13 +214,13 @@ Update existing user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UsersApi(
+$apiInstance = new RackbeatApp\Client\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | User number
-$body = new \Swagger\Client\Model\UserForm(); // \Swagger\Client\Model\UserForm | User object that should be created.
+$body = new \RackbeatApp\Client\Model\UserForm(); // \RackbeatApp\Client\Model\UserForm | User object that should be created.
 
 try {
     $result = $apiInstance->updateUser($number, $body);
@@ -236,11 +236,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| User number |
- **body** | [**\Swagger\Client\Model\UserForm**](../Model/UserForm.md)| User object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\UserForm**](../Model/UserForm.md)| User object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\User**](../Model/User.md)
+[**\RackbeatApp\Client\Model\User**](../Model/User.md)
 
 ### Authorization
 

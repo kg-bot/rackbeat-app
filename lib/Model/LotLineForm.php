@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LotLineForm Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,8 +57,8 @@ class LotLineForm implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'product_id' => 'int',
-        'quantity' => 'int',
-        'variations' => '\Swagger\Client\Model\VariationForm[]'
+        'quantity'   => 'int',
+        'variations' => '\RackbeatApp\Client\Model\VariationForm[]',
     ];
 
     /**
@@ -279,7 +279,7 @@ class LotLineForm implements ModelInterface, ArrayAccess
     /**
      * Gets variations
      *
-     * @return \Swagger\Client\Model\VariationForm[]
+     * @return \RackbeatApp\Client\Model\VariationForm[]
      */
     public function getVariations()
     {
@@ -289,7 +289,7 @@ class LotLineForm implements ModelInterface, ArrayAccess
     /**
      * Sets variations
      *
-     * @param \Swagger\Client\Model\VariationForm[] $variations variations
+     * @param \RackbeatApp\Client\Model\VariationForm[] $variations variations
      *
      * @return $this
      */

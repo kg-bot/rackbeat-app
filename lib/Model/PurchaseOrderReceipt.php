@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrderReceipt Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,13 +56,13 @@ class PurchaseOrderReceipt implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'is_received' => 'bool',
-        'lines' => '\Swagger\Client\Model\PurchaseOrderReceiptLine[]',
-        'purchase_order' => '\Swagger\Client\Model\PurchaseOrderReceiptPurchaseOrder',
-        'received_at' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string'
+        'number'         => 'int',
+        'is_received'    => 'bool',
+        'lines'          => '\RackbeatApp\Client\Model\PurchaseOrderReceiptLine[]',
+        'purchase_order' => '\RackbeatApp\Client\Model\PurchaseOrderReceiptPurchaseOrder',
+        'received_at'    => 'string',
+        'created_at'     => 'string',
+        'updated_at'     => 'string'
     ];
 
     /**
@@ -291,7 +291,7 @@ class PurchaseOrderReceipt implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\PurchaseOrderReceiptLine[]
+     * @return \RackbeatApp\Client\Model\PurchaseOrderReceiptLine[]
      */
     public function getLines()
     {
@@ -301,7 +301,7 @@ class PurchaseOrderReceipt implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\PurchaseOrderReceiptLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\PurchaseOrderReceiptLine[] $lines lines
      *
      * @return $this
      */
@@ -315,7 +315,7 @@ class PurchaseOrderReceipt implements ModelInterface, ArrayAccess
     /**
      * Gets purchase_order
      *
-     * @return \Swagger\Client\Model\PurchaseOrderReceiptPurchaseOrder
+     * @return \RackbeatApp\Client\Model\PurchaseOrderReceiptPurchaseOrder
      */
     public function getPurchaseOrder()
     {
@@ -325,7 +325,7 @@ class PurchaseOrderReceipt implements ModelInterface, ArrayAccess
     /**
      * Sets purchase_order
      *
-     * @param \Swagger\Client\Model\PurchaseOrderReceiptPurchaseOrder $purchase_order purchase_order
+     * @param \RackbeatApp\Client\Model\PurchaseOrderReceiptPurchaseOrder $purchase_order purchase_order
      *
      * @return $this
      */

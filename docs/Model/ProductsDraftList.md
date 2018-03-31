@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**products_drafts** | [**\Swagger\Client\Model\Product[]**](Product.md) |  | [optional] 
+**products_drafts** | [**\RackbeatApp\Client\Model\Product[]**](Product.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

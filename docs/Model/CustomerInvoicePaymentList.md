@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**purchase_orders** | [**\Swagger\Client\Model\CustomerInvoicePayment[]**](CustomerInvoicePayment.md) |  | [optional] 
+**purchase_orders** | [**\RackbeatApp\Client\Model\CustomerInvoicePayment[]**](CustomerInvoicePayment.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

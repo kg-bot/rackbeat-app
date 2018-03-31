@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LanguagesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class LanguagesApi
      *
      * @param  string $number Language number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class LanguagesApi
      *
      * @param  string $number Language number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -316,9 +316,9 @@ class LanguagesApi
      * @param  string $name Filter by language name (optional)
      * @param  string $number Filter by language number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\LanguageList
+     * @return \RackbeatApp\Client\Model\LanguageList
      */
     public function indexLanguages($name = null, $number = null)
     {
@@ -334,14 +334,14 @@ class LanguagesApi
      * @param  string $name Filter by language name (optional)
      * @param  string $number Filter by language number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\LanguageList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\LanguageList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexLanguagesWithHttpInfo($name = null, $number = null)
     {
-        $returnType = '\Swagger\Client\Model\LanguageList';
-        $request = $this->indexLanguagesRequest($name, $number);
+        $returnType = '\RackbeatApp\Client\Model\LanguageList';
+        $request    = $this->indexLanguagesRequest($name, $number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -392,7 +392,7 @@ class LanguagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\LanguageList',
+                        '\RackbeatApp\Client\Model\LanguageList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -436,8 +436,8 @@ class LanguagesApi
      */
     public function indexLanguagesAsyncWithHttpInfo($name = null, $number = null)
     {
-        $returnType = '\Swagger\Client\Model\LanguageList';
-        $request = $this->indexLanguagesRequest($name, $number);
+        $returnType = '\RackbeatApp\Client\Model\LanguageList';
+        $request    = $this->indexLanguagesRequest($name, $number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -576,9 +576,9 @@ class LanguagesApi
      *
      * @param  string $number Language number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Language
+     * @return \RackbeatApp\Client\Model\Language
      */
     public function showLanguage($number)
     {
@@ -593,14 +593,14 @@ class LanguagesApi
      *
      * @param  string $number Language number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Language, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Language, HTTP status code, HTTP response headers (array of strings)
      */
     public function showLanguageWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Language';
-        $request = $this->showLanguageRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Language';
+        $request    = $this->showLanguageRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -651,7 +651,7 @@ class LanguagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Language',
+                        '\RackbeatApp\Client\Model\Language',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -693,8 +693,8 @@ class LanguagesApi
      */
     public function showLanguageAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Language';
-        $request = $this->showLanguageRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Language';
+        $request    = $this->showLanguageRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -836,11 +836,11 @@ class LanguagesApi
      *
      * Create new language
      *
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body Language object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Language
+     * @return \RackbeatApp\Client\Model\Language
      */
     public function storeLanguage($body)
     {
@@ -853,16 +853,16 @@ class LanguagesApi
      *
      * Create new language
      *
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body Language object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Language, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Language, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeLanguageWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Language';
-        $request = $this->storeLanguageRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Language';
+        $request    = $this->storeLanguageRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -913,7 +913,7 @@ class LanguagesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Language',
+                        '\RackbeatApp\Client\Model\Language',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -928,7 +928,7 @@ class LanguagesApi
      *
      * Create new language
      *
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body Language object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -948,15 +948,15 @@ class LanguagesApi
      *
      * Create new language
      *
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body Language object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeLanguageAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Language';
-        $request = $this->storeLanguageRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Language';
+        $request    = $this->storeLanguageRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -998,7 +998,7 @@ class LanguagesApi
     /**
      * Create request for operation 'storeLanguage'
      *
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body Language object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1093,12 +1093,12 @@ class LanguagesApi
      *
      * Update existing language
      *
-     * @param  string $number Language number (required)
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be updated. (required)
+     * @param  string                                 $number Language number (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body   Language object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Language
+     * @return \RackbeatApp\Client\Model\Language
      */
     public function updateLanguage($number, $body)
     {
@@ -1111,17 +1111,17 @@ class LanguagesApi
      *
      * Update existing language
      *
-     * @param  string $number Language number (required)
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be updated. (required)
+     * @param  string                                 $number Language number (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body   Language object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Language, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Language, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateLanguageWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Language';
-        $request = $this->updateLanguageRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Language';
+        $request    = $this->updateLanguageRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1172,7 +1172,7 @@ class LanguagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Language',
+                        '\RackbeatApp\Client\Model\Language',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1187,8 +1187,8 @@ class LanguagesApi
      *
      * Update existing language
      *
-     * @param  string $number Language number (required)
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be updated. (required)
+     * @param  string                                 $number Language number (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body   Language object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1208,16 +1208,16 @@ class LanguagesApi
      *
      * Update existing language
      *
-     * @param  string $number Language number (required)
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be updated. (required)
+     * @param  string                                 $number Language number (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body   Language object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateLanguageAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Language';
-        $request = $this->updateLanguageRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Language';
+        $request    = $this->updateLanguageRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1259,8 +1259,8 @@ class LanguagesApi
     /**
      * Create request for operation 'updateLanguage'
      *
-     * @param  string $number Language number (required)
-     * @param  \Swagger\Client\Model\LanguageForm $body Language object that should be updated. (required)
+     * @param  string                                 $number Language number (required)
+     * @param  \RackbeatApp\Client\Model\LanguageForm $body   Language object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

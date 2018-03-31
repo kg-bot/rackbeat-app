@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CustomerInvoicesApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -315,7 +315,7 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -331,7 +331,7 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -541,7 +541,7 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $note_id Customer invoice id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -558,7 +558,7 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $note_id Customer invoice id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -785,7 +785,7 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $payment_number Customer invoice payment number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -802,7 +802,7 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $payment_number Customer invoice payment number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1026,11 +1026,11 @@ class CustomerInvoicesApi
      *
      * Create customer invoice draft
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoice
+     * @return \RackbeatApp\Client\Model\CustomerInvoice
      */
     public function draftCustomerInvoice($body)
     {
@@ -1043,16 +1043,16 @@ class CustomerInvoicesApi
      *
      * Create customer invoice draft
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function draftCustomerInvoiceWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->draftCustomerInvoiceRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->draftCustomerInvoiceRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1103,7 +1103,7 @@ class CustomerInvoicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoice',
+                        '\RackbeatApp\Client\Model\CustomerInvoice',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1118,7 +1118,7 @@ class CustomerInvoicesApi
      *
      * Create customer invoice draft
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1138,15 +1138,15 @@ class CustomerInvoicesApi
      *
      * Create customer invoice draft
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function draftCustomerInvoiceAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->draftCustomerInvoiceRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->draftCustomerInvoiceRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1188,7 +1188,7 @@ class CustomerInvoicesApi
     /**
      * Create request for operation 'draftCustomerInvoice'
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be drafted. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1285,9 +1285,9 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoicePaymentList
+     * @return \RackbeatApp\Client\Model\CustomerInvoicePaymentList
      */
     public function indexCustomerInvoicePayments($number)
     {
@@ -1302,14 +1302,14 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoicePaymentList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoicePaymentList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCustomerInvoicePaymentsWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePaymentList';
-        $request = $this->indexCustomerInvoicePaymentsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePaymentList';
+        $request    = $this->indexCustomerInvoicePaymentsRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1360,7 +1360,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoicePaymentList',
+                        '\RackbeatApp\Client\Model\CustomerInvoicePaymentList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1402,8 +1402,8 @@ class CustomerInvoicesApi
      */
     public function indexCustomerInvoicePaymentsAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePaymentList';
-        $request = $this->indexCustomerInvoicePaymentsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePaymentList';
+        $request    = $this->indexCustomerInvoicePaymentsRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1551,9 +1551,9 @@ class CustomerInvoicesApi
      * @param  string $customer_number Filter by customer number (optional)
      * @param  string $search Search in number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoiceList
+     * @return \RackbeatApp\Client\Model\CustomerInvoiceList
      */
     public function indexCustomerInvoices($is_paid = null, $is_booked = null, $order_number = null, $customer_number = null, $search = null)
     {
@@ -1572,14 +1572,14 @@ class CustomerInvoicesApi
      * @param  string $customer_number Filter by customer number (optional)
      * @param  string $search Search in number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoiceList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoiceList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCustomerInvoicesWithHttpInfo($is_paid = null, $is_booked = null, $order_number = null, $customer_number = null, $search = null)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoiceList';
-        $request = $this->indexCustomerInvoicesRequest($is_paid, $is_booked, $order_number, $customer_number, $search);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoiceList';
+        $request    = $this->indexCustomerInvoicesRequest($is_paid, $is_booked, $order_number, $customer_number, $search);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1630,7 +1630,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoiceList',
+                        '\RackbeatApp\Client\Model\CustomerInvoiceList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1680,8 +1680,8 @@ class CustomerInvoicesApi
      */
     public function indexCustomerInvoicesAsyncWithHttpInfo($is_paid = null, $is_booked = null, $order_number = null, $customer_number = null, $search = null)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoiceList';
-        $request = $this->indexCustomerInvoicesRequest($is_paid, $is_booked, $order_number, $customer_number, $search);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoiceList';
+        $request    = $this->indexCustomerInvoicesRequest($is_paid, $is_booked, $order_number, $customer_number, $search);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1835,9 +1835,9 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\NoteList
+     * @return \RackbeatApp\Client\Model\NoteList
      */
     public function indexCustomerInvoicesNotes($number)
     {
@@ -1852,14 +1852,14 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\NoteList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\NoteList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCustomerInvoicesNotesWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\NoteList';
-        $request = $this->indexCustomerInvoicesNotesRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\NoteList';
+        $request    = $this->indexCustomerInvoicesNotesRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1910,7 +1910,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\NoteList',
+                        '\RackbeatApp\Client\Model\NoteList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1952,8 +1952,8 @@ class CustomerInvoicesApi
      */
     public function indexCustomerInvoicesNotesAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\NoteList';
-        $request = $this->indexCustomerInvoicesNotesRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\NoteList';
+        $request    = $this->indexCustomerInvoicesNotesRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2097,9 +2097,9 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoice
+     * @return \RackbeatApp\Client\Model\CustomerInvoice
      */
     public function showCustomerInvoice($number)
     {
@@ -2114,14 +2114,14 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function showCustomerInvoiceWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->showCustomerInvoiceRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->showCustomerInvoiceRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2172,7 +2172,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoice',
+                        '\RackbeatApp\Client\Model\CustomerInvoice',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2214,8 +2214,8 @@ class CustomerInvoicesApi
      */
     public function showCustomerInvoiceAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->showCustomerInvoiceRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->showCustomerInvoiceRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2360,9 +2360,9 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $note_id Customer invoice id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Note
+     * @return \RackbeatApp\Client\Model\Note
      */
     public function showCustomerInvoiceNote($number, $note_id)
     {
@@ -2378,14 +2378,14 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $note_id Customer invoice id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
      */
     public function showCustomerInvoiceNoteWithHttpInfo($number, $note_id)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->showCustomerInvoiceNoteRequest($number, $note_id);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->showCustomerInvoiceNoteRequest($number, $note_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2436,7 +2436,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Note',
+                        '\RackbeatApp\Client\Model\Note',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2480,8 +2480,8 @@ class CustomerInvoicesApi
      */
     public function showCustomerInvoiceNoteAsyncWithHttpInfo($number, $note_id)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->showCustomerInvoiceNoteRequest($number, $note_id);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->showCustomerInvoiceNoteRequest($number, $note_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2641,9 +2641,9 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $payment_number Customer invoice payment number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoicePayment
+     * @return \RackbeatApp\Client\Model\CustomerInvoicePayment
      */
     public function showCustomerInvoicePayment($number, $payment_number)
     {
@@ -2659,14 +2659,14 @@ class CustomerInvoicesApi
      * @param  string $number Customer invoice number (required)
      * @param  string $payment_number Customer invoice payment number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoicePayment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoicePayment, HTTP status code, HTTP response headers (array of strings)
      */
     public function showCustomerInvoicePaymentWithHttpInfo($number, $payment_number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePayment';
-        $request = $this->showCustomerInvoicePaymentRequest($number, $payment_number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePayment';
+        $request    = $this->showCustomerInvoicePaymentRequest($number, $payment_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2717,7 +2717,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoicePayment',
+                        '\RackbeatApp\Client\Model\CustomerInvoicePayment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2761,8 +2761,8 @@ class CustomerInvoicesApi
      */
     public function showCustomerInvoicePaymentAsyncWithHttpInfo($number, $payment_number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePayment';
-        $request = $this->showCustomerInvoicePaymentRequest($number, $payment_number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePayment';
+        $request    = $this->showCustomerInvoicePaymentRequest($number, $payment_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2919,11 +2919,11 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoice
+     * @return \RackbeatApp\Client\Model\CustomerInvoice
      */
     public function storeCustomerInvoice($body)
     {
@@ -2936,16 +2936,16 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeCustomerInvoiceWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->storeCustomerInvoiceRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->storeCustomerInvoiceRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2996,7 +2996,7 @@ class CustomerInvoicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoice',
+                        '\RackbeatApp\Client\Model\CustomerInvoice',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3011,7 +3011,7 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3031,15 +3031,15 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeCustomerInvoiceAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->storeCustomerInvoiceRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->storeCustomerInvoiceRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3081,7 +3081,7 @@ class CustomerInvoicesApi
     /**
      * Create request for operation 'storeCustomerInvoice'
      *
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3176,12 +3176,12 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be created. (required)
+     * @param  string                             $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Customer invoice object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Note
+     * @return \RackbeatApp\Client\Model\Note
      */
     public function storeCustomerInvoiceNote($number, $body)
     {
@@ -3194,17 +3194,17 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be created. (required)
+     * @param  string                             $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Customer invoice object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeCustomerInvoiceNoteWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->storeCustomerInvoiceNoteRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->storeCustomerInvoiceNoteRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3255,7 +3255,7 @@ class CustomerInvoicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Note',
+                        '\RackbeatApp\Client\Model\Note',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3270,8 +3270,8 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be created. (required)
+     * @param  string                             $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Customer invoice object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3291,16 +3291,16 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be created. (required)
+     * @param  string                             $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Customer invoice object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeCustomerInvoiceNoteAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->storeCustomerInvoiceNoteRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->storeCustomerInvoiceNoteRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3342,8 +3342,8 @@ class CustomerInvoicesApi
     /**
      * Create request for operation 'storeCustomerInvoiceNote'
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be created. (required)
+     * @param  string                             $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body   Customer invoice object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3452,12 +3452,12 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be created. (required)
+     * @param  string                                               $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body   Customer invoice payment object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoicePayment
+     * @return \RackbeatApp\Client\Model\CustomerInvoicePayment
      */
     public function storeCustomerInvoicePayment($number, $body)
     {
@@ -3470,17 +3470,17 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be created. (required)
+     * @param  string                                               $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body   Customer invoice payment object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoicePayment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoicePayment, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeCustomerInvoicePaymentWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePayment';
-        $request = $this->storeCustomerInvoicePaymentRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePayment';
+        $request    = $this->storeCustomerInvoicePaymentRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3531,7 +3531,7 @@ class CustomerInvoicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoicePayment',
+                        '\RackbeatApp\Client\Model\CustomerInvoicePayment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3546,8 +3546,8 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be created. (required)
+     * @param  string                                               $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body   Customer invoice payment object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3567,16 +3567,16 @@ class CustomerInvoicesApi
      *
      * Create new customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be created. (required)
+     * @param  string                                               $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body   Customer invoice payment object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeCustomerInvoicePaymentAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePayment';
-        $request = $this->storeCustomerInvoicePaymentRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePayment';
+        $request    = $this->storeCustomerInvoicePaymentRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3618,8 +3618,8 @@ class CustomerInvoicesApi
     /**
      * Create request for operation 'storeCustomerInvoicePayment'
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be created. (required)
+     * @param  string                                               $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body   Customer invoice payment object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3730,7 +3730,7 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3746,7 +3746,7 @@ class CustomerInvoicesApi
      *
      * @param  string $number Customer invoice number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3953,12 +3953,12 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be updated. (required)
+     * @param  string                                        $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body   Customer invoice object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoice
+     * @return \RackbeatApp\Client\Model\CustomerInvoice
      */
     public function updateCustomerInvoice($number, $body)
     {
@@ -3971,17 +3971,17 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be updated. (required)
+     * @param  string                                        $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body   Customer invoice object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCustomerInvoiceWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->updateCustomerInvoiceRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->updateCustomerInvoiceRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4032,7 +4032,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoice',
+                        '\RackbeatApp\Client\Model\CustomerInvoice',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4047,8 +4047,8 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be updated. (required)
+     * @param  string                                        $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body   Customer invoice object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4068,16 +4068,16 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be updated. (required)
+     * @param  string                                        $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body   Customer invoice object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCustomerInvoiceAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoice';
-        $request = $this->updateCustomerInvoiceRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoice';
+        $request    = $this->updateCustomerInvoiceRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4119,8 +4119,8 @@ class CustomerInvoicesApi
     /**
      * Create request for operation 'updateCustomerInvoice'
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoiceForm $body Customer invoice object that should be updated. (required)
+     * @param  string                                        $number Customer invoice number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoiceForm $body   Customer invoice object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4229,13 +4229,13 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $note_id Customer invoice id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be updated. (required)
+     * @param  string                             $number  Customer invoice number (required)
+     * @param  string                             $note_id Customer invoice id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Customer invoice object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Note
+     * @return \RackbeatApp\Client\Model\Note
      */
     public function updateCustomerInvoiceNote($number, $note_id, $body)
     {
@@ -4248,18 +4248,18 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $note_id Customer invoice id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be updated. (required)
+     * @param  string                             $number  Customer invoice number (required)
+     * @param  string                             $note_id Customer invoice id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Customer invoice object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Note, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCustomerInvoiceNoteWithHttpInfo($number, $note_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->updateCustomerInvoiceNoteRequest($number, $note_id, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->updateCustomerInvoiceNoteRequest($number, $note_id, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4310,7 +4310,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Note',
+                        '\RackbeatApp\Client\Model\Note',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4325,9 +4325,9 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $note_id Customer invoice id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be updated. (required)
+     * @param  string                             $number  Customer invoice number (required)
+     * @param  string                             $note_id Customer invoice id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Customer invoice object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4347,17 +4347,17 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice note
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $note_id Customer invoice id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be updated. (required)
+     * @param  string                             $number  Customer invoice number (required)
+     * @param  string                             $note_id Customer invoice id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Customer invoice object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCustomerInvoiceNoteAsyncWithHttpInfo($number, $note_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Note';
-        $request = $this->updateCustomerInvoiceNoteRequest($number, $note_id, $body);
+        $returnType = '\RackbeatApp\Client\Model\Note';
+        $request    = $this->updateCustomerInvoiceNoteRequest($number, $note_id, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4399,9 +4399,9 @@ class CustomerInvoicesApi
     /**
      * Create request for operation 'updateCustomerInvoiceNote'
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $note_id Customer invoice id (required)
-     * @param  \Swagger\Client\Model\NoteForm $body Customer invoice object that should be updated. (required)
+     * @param  string                             $number  Customer invoice number (required)
+     * @param  string                             $note_id Customer invoice id (required)
+     * @param  \RackbeatApp\Client\Model\NoteForm $body    Customer invoice object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4524,13 +4524,13 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $payment_number Customer invoice payment number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be updated. (required)
+     * @param  string                                               $number         Customer invoice number (required)
+     * @param  string                                               $payment_number Customer invoice payment number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body           Customer invoice payment object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerInvoicePayment
+     * @return \RackbeatApp\Client\Model\CustomerInvoicePayment
      */
     public function updateCustomerInvoicePayment($number, $payment_number, $body)
     {
@@ -4543,18 +4543,18 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $payment_number Customer invoice payment number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be updated. (required)
+     * @param  string                                               $number         Customer invoice number (required)
+     * @param  string                                               $payment_number Customer invoice payment number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body           Customer invoice payment object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerInvoicePayment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerInvoicePayment, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCustomerInvoicePaymentWithHttpInfo($number, $payment_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePayment';
-        $request = $this->updateCustomerInvoicePaymentRequest($number, $payment_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePayment';
+        $request    = $this->updateCustomerInvoicePaymentRequest($number, $payment_number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4605,7 +4605,7 @@ class CustomerInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerInvoicePayment',
+                        '\RackbeatApp\Client\Model\CustomerInvoicePayment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4620,9 +4620,9 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $payment_number Customer invoice payment number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be updated. (required)
+     * @param  string                                               $number         Customer invoice number (required)
+     * @param  string                                               $payment_number Customer invoice payment number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body           Customer invoice payment object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4642,17 +4642,17 @@ class CustomerInvoicesApi
      *
      * Update existing customer invoice payment
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $payment_number Customer invoice payment number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be updated. (required)
+     * @param  string                                               $number         Customer invoice number (required)
+     * @param  string                                               $payment_number Customer invoice payment number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body           Customer invoice payment object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCustomerInvoicePaymentAsyncWithHttpInfo($number, $payment_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerInvoicePayment';
-        $request = $this->updateCustomerInvoicePaymentRequest($number, $payment_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerInvoicePayment';
+        $request    = $this->updateCustomerInvoicePaymentRequest($number, $payment_number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4694,9 +4694,9 @@ class CustomerInvoicesApi
     /**
      * Create request for operation 'updateCustomerInvoicePayment'
      *
-     * @param  string $number Customer invoice number (required)
-     * @param  string $payment_number Customer invoice payment number (required)
-     * @param  \Swagger\Client\Model\CustomerInvoicePaymentForm $body Customer invoice payment object that should be updated. (required)
+     * @param  string                                               $number         Customer invoice number (required)
+     * @param  string                                               $payment_number Customer invoice payment number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerInvoicePaymentForm $body           Customer invoice payment object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

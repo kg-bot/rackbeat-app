@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**orders** | [**\Swagger\Client\Model\OrderShipment[]**](OrderShipment.md) |  | [optional] 
+**orders** | [**\RackbeatApp\Client\Model\OrderShipment[]**](OrderShipment.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

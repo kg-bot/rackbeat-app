@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InventoryReportsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -88,11 +88,11 @@ class InventoryReportsApi
      *
      * Inventory report: inventory checking
      *
-     * @param  \Swagger\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InventoryCheckingReport
+     * @return \RackbeatApp\Client\Model\InventoryCheckingReport
      */
     public function inventoryReportInventoryChecking($body)
     {
@@ -105,16 +105,16 @@ class InventoryReportsApi
      *
      * Inventory report: inventory checking
      *
-     * @param  \Swagger\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InventoryCheckingReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InventoryCheckingReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function inventoryReportInventoryCheckingWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryCheckingReport';
-        $request = $this->inventoryReportInventoryCheckingRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryCheckingReport';
+        $request    = $this->inventoryReportInventoryCheckingRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -165,7 +165,7 @@ class InventoryReportsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InventoryCheckingReport',
+                        '\RackbeatApp\Client\Model\InventoryCheckingReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class InventoryReportsApi
      *
      * Inventory report: inventory checking
      *
-     * @param  \Swagger\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -200,15 +200,15 @@ class InventoryReportsApi
      *
      * Inventory report: inventory checking
      *
-     * @param  \Swagger\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function inventoryReportInventoryCheckingAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryCheckingReport';
-        $request = $this->inventoryReportInventoryCheckingRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryCheckingReport';
+        $request    = $this->inventoryReportInventoryCheckingRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -250,7 +250,7 @@ class InventoryReportsApi
     /**
      * Create request for operation 'inventoryReportInventoryChecking'
      *
-     * @param  \Swagger\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryCheckingReportForm $body Inventory checking filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -345,11 +345,11 @@ class InventoryReportsApi
      *
      * Inventory report: inventory ledger
      *
-     * @param  \Swagger\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InventoryLedgerReport
+     * @return \RackbeatApp\Client\Model\InventoryLedgerReport
      */
     public function inventoryReportInventoryLedger($body)
     {
@@ -362,16 +362,16 @@ class InventoryReportsApi
      *
      * Inventory report: inventory ledger
      *
-     * @param  \Swagger\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InventoryLedgerReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InventoryLedgerReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function inventoryReportInventoryLedgerWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryLedgerReport';
-        $request = $this->inventoryReportInventoryLedgerRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryLedgerReport';
+        $request    = $this->inventoryReportInventoryLedgerRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -422,7 +422,7 @@ class InventoryReportsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InventoryLedgerReport',
+                        '\RackbeatApp\Client\Model\InventoryLedgerReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -437,7 +437,7 @@ class InventoryReportsApi
      *
      * Inventory report: inventory ledger
      *
-     * @param  \Swagger\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -457,15 +457,15 @@ class InventoryReportsApi
      *
      * Inventory report: inventory ledger
      *
-     * @param  \Swagger\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function inventoryReportInventoryLedgerAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryLedgerReport';
-        $request = $this->inventoryReportInventoryLedgerRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryLedgerReport';
+        $request    = $this->inventoryReportInventoryLedgerRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -507,7 +507,7 @@ class InventoryReportsApi
     /**
      * Create request for operation 'inventoryReportInventoryLedger'
      *
-     * @param  \Swagger\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryLedgerReportForm $body Inventory ledger filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -602,11 +602,11 @@ class InventoryReportsApi
      *
      * Inventory report: inventory valuation
      *
-     * @param  \Swagger\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InventoryValuationReport
+     * @return \RackbeatApp\Client\Model\InventoryValuationReport
      */
     public function inventoryReportInventoryValuation($body)
     {
@@ -619,16 +619,16 @@ class InventoryReportsApi
      *
      * Inventory report: inventory valuation
      *
-     * @param  \Swagger\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InventoryValuationReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InventoryValuationReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function inventoryReportInventoryValuationWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryValuationReport';
-        $request = $this->inventoryReportInventoryValuationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryValuationReport';
+        $request    = $this->inventoryReportInventoryValuationRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -679,7 +679,7 @@ class InventoryReportsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InventoryValuationReport',
+                        '\RackbeatApp\Client\Model\InventoryValuationReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -694,7 +694,7 @@ class InventoryReportsApi
      *
      * Inventory report: inventory valuation
      *
-     * @param  \Swagger\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -714,15 +714,15 @@ class InventoryReportsApi
      *
      * Inventory report: inventory valuation
      *
-     * @param  \Swagger\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function inventoryReportInventoryValuationAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\InventoryValuationReport';
-        $request = $this->inventoryReportInventoryValuationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\InventoryValuationReport';
+        $request    = $this->inventoryReportInventoryValuationRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -764,7 +764,7 @@ class InventoryReportsApi
     /**
      * Create request for operation 'inventoryReportInventoryValuation'
      *
-     * @param  \Swagger\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
+     * @param  \RackbeatApp\Client\Model\InventoryValuationReportForm $body Inventory valuation filter object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

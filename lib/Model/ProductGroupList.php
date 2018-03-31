@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * ProductGroupList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class ProductGroupList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'product_groups' => '\Swagger\Client\Model\ProductGroup[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'product_groups' => '\RackbeatApp\Client\Model\ProductGroup[]',
+        'total'          => 'int',
+        'pages'          => 'int',
+        'limit'          => 'int',
+        'page'           => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class ProductGroupList implements ModelInterface, ArrayAccess
     /**
      * Gets product_groups
      *
-     * @return \Swagger\Client\Model\ProductGroup[]
+     * @return \RackbeatApp\Client\Model\ProductGroup[]
      */
     public function getProductGroups()
     {
@@ -241,7 +241,7 @@ class ProductGroupList implements ModelInterface, ArrayAccess
     /**
      * Sets product_groups
      *
-     * @param \Swagger\Client\Model\ProductGroup[] $product_groups product_groups
+     * @param \RackbeatApp\Client\Model\ProductGroup[] $product_groups product_groups
      *
      * @return $this
      */

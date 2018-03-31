@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CurrencyRateList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class CurrencyRateList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'orders' => '\Swagger\Client\Model\CurrencyRate[]'
+        'orders' => '\RackbeatApp\Client\Model\CurrencyRate[]',
     ];
 
     /**
@@ -207,7 +207,7 @@ class CurrencyRateList implements ModelInterface, ArrayAccess
     /**
      * Gets orders
      *
-     * @return \Swagger\Client\Model\CurrencyRate[]
+     * @return \RackbeatApp\Client\Model\CurrencyRate[]
      */
     public function getOrders()
     {
@@ -217,7 +217,7 @@ class CurrencyRateList implements ModelInterface, ArrayAccess
     /**
      * Sets orders
      *
-     * @param \Swagger\Client\Model\CurrencyRate[] $orders orders
+     * @param \RackbeatApp\Client\Model\CurrencyRate[] $orders orders
      *
      * @return $this
      */

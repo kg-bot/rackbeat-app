@@ -1,4 +1,4 @@
-# Swagger\Client\UnitsApi
+# RackbeatApp\Client\UnitsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing unit
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UnitsApi(
+$apiInstance = new RackbeatApp\Client\Api\UnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexUnit**
-> \Swagger\Client\Model\UnitList indexUnit($is_draft, $name)
+> \RackbeatApp\Client\Model\UnitList indexUnit($is_draft, $name)
 
 Index unit
 
@@ -71,7 +71,7 @@ Index unit
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UnitsApi(
+$apiInstance = new RackbeatApp\Client\Api\UnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\UnitList**](../Model/UnitList.md)
+[**\RackbeatApp\Client\Model\UnitList**](../Model/UnitList.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showUnit**
-> \Swagger\Client\Model\Unit showUnit($number)
+> \RackbeatApp\Client\Model\Unit showUnit($number)
 
 Show single unit
 
@@ -122,7 +122,7 @@ Show single unit
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UnitsApi(
+$apiInstance = new RackbeatApp\Client\Api\UnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Unit**](../Model/Unit.md)
+[**\RackbeatApp\Client\Model\Unit**](../Model/Unit.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeUnit**
-> \Swagger\Client\Model\Unit storeUnit($body)
+> \RackbeatApp\Client\Model\Unit storeUnit($body)
 
 Create new unit
 
@@ -171,12 +171,12 @@ Create new unit
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UnitsApi(
+$apiInstance = new RackbeatApp\Client\Api\UnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\UnitForm(); // \Swagger\Client\Model\UnitForm | Unit object that should be created.
+$body = new \RackbeatApp\Client\Model\UnitForm(); // \RackbeatApp\Client\Model\UnitForm | Unit object that should be created.
 
 try {
     $result = $apiInstance->storeUnit($body);
@@ -191,11 +191,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\UnitForm**](../Model/UnitForm.md)| Unit object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\UnitForm**](../Model/UnitForm.md)| Unit object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Unit**](../Model/Unit.md)
+[**\RackbeatApp\Client\Model\Unit**](../Model/Unit.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUnit**
-> \Swagger\Client\Model\Unit updateUnit($number, $body)
+> \RackbeatApp\Client\Model\Unit updateUnit($number, $body)
 
 Update existing unit
 
@@ -220,13 +220,13 @@ Update existing unit
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\UnitsApi(
+$apiInstance = new RackbeatApp\Client\Api\UnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Unit number
-$body = new \Swagger\Client\Model\UnitForm(); // \Swagger\Client\Model\UnitForm | Unit object that should be created.
+$body = new \RackbeatApp\Client\Model\UnitForm(); // \RackbeatApp\Client\Model\UnitForm | Unit object that should be created.
 
 try {
     $result = $apiInstance->updateUnit($number, $body);
@@ -242,11 +242,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Unit number |
- **body** | [**\Swagger\Client\Model\UnitForm**](../Model/UnitForm.md)| Unit object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\UnitForm**](../Model/UnitForm.md)| Unit object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Unit**](../Model/Unit.md)
+[**\RackbeatApp\Client\Model\Unit**](../Model/Unit.md)
 
 ### Authorization
 

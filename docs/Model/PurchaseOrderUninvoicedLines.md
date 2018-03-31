@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**uninvoiced_lines** | [**\Swagger\Client\Model\PurchaseOrderLine[]**](PurchaseOrderLine.md) |  | [optional] 
+**uninvoiced_lines** | [**\RackbeatApp\Client\Model\PurchaseOrderLine[]**](PurchaseOrderLine.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

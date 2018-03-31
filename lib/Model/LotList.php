@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LotList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class LotList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'lots' => '\Swagger\Client\Model\Lot[]',
+        'lots'  => '\RackbeatApp\Client\Model\Lot[]',
         'total' => 'int',
         'pages' => 'int',
         'limit' => 'int',
-        'page' => 'int'
+        'page'  => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class LotList implements ModelInterface, ArrayAccess
     /**
      * Gets lots
      *
-     * @return \Swagger\Client\Model\Lot[]
+     * @return \RackbeatApp\Client\Model\Lot[]
      */
     public function getLots()
     {
@@ -241,7 +241,7 @@ class LotList implements ModelInterface, ArrayAccess
     /**
      * Sets lots
      *
-     * @param \Swagger\Client\Model\Lot[] $lots lots
+     * @param \RackbeatApp\Client\Model\Lot[] $lots lots
      *
      * @return $this
      */

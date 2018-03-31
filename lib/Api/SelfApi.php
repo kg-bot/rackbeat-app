@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SelfApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -89,9 +89,9 @@ class SelfApi
      * Get user account
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Self
+     * @return \RackbeatApp\Client\Model\Self
      */
     public function getUserAccount()
     {
@@ -105,14 +105,14 @@ class SelfApi
      * Get user account
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Self, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Self, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserAccountWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Self';
-        $request = $this->getUserAccountRequest();
+        $returnType = '\RackbeatApp\Client\Model\Self';
+        $request    = $this->getUserAccountRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -163,7 +163,7 @@ class SelfApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Self',
+                        '\RackbeatApp\Client\Model\Self',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -203,8 +203,8 @@ class SelfApi
      */
     public function getUserAccountAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Self';
-        $request = $this->getUserAccountRequest();
+        $returnType = '\RackbeatApp\Client\Model\Self';
+        $request    = $this->getUserAccountRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

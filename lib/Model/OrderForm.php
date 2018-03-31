@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * OrderForm Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,17 +56,17 @@ class OrderForm implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'customer_id' => 'int',
-        'employee_id' => 'int',
-        'currency' => 'string',
-        'address_street' => 'string',
+        'number'          => 'int',
+        'customer_id'     => 'int',
+        'employee_id'     => 'int',
+        'currency'        => 'string',
+        'address_street'  => 'string',
         'address_street2' => 'string',
-        'address_city' => 'string',
+        'address_city'    => 'string',
         'address_zipcode' => 'string',
         'address_country' => 'string',
-        'deliver_at' => 'string',
-        'lines' => '\Swagger\Client\Model\OrderLineForm[]'
+        'deliver_at'      => 'string',
+        'lines'           => '\RackbeatApp\Client\Model\OrderLineForm[]',
     ];
 
     /**
@@ -591,7 +591,7 @@ class OrderForm implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\OrderLineForm[]
+     * @return \RackbeatApp\Client\Model\OrderLineForm[]
      */
     public function getLines()
     {
@@ -601,7 +601,7 @@ class OrderForm implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\OrderLineForm[] $lines lines
+     * @param \RackbeatApp\Client\Model\OrderLineForm[] $lines lines
      *
      * @return $this
      */

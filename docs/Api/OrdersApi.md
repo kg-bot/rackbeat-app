@@ -1,4 +1,4 @@
-# Swagger\Client\OrdersApi
+# RackbeatApp\Client\OrdersApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -33,7 +33,7 @@ Book order for shipping
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -81,7 +81,7 @@ Delete existing order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -129,7 +129,7 @@ Delete existing order note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -168,7 +168,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexOrderNotes**
-> \Swagger\Client\Model\NoteList indexOrderNotes($number)
+> \RackbeatApp\Client\Model\NoteList indexOrderNotes($number)
 
 Index order notes
 
@@ -179,7 +179,7 @@ Index order notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\NoteList**](../Model/NoteList.md)
+[**\RackbeatApp\Client\Model\NoteList**](../Model/NoteList.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexOrders**
-> \Swagger\Client\Model\OrdersList indexOrders($is_booked, $is_paid, $is_shipped)
+> \RackbeatApp\Client\Model\OrdersList indexOrders($is_booked, $is_paid, $is_shipped)
 
 Index orders
 
@@ -228,7 +228,7 @@ Index orders
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrdersList**](../Model/OrdersList.md)
+[**\RackbeatApp\Client\Model\OrdersList**](../Model/OrdersList.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orderCreateInvoice**
-> \Swagger\Client\Model\CustomerInvoice orderCreateInvoice($number)
+> \RackbeatApp\Client\Model\CustomerInvoice orderCreateInvoice($number)
 
 Order create invoice
 
@@ -281,7 +281,7 @@ Order create invoice
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
+[**\RackbeatApp\Client\Model\CustomerInvoice**](../Model/CustomerInvoice.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orderCreateReceipt**
-> \Swagger\Client\Model\Order orderCreateReceipt($number)
+> \RackbeatApp\Client\Model\Order orderCreateReceipt($number)
 
 Order create receipt
 
@@ -330,7 +330,7 @@ Order create receipt
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\RackbeatApp\Client\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orderDrafts**
-> \Swagger\Client\Model\Order orderDrafts($body)
+> \RackbeatApp\Client\Model\Order orderDrafts($body)
 
 Order drafts
 
@@ -379,12 +379,12 @@ Order drafts
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\OrderForm(); // \Swagger\Client\Model\OrderForm | Order draft should be created
+$body = new \RackbeatApp\Client\Model\OrderForm(); // \RackbeatApp\Client\Model\OrderForm | Order draft should be created
 
 try {
     $result = $apiInstance->orderDrafts($body);
@@ -399,11 +399,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\OrderForm**](../Model/OrderForm.md)| Order draft should be created |
+ **body** | [**\RackbeatApp\Client\Model\OrderForm**](../Model/OrderForm.md)| Order draft should be created |
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\RackbeatApp\Client\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showOrder**
-> \Swagger\Client\Model\Order showOrder($number)
+> \RackbeatApp\Client\Model\Order showOrder($number)
 
 Show single order
 
@@ -428,7 +428,7 @@ Show single order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -452,7 +452,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\RackbeatApp\Client\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -466,7 +466,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showOrderNote**
-> \Swagger\Client\Model\Note showOrderNote($number, $note_id)
+> \RackbeatApp\Client\Model\Note showOrderNote($number, $note_id)
 
 Show single order note
 
@@ -477,7 +477,7 @@ Show single order note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -503,7 +503,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -517,7 +517,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showUninvoicedLines**
-> \Swagger\Client\Model\OrderLine showUninvoicedLines($number)
+> \RackbeatApp\Client\Model\OrderLine showUninvoicedLines($number)
 
 Show uninvoiced lines
 
@@ -528,7 +528,7 @@ Show uninvoiced lines
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -552,7 +552,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderLine**](../Model/OrderLine.md)
+[**\RackbeatApp\Client\Model\OrderLine**](../Model/OrderLine.md)
 
 ### Authorization
 
@@ -566,7 +566,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeOrder**
-> \Swagger\Client\Model\Order storeOrder($body)
+> \RackbeatApp\Client\Model\Order storeOrder($body)
 
 Create new order
 
@@ -577,12 +577,12 @@ Create new order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\OrderForm(); // \Swagger\Client\Model\OrderForm | Order object that should be created.
+$body = new \RackbeatApp\Client\Model\OrderForm(); // \RackbeatApp\Client\Model\OrderForm | Order object that should be created.
 
 try {
     $result = $apiInstance->storeOrder($body);
@@ -597,11 +597,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\OrderForm**](../Model/OrderForm.md)| Order object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\OrderForm**](../Model/OrderForm.md)| Order object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\RackbeatApp\Client\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -615,7 +615,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeOrderNote**
-> \Swagger\Client\Model\Note storeOrderNote($number, $body)
+> \RackbeatApp\Client\Model\Note storeOrderNote($number, $body)
 
 Create new order note
 
@@ -626,13 +626,13 @@ Create new order note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Order number
-$body = new \Swagger\Client\Model\NoteForm(); // \Swagger\Client\Model\NoteForm | Order note object that should be created.
+$body = new \RackbeatApp\Client\Model\NoteForm(); // \RackbeatApp\Client\Model\NoteForm | Order note object that should be created.
 
 try {
     $result = $apiInstance->storeOrderNote($number, $body);
@@ -648,11 +648,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Order number |
- **body** | [**\Swagger\Client\Model\NoteForm**](../Model/NoteForm.md)| Order note object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\NoteForm**](../Model/NoteForm.md)| Order note object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 
@@ -666,7 +666,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOrder**
-> \Swagger\Client\Model\Order updateOrder($number, $body)
+> \RackbeatApp\Client\Model\Order updateOrder($number, $body)
 
 Update existing order
 
@@ -677,13 +677,13 @@ Update existing order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Order number
-$body = new \Swagger\Client\Model\OrderForm(); // \Swagger\Client\Model\OrderForm | Order object that should be updated.
+$body = new \RackbeatApp\Client\Model\OrderForm(); // \RackbeatApp\Client\Model\OrderForm | Order object that should be updated.
 
 try {
     $result = $apiInstance->updateOrder($number, $body);
@@ -699,11 +699,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Order number |
- **body** | [**\Swagger\Client\Model\OrderForm**](../Model/OrderForm.md)| Order object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\OrderForm**](../Model/OrderForm.md)| Order object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Order**](../Model/Order.md)
+[**\RackbeatApp\Client\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -717,7 +717,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOrderNote**
-> \Swagger\Client\Model\Note updateOrderNote($number, $note_id, $body)
+> \RackbeatApp\Client\Model\Note updateOrderNote($number, $note_id, $body)
 
 Update existing order note
 
@@ -728,14 +728,14 @@ Update existing order note
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersApi(
+$apiInstance = new RackbeatApp\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Order number
 $note_id = "note_id_example"; // string | Order note id
-$body = new \Swagger\Client\Model\NoteForm(); // \Swagger\Client\Model\NoteForm | Order note object that should be updated.
+$body = new \RackbeatApp\Client\Model\NoteForm(); // \RackbeatApp\Client\Model\NoteForm | Order note object that should be updated.
 
 try {
     $result = $apiInstance->updateOrderNote($number, $note_id, $body);
@@ -752,11 +752,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Order number |
  **note_id** | **string**| Order note id |
- **body** | [**\Swagger\Client\Model\NoteForm**](../Model/NoteForm.md)| Order note object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\NoteForm**](../Model/NoteForm.md)| Order note object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Note**](../Model/Note.md)
+[**\RackbeatApp\Client\Model\Note**](../Model/Note.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * OrderShipment Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,18 +56,18 @@ class OrderShipment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'is_picked' => 'bool',
-        'is_shipped' => 'bool',
-        'lines' => '\Swagger\Client\Model\OrderShipmentLine',
-        'order_id' => 'int',
-        'order' => '\Swagger\Client\Model\ShipmentOrder',
+        'id'          => 'int',
+        'is_picked'   => 'bool',
+        'is_shipped'  => 'bool',
+        'lines'       => '\RackbeatApp\Client\Model\OrderShipmentLine',
+        'order_id'    => 'int',
+        'order'       => '\RackbeatApp\Client\Model\ShipmentOrder',
         'employee_id' => 'int',
-        'employee' => '\Swagger\Client\Model\Employee',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'pdf' => 'string',
-        'self' => 'string'
+        'employee'    => '\RackbeatApp\Client\Model\Employee',
+        'created_at'  => 'string',
+        'updated_at'  => 'string',
+        'pdf'         => 'string',
+        'self'        => 'string'
     ];
 
     /**
@@ -345,7 +345,7 @@ class OrderShipment implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\OrderShipmentLine
+     * @return \RackbeatApp\Client\Model\OrderShipmentLine
      */
     public function getLines()
     {
@@ -355,7 +355,7 @@ class OrderShipment implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\OrderShipmentLine $lines lines
+     * @param \RackbeatApp\Client\Model\OrderShipmentLine $lines lines
      *
      * @return $this
      */
@@ -393,7 +393,7 @@ class OrderShipment implements ModelInterface, ArrayAccess
     /**
      * Gets order
      *
-     * @return \Swagger\Client\Model\ShipmentOrder
+     * @return \RackbeatApp\Client\Model\ShipmentOrder
      */
     public function getOrder()
     {
@@ -403,7 +403,7 @@ class OrderShipment implements ModelInterface, ArrayAccess
     /**
      * Sets order
      *
-     * @param \Swagger\Client\Model\ShipmentOrder $order order
+     * @param \RackbeatApp\Client\Model\ShipmentOrder $order order
      *
      * @return $this
      */
@@ -441,7 +441,7 @@ class OrderShipment implements ModelInterface, ArrayAccess
     /**
      * Gets employee
      *
-     * @return \Swagger\Client\Model\Employee
+     * @return \RackbeatApp\Client\Model\Employee
      */
     public function getEmployee()
     {
@@ -451,7 +451,7 @@ class OrderShipment implements ModelInterface, ArrayAccess
     /**
      * Sets employee
      *
-     * @param \Swagger\Client\Model\Employee $employee employee
+     * @param \RackbeatApp\Client\Model\Employee $employee employee
      *
      * @return $this
      */

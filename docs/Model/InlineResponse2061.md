@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**supplier_invoices** | [**\Swagger\Client\Model\SupplierInvoice[]**](SupplierInvoice.md) |  | [optional] 
+**supplier_invoices** | [**\RackbeatApp\Client\Model\SupplierInvoice[]**](SupplierInvoice.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

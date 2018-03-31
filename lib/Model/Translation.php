@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Translation Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class Translation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'product_id' => 'int',
-        'product' => '\Swagger\Client\Model\TranslationProduct[]',
+        'product_id'  => 'int',
+        'product'     => '\RackbeatApp\Client\Model\TranslationProduct[]',
         'language_id' => 'int',
-        'language' => '\Swagger\Client\Model\TranslationLanguage'
+        'language'    => '\RackbeatApp\Client\Model\TranslationLanguage',
     ];
 
     /**
@@ -249,7 +249,7 @@ class Translation implements ModelInterface, ArrayAccess
     /**
      * Gets product
      *
-     * @return \Swagger\Client\Model\TranslationProduct[]
+     * @return \RackbeatApp\Client\Model\TranslationProduct[]
      */
     public function getProduct()
     {
@@ -259,7 +259,7 @@ class Translation implements ModelInterface, ArrayAccess
     /**
      * Sets product
      *
-     * @param \Swagger\Client\Model\TranslationProduct[] $product product
+     * @param \RackbeatApp\Client\Model\TranslationProduct[] $product product
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class Translation implements ModelInterface, ArrayAccess
     /**
      * Gets language
      *
-     * @return \Swagger\Client\Model\TranslationLanguage
+     * @return \RackbeatApp\Client\Model\TranslationLanguage
      */
     public function getLanguage()
     {
@@ -307,7 +307,7 @@ class Translation implements ModelInterface, ArrayAccess
     /**
      * Sets language
      *
-     * @param \Swagger\Client\Model\TranslationLanguage $language language
+     * @param \RackbeatApp\Client\Model\TranslationLanguage $language language
      *
      * @return $this
      */

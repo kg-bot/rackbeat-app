@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PluginsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -88,10 +88,10 @@ class PluginsApi
      *
      * Set plugin settings
      *
-     * @param  string $number Plugin number (required)
-     * @param  \Swagger\Client\Model\Body5 $body Location object that should be created. (required)
+     * @param  string                          $number Plugin number (required)
+     * @param  \RackbeatApp\Client\Model\Body5 $body   Location object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -105,10 +105,10 @@ class PluginsApi
      *
      * Set plugin settings
      *
-     * @param  string $number Plugin number (required)
-     * @param  \Swagger\Client\Model\Body5 $body Location object that should be created. (required)
+     * @param  string                          $number Plugin number (required)
+     * @param  \RackbeatApp\Client\Model\Body5 $body   Location object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -159,8 +159,8 @@ class PluginsApi
      *
      * Set plugin settings
      *
-     * @param  string $number Plugin number (required)
-     * @param  \Swagger\Client\Model\Body5 $body Location object that should be created. (required)
+     * @param  string                          $number Plugin number (required)
+     * @param  \RackbeatApp\Client\Model\Body5 $body   Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -180,8 +180,8 @@ class PluginsApi
      *
      * Set plugin settings
      *
-     * @param  string $number Plugin number (required)
-     * @param  \Swagger\Client\Model\Body5 $body Location object that should be created. (required)
+     * @param  string                          $number Plugin number (required)
+     * @param  \RackbeatApp\Client\Model\Body5 $body   Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -217,8 +217,8 @@ class PluginsApi
     /**
      * Create request for operation 'setPluginSettings'
      *
-     * @param  string $number Plugin number (required)
-     * @param  \Swagger\Client\Model\Body5 $body Location object that should be created. (required)
+     * @param  string                          $number Plugin number (required)
+     * @param  \RackbeatApp\Client\Model\Body5 $body   Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

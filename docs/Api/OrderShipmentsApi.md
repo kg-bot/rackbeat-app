@@ -1,4 +1,4 @@
-# Swagger\Client\OrderShipmentsApi
+# RackbeatApp\Client\OrderShipmentsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -40,7 +40,7 @@ Delete existing order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -90,7 +90,7 @@ Download delivery note pdf file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -140,7 +140,7 @@ Download order shipment pdf file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -190,7 +190,7 @@ Download single order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -238,7 +238,7 @@ Download delivery note pdf file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -288,7 +288,7 @@ Download order shipment pdf file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -338,7 +338,7 @@ Download single order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -386,7 +386,7 @@ Request to download order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -426,7 +426,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexOrderShipments**
-> \Swagger\Client\Model\OrderShipmentList indexOrderShipments($number, $employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number)
+> \RackbeatApp\Client\Model\OrderShipmentList indexOrderShipments($number, $employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number)
 
 Index order shipments
 
@@ -437,7 +437,7 @@ Index order shipments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -477,7 +477,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipmentList**](../Model/OrderShipmentList.md)
+[**\RackbeatApp\Client\Model\OrderShipmentList**](../Model/OrderShipmentList.md)
 
 ### Authorization
 
@@ -491,7 +491,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexOrderShipmentsGeneral**
-> \Swagger\Client\Model\OrderShipmentList indexOrderShipmentsGeneral($employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number)
+> \RackbeatApp\Client\Model\OrderShipmentList indexOrderShipmentsGeneral($employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number)
 
 Index order shipments
 
@@ -502,7 +502,7 @@ Index order shipments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -540,7 +540,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipmentList**](../Model/OrderShipmentList.md)
+[**\RackbeatApp\Client\Model\OrderShipmentList**](../Model/OrderShipmentList.md)
 
 ### Authorization
 
@@ -554,7 +554,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexShipmentLines**
-> \Swagger\Client\Model\OrderShipmentLineList indexShipmentLines($number, $shipment_id)
+> \RackbeatApp\Client\Model\OrderShipmentLineList indexShipmentLines($number, $shipment_id)
 
 Index shipment lines
 
@@ -565,7 +565,7 @@ Index shipment lines
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -591,7 +591,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipmentLineList**](../Model/OrderShipmentLineList.md)
+[**\RackbeatApp\Client\Model\OrderShipmentLineList**](../Model/OrderShipmentLineList.md)
 
 ### Authorization
 
@@ -605,7 +605,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **markPickedOrderShipment**
-> \Swagger\Client\Model\OrderShipment markPickedOrderShipment($number, $shipment_id)
+> \RackbeatApp\Client\Model\OrderShipment markPickedOrderShipment($number, $shipment_id)
 
 Mark order shipment as picked
 
@@ -616,7 +616,7 @@ Mark order shipment as picked
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -642,7 +642,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipment**](../Model/OrderShipment.md)
+[**\RackbeatApp\Client\Model\OrderShipment**](../Model/OrderShipment.md)
 
 ### Authorization
 
@@ -667,7 +667,7 @@ Mark shipment line as picked
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -719,7 +719,7 @@ Mark shipment line as unpicked
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -760,7 +760,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **markShippedOrderShipment**
-> \Swagger\Client\Model\OrderShipment markShippedOrderShipment($number, $shipment_id)
+> \RackbeatApp\Client\Model\OrderShipment markShippedOrderShipment($number, $shipment_id)
 
 Mark order shipment as shipped
 
@@ -771,7 +771,7 @@ Mark order shipment as shipped
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -797,7 +797,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipment**](../Model/OrderShipment.md)
+[**\RackbeatApp\Client\Model\OrderShipment**](../Model/OrderShipment.md)
 
 ### Authorization
 
@@ -822,7 +822,7 @@ Multiply download order shipments
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -870,7 +870,7 @@ Download order shipment pdf file in a stream
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -920,7 +920,7 @@ Request to download order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -960,7 +960,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showOrderShipment**
-> \Swagger\Client\Model\OrderShipment showOrderShipment($number, $shipment_id)
+> \RackbeatApp\Client\Model\OrderShipment showOrderShipment($number, $shipment_id)
 
 Show single order shipment
 
@@ -971,7 +971,7 @@ Show single order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -997,7 +997,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipment**](../Model/OrderShipment.md)
+[**\RackbeatApp\Client\Model\OrderShipment**](../Model/OrderShipment.md)
 
 ### Authorization
 
@@ -1011,7 +1011,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showShipmentLine**
-> \Swagger\Client\Model\OrderShipmentLine showShipmentLine($number, $shipment_id, $shipment_line_id)
+> \RackbeatApp\Client\Model\OrderShipmentLine showShipmentLine($number, $shipment_id, $shipment_line_id)
 
 Show single shipment line
 
@@ -1022,7 +1022,7 @@ Show single shipment line
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1050,7 +1050,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipmentLine**](../Model/OrderShipmentLine.md)
+[**\RackbeatApp\Client\Model\OrderShipmentLine**](../Model/OrderShipmentLine.md)
 
 ### Authorization
 
@@ -1064,7 +1064,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeOrderShipment**
-> \Swagger\Client\Model\OrderShipment storeOrderShipment($number)
+> \RackbeatApp\Client\Model\OrderShipment storeOrderShipment($number)
 
 Create new order shipment
 
@@ -1075,7 +1075,7 @@ Create new order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1099,7 +1099,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OrderShipment**](../Model/OrderShipment.md)
+[**\RackbeatApp\Client\Model\OrderShipment**](../Model/OrderShipment.md)
 
 ### Authorization
 
@@ -1124,7 +1124,7 @@ Download single order shipment
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrderShipmentsApi(
+$apiInstance = new RackbeatApp\Client\Api\OrderShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

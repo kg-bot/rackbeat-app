@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * UsersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class UsersApi
      *
      * @param  string $number User number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class UsersApi
      *
      * @param  string $number User number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -314,9 +314,9 @@ class UsersApi
      * Index user
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\UserList
+     * @return \RackbeatApp\Client\Model\UserList
      */
     public function indexUser()
     {
@@ -330,14 +330,14 @@ class UsersApi
      * Index user
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\UserList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\UserList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexUserWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\UserList';
-        $request = $this->indexUserRequest();
+        $returnType = '\RackbeatApp\Client\Model\UserList';
+        $request    = $this->indexUserRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -388,7 +388,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\UserList',
+                        '\RackbeatApp\Client\Model\UserList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -428,8 +428,8 @@ class UsersApi
      */
     public function indexUserAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\UserList';
-        $request = $this->indexUserRequest();
+        $returnType = '\RackbeatApp\Client\Model\UserList';
+        $request    = $this->indexUserRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -558,9 +558,9 @@ class UsersApi
      *
      * @param  string $number User number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\User
+     * @return \RackbeatApp\Client\Model\User
      */
     public function showUser($number)
     {
@@ -575,14 +575,14 @@ class UsersApi
      *
      * @param  string $number User number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
      */
     public function showUserWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\User';
-        $request = $this->showUserRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\User';
+        $request    = $this->showUserRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -633,7 +633,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\User',
+                        '\RackbeatApp\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -675,8 +675,8 @@ class UsersApi
      */
     public function showUserAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\User';
-        $request = $this->showUserRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\User';
+        $request    = $this->showUserRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -818,11 +818,11 @@ class UsersApi
      *
      * Create new user
      *
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body User object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\User
+     * @return \RackbeatApp\Client\Model\User
      */
     public function storeUser($body)
     {
@@ -835,16 +835,16 @@ class UsersApi
      *
      * Create new user
      *
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body User object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeUserWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\User';
-        $request = $this->storeUserRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\User';
+        $request    = $this->storeUserRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -895,7 +895,7 @@ class UsersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\User',
+                        '\RackbeatApp\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -910,7 +910,7 @@ class UsersApi
      *
      * Create new user
      *
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body User object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -930,15 +930,15 @@ class UsersApi
      *
      * Create new user
      *
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body User object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeUserAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\User';
-        $request = $this->storeUserRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\User';
+        $request    = $this->storeUserRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -980,7 +980,7 @@ class UsersApi
     /**
      * Create request for operation 'storeUser'
      *
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body User object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1075,12 +1075,12 @@ class UsersApi
      *
      * Update existing user
      *
-     * @param  string $number User number (required)
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  string                             $number User number (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body   User object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\User
+     * @return \RackbeatApp\Client\Model\User
      */
     public function updateUser($number, $body)
     {
@@ -1093,17 +1093,17 @@ class UsersApi
      *
      * Update existing user
      *
-     * @param  string $number User number (required)
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  string                             $number User number (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body   User object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\User, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateUserWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\User';
-        $request = $this->updateUserRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\User';
+        $request    = $this->updateUserRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1154,7 +1154,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\User',
+                        '\RackbeatApp\Client\Model\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1169,8 +1169,8 @@ class UsersApi
      *
      * Update existing user
      *
-     * @param  string $number User number (required)
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  string                             $number User number (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body   User object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1190,16 +1190,16 @@ class UsersApi
      *
      * Update existing user
      *
-     * @param  string $number User number (required)
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  string                             $number User number (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body   User object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateUserAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\User';
-        $request = $this->updateUserRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\User';
+        $request    = $this->updateUserRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1241,8 +1241,8 @@ class UsersApi
     /**
      * Create request for operation 'updateUser'
      *
-     * @param  string $number User number (required)
-     * @param  \Swagger\Client\Model\UserForm $body User object that should be created. (required)
+     * @param  string                             $number User number (required)
+     * @param  \RackbeatApp\Client\Model\UserForm $body   User object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

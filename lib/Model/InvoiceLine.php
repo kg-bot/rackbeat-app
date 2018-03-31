@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InvoiceLine Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,14 +56,14 @@ class InvoiceLine implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'lineable_id' => 'int',
+        'lineable_id'   => 'int',
         'lineable_type' => 'string',
-        'location_id' => 'int',
-        'location' => '\Swagger\Client\Model\SupplierInvoiceLineLocation',
-        'name' => 'string',
-        'quantity' => 'int',
-        'line_price' => 'float',
-        'variations' => 'object'
+        'location_id'   => 'int',
+        'location'      => '\RackbeatApp\Client\Model\SupplierInvoiceLineLocation',
+        'name'          => 'string',
+        'quantity'      => 'int',
+        'line_price'    => 'float',
+        'variations'    => 'object'
     ];
 
     /**
@@ -321,7 +321,7 @@ class InvoiceLine implements ModelInterface, ArrayAccess
     /**
      * Gets location
      *
-     * @return \Swagger\Client\Model\SupplierInvoiceLineLocation
+     * @return \RackbeatApp\Client\Model\SupplierInvoiceLineLocation
      */
     public function getLocation()
     {
@@ -331,7 +331,7 @@ class InvoiceLine implements ModelInterface, ArrayAccess
     /**
      * Sets location
      *
-     * @param \Swagger\Client\Model\SupplierInvoiceLineLocation $location location
+     * @param \RackbeatApp\Client\Model\SupplierInvoiceLineLocation $location location
      *
      * @return $this
      */

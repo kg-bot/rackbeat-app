@@ -1,4 +1,4 @@
-# Swagger\Client\ProductGroupsApi
+# RackbeatApp\Client\ProductGroupsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -25,7 +25,7 @@ Delete existing product group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexProductGroup**
-> \Swagger\Client\Model\ProductGroupList indexProductGroup($is_draft)
+> \RackbeatApp\Client\Model\ProductGroupList indexProductGroup($is_draft)
 
 Index product group
 
@@ -73,7 +73,7 @@ Index product group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductGroupList**](../Model/ProductGroupList.md)
+[**\RackbeatApp\Client\Model\ProductGroupList**](../Model/ProductGroupList.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **publishProductGroup**
-> \Swagger\Client\Model\ProductGroup publishProductGroup($number)
+> \RackbeatApp\Client\Model\ProductGroup publishProductGroup($number)
 
 Create new draft product group
 
@@ -122,7 +122,7 @@ Create new draft product group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductGroup**](../Model/ProductGroup.md)
+[**\RackbeatApp\Client\Model\ProductGroup**](../Model/ProductGroup.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showProductGroup**
-> \Swagger\Client\Model\ProductGroup showProductGroup($number)
+> \RackbeatApp\Client\Model\ProductGroup showProductGroup($number)
 
 Show single product group
 
@@ -171,7 +171,7 @@ Show single product group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductGroup**](../Model/ProductGroup.md)
+[**\RackbeatApp\Client\Model\ProductGroup**](../Model/ProductGroup.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeDraftProductGroup**
-> \Swagger\Client\Model\ProductGroup storeDraftProductGroup($body)
+> \RackbeatApp\Client\Model\ProductGroup storeDraftProductGroup($body)
 
 Create new draft product group
 
@@ -220,12 +220,12 @@ Create new draft product group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ProductGroupForm(); // \Swagger\Client\Model\ProductGroupForm | Product group object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductGroupForm(); // \RackbeatApp\Client\Model\ProductGroupForm | Product group object that should be created.
 
 try {
     $result = $apiInstance->storeDraftProductGroup($body);
@@ -240,11 +240,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProductGroupForm**](../Model/ProductGroupForm.md)| Product group object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductGroupForm**](../Model/ProductGroupForm.md)| Product group object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductGroup**](../Model/ProductGroup.md)
+[**\RackbeatApp\Client\Model\ProductGroup**](../Model/ProductGroup.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeProductGroup**
-> \Swagger\Client\Model\ProductGroup storeProductGroup($body)
+> \RackbeatApp\Client\Model\ProductGroup storeProductGroup($body)
 
 Create new product group
 
@@ -269,12 +269,12 @@ Create new product group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\ProductGroupForm(); // \Swagger\Client\Model\ProductGroupForm | Product group object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductGroupForm(); // \RackbeatApp\Client\Model\ProductGroupForm | Product group object that should be created.
 
 try {
     $result = $apiInstance->storeProductGroup($body);
@@ -289,11 +289,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ProductGroupForm**](../Model/ProductGroupForm.md)| Product group object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductGroupForm**](../Model/ProductGroupForm.md)| Product group object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductGroup**](../Model/ProductGroup.md)
+[**\RackbeatApp\Client\Model\ProductGroup**](../Model/ProductGroup.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProductGroup**
-> \Swagger\Client\Model\ProductGroup updateProductGroup($number, $body)
+> \RackbeatApp\Client\Model\ProductGroup updateProductGroup($number, $body)
 
 Update existing product group
 
@@ -318,13 +318,13 @@ Update existing product group
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ProductGroupsApi(
+$apiInstance = new RackbeatApp\Client\Api\ProductGroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Product Group number
-$body = new \Swagger\Client\Model\ProductGroupForm(); // \Swagger\Client\Model\ProductGroupForm | Product group object that should be created.
+$body = new \RackbeatApp\Client\Model\ProductGroupForm(); // \RackbeatApp\Client\Model\ProductGroupForm | Product group object that should be created.
 
 try {
     $result = $apiInstance->updateProductGroup($number, $body);
@@ -340,11 +340,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Product Group number |
- **body** | [**\Swagger\Client\Model\ProductGroupForm**](../Model/ProductGroupForm.md)| Product group object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\ProductGroupForm**](../Model/ProductGroupForm.md)| Product group object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductGroup**](../Model/ProductGroup.md)
+[**\RackbeatApp\Client\Model\ProductGroup**](../Model/ProductGroup.md)
 
 ### Authorization
 

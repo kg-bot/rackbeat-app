@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InlineResponse2061 Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class InlineResponse2061 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'supplier_invoices' => '\Swagger\Client\Model\SupplierInvoice[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'supplier_invoices' => '\RackbeatApp\Client\Model\SupplierInvoice[]',
+        'total'             => 'int',
+        'pages'             => 'int',
+        'limit'             => 'int',
+        'page'              => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class InlineResponse2061 implements ModelInterface, ArrayAccess
     /**
      * Gets supplier_invoices
      *
-     * @return \Swagger\Client\Model\SupplierInvoice[]
+     * @return \RackbeatApp\Client\Model\SupplierInvoice[]
      */
     public function getSupplierInvoices()
     {
@@ -241,7 +241,7 @@ class InlineResponse2061 implements ModelInterface, ArrayAccess
     /**
      * Sets supplier_invoices
      *
-     * @param \Swagger\Client\Model\SupplierInvoice[] $supplier_invoices supplier_invoices
+     * @param \RackbeatApp\Client\Model\SupplierInvoice[] $supplier_invoices supplier_invoices
      *
      * @return $this
      */

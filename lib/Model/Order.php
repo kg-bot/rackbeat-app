@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,33 +56,33 @@ class Order implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'total_subtotal' => 'float',
-        'total_total' => 'float',
-        'currency' => 'string',
-        'currency_rate' => 'float',
-        'is_booked' => 'bool',
-        'is_shipped' => 'bool',
-        'is_partly_shipped' => 'bool',
-        'is_invoiced' => 'bool',
+        'number'             => 'int',
+        'total_subtotal'     => 'float',
+        'total_total'        => 'float',
+        'currency'           => 'string',
+        'currency_rate'      => 'float',
+        'is_booked'          => 'bool',
+        'is_shipped'         => 'bool',
+        'is_partly_shipped'  => 'bool',
+        'is_invoiced'        => 'bool',
         'is_partly_invoiced' => 'bool',
-        'is_paid' => 'bool',
-        'is_partly_paid' => 'bool',
-        'lines' => '\Swagger\Client\Model\OrderLine[]',
-        'customer_id' => 'int',
-        'customer' => '\Swagger\Client\Model\Customer',
-        'employee_id' => 'int',
-        'employee' => '\Swagger\Client\Model\Employee',
-        'note' => 'string',
-        'address_street' => 'string',
-        'address_street2' => 'string',
-        'address_city' => 'string',
-        'address_zipcode' => 'string',
-        'address_country' => 'string',
-        'deliver_at' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'self' => 'string'
+        'is_paid'            => 'bool',
+        'is_partly_paid'     => 'bool',
+        'lines'              => '\RackbeatApp\Client\Model\OrderLine[]',
+        'customer_id'        => 'int',
+        'customer'           => '\RackbeatApp\Client\Model\Customer',
+        'employee_id'        => 'int',
+        'employee'           => '\RackbeatApp\Client\Model\Employee',
+        'note'               => 'string',
+        'address_street'     => 'string',
+        'address_street2'    => 'string',
+        'address_city'       => 'string',
+        'address_zipcode'    => 'string',
+        'address_country'    => 'string',
+        'deliver_at'         => 'string',
+        'created_at'         => 'string',
+        'updated_at'         => 'string',
+        'self'               => 'string'
     ];
 
     /**
@@ -697,7 +697,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\OrderLine[]
+     * @return \RackbeatApp\Client\Model\OrderLine[]
      */
     public function getLines()
     {
@@ -707,7 +707,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\OrderLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\OrderLine[] $lines lines
      *
      * @return $this
      */
@@ -745,7 +745,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets customer
      *
-     * @return \Swagger\Client\Model\Customer
+     * @return \RackbeatApp\Client\Model\Customer
      */
     public function getCustomer()
     {
@@ -755,7 +755,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets customer
      *
-     * @param \Swagger\Client\Model\Customer $customer customer
+     * @param \RackbeatApp\Client\Model\Customer $customer customer
      *
      * @return $this
      */
@@ -793,7 +793,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets employee
      *
-     * @return \Swagger\Client\Model\Employee
+     * @return \RackbeatApp\Client\Model\Employee
      */
     public function getEmployee()
     {
@@ -803,7 +803,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets employee
      *
-     * @param \Swagger\Client\Model\Employee $employee employee
+     * @param \RackbeatApp\Client\Model\Employee $employee employee
      *
      * @return $this
      */

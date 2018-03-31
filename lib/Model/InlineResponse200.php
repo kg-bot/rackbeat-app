@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InlineResponse200 Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'product' => '\Swagger\Client\Model\Product'
+        'product' => '\RackbeatApp\Client\Model\Product',
     ];
 
     /**
@@ -207,7 +207,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Gets product
      *
-     * @return \Swagger\Client\Model\Product
+     * @return \RackbeatApp\Client\Model\Product
      */
     public function getProduct()
     {
@@ -217,7 +217,7 @@ class InlineResponse200 implements ModelInterface, ArrayAccess
     /**
      * Sets product
      *
-     * @param \Swagger\Client\Model\Product $product product
+     * @param \RackbeatApp\Client\Model\Product $product product
      *
      * @return $this
      */

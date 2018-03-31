@@ -1,4 +1,4 @@
-# Swagger\Client\WebhooksApi
+# RackbeatApp\Client\WebhooksApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing webhook
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WebhooksApi(
+$apiInstance = new RackbeatApp\Client\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexWebhook**
-> \Swagger\Client\Model\WebhookList indexWebhook()
+> \RackbeatApp\Client\Model\WebhookList indexWebhook()
 
 Index webhook
 
@@ -71,7 +71,7 @@ Index webhook
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WebhooksApi(
+$apiInstance = new RackbeatApp\Client\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\WebhookList**](../Model/WebhookList.md)
+[**\RackbeatApp\Client\Model\WebhookList**](../Model/WebhookList.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showWebhook**
-> \Swagger\Client\Model\Webhook showWebhook($number)
+> \RackbeatApp\Client\Model\Webhook showWebhook($number)
 
 Show single webhook
 
@@ -116,7 +116,7 @@ Show single webhook
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WebhooksApi(
+$apiInstance = new RackbeatApp\Client\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Webhook**](../Model/Webhook.md)
+[**\RackbeatApp\Client\Model\Webhook**](../Model/Webhook.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeWebhook**
-> \Swagger\Client\Model\Webhook storeWebhook($body)
+> \RackbeatApp\Client\Model\Webhook storeWebhook($body)
 
 Create new webhook
 
@@ -165,12 +165,12 @@ Create new webhook
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WebhooksApi(
+$apiInstance = new RackbeatApp\Client\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\WebhookForm(); // \Swagger\Client\Model\WebhookForm | Webhook object that should be created.
+$body = new \RackbeatApp\Client\Model\WebhookForm(); // \RackbeatApp\Client\Model\WebhookForm | Webhook object that should be created.
 
 try {
     $result = $apiInstance->storeWebhook($body);
@@ -185,11 +185,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\WebhookForm**](../Model/WebhookForm.md)| Webhook object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\WebhookForm**](../Model/WebhookForm.md)| Webhook object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Webhook**](../Model/Webhook.md)
+[**\RackbeatApp\Client\Model\Webhook**](../Model/Webhook.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateWebhook**
-> \Swagger\Client\Model\Webhook updateWebhook($number, $body)
+> \RackbeatApp\Client\Model\Webhook updateWebhook($number, $body)
 
 Update existing webhook
 
@@ -214,13 +214,13 @@ Update existing webhook
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WebhooksApi(
+$apiInstance = new RackbeatApp\Client\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Webhook number
-$body = new \Swagger\Client\Model\WebhookForm(); // \Swagger\Client\Model\WebhookForm | Webhook object that should be created.
+$body = new \RackbeatApp\Client\Model\WebhookForm(); // \RackbeatApp\Client\Model\WebhookForm | Webhook object that should be created.
 
 try {
     $result = $apiInstance->updateWebhook($number, $body);
@@ -236,11 +236,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Webhook number |
- **body** | [**\Swagger\Client\Model\WebhookForm**](../Model/WebhookForm.md)| Webhook object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\WebhookForm**](../Model/WebhookForm.md)| Webhook object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Webhook**](../Model/Webhook.md)
+[**\RackbeatApp\Client\Model\Webhook**](../Model/Webhook.md)
 
 ### Authorization
 

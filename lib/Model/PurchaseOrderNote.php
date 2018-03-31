@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrderNote Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class PurchaseOrderNote implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'user_id' => 'int',
-        'user' => '\Swagger\Client\Model\User',
-        'note' => 'string',
-        'note_html' => 'string',
+        'id'         => 'int',
+        'user_id'    => 'int',
+        'user'       => '\RackbeatApp\Client\Model\User',
+        'note'       => 'string',
+        'note_html'  => 'string',
         'created_at' => 'string',
         'updated_at' => 'string'
     ];
@@ -291,7 +291,7 @@ class PurchaseOrderNote implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \Swagger\Client\Model\User
+     * @return \RackbeatApp\Client\Model\User
      */
     public function getUser()
     {
@@ -301,7 +301,7 @@ class PurchaseOrderNote implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \Swagger\Client\Model\User $user user
+     * @param \RackbeatApp\Client\Model\User $user user
      *
      * @return $this
      */

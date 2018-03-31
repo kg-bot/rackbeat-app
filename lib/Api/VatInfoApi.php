@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * VatInfoApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -91,9 +91,9 @@ class VatInfoApi
      * @param  string $country Country number (required)
      * @param  string $vat Vat number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2009
+     * @return \RackbeatApp\Client\Model\InlineResponse2009
      */
     public function indexVatInfo($country, $vat)
     {
@@ -109,14 +109,14 @@ class VatInfoApi
      * @param  string $country Country number (required)
      * @param  string $vat Vat number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2009, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2009, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexVatInfoWithHttpInfo($country, $vat)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2009';
-        $request = $this->indexVatInfoRequest($country, $vat);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2009';
+        $request    = $this->indexVatInfoRequest($country, $vat);
 
         try {
             $options = $this->createHttpClientOption();
@@ -167,7 +167,7 @@ class VatInfoApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2009',
+                        '\RackbeatApp\Client\Model\InlineResponse2009',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,8 +211,8 @@ class VatInfoApi
      */
     public function indexVatInfoAsyncWithHttpInfo($country, $vat)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2009';
-        $request = $this->indexVatInfoRequest($country, $vat);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2009';
+        $request    = $this->indexVatInfoRequest($country, $vat);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

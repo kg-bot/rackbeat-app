@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
 **product_id** | **int** |  | [optional] 
-**variation_options** | [**\Swagger\Client\Model\VariationTypeOption[]**](VariationTypeOption.md) |  | [optional] 
+**variation_options** | [**\RackbeatApp\Client\Model\VariationTypeOption[]**](VariationTypeOption.md) |  | [optional] 
 **default_location_id** | **int** |  | [optional] 
 **barcode** | **string** |  | [optional] 
 **created_at** | **string** |  | [optional] 

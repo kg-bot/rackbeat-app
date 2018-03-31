@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * StatsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -89,9 +89,9 @@ class StatsApi
      * Index stats
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Stats
+     * @return \RackbeatApp\Client\Model\Stats
      */
     public function indexStats()
     {
@@ -105,14 +105,14 @@ class StatsApi
      * Index stats
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Stats, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Stats, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexStatsWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Stats';
-        $request = $this->indexStatsRequest();
+        $returnType = '\RackbeatApp\Client\Model\Stats';
+        $request    = $this->indexStatsRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -163,7 +163,7 @@ class StatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Stats',
+                        '\RackbeatApp\Client\Model\Stats',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -203,8 +203,8 @@ class StatsApi
      */
     public function indexStatsAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\Stats';
-        $request = $this->indexStatsRequest();
+        $returnType = '\RackbeatApp\Client\Model\Stats';
+        $request    = $this->indexStatsRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

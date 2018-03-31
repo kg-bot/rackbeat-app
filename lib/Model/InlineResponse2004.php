@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InlineResponse2004 Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'invoices' => '\Swagger\Client\Model\Invoice[]',
-        'upcoming' => '\Swagger\Client\Model\Invoice[]'
+        'invoices' => '\RackbeatApp\Client\Model\Invoice[]',
+        'upcoming' => '\RackbeatApp\Client\Model\Invoice[]',
     ];
 
     /**
@@ -213,7 +213,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Gets invoices
      *
-     * @return \Swagger\Client\Model\Invoice[]
+     * @return \RackbeatApp\Client\Model\Invoice[]
      */
     public function getInvoices()
     {
@@ -223,7 +223,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Sets invoices
      *
-     * @param \Swagger\Client\Model\Invoice[] $invoices invoices
+     * @param \RackbeatApp\Client\Model\Invoice[] $invoices invoices
      *
      * @return $this
      */
@@ -237,7 +237,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Gets upcoming
      *
-     * @return \Swagger\Client\Model\Invoice[]
+     * @return \RackbeatApp\Client\Model\Invoice[]
      */
     public function getUpcoming()
     {
@@ -247,7 +247,7 @@ class InlineResponse2004 implements ModelInterface, ArrayAccess
     /**
      * Sets upcoming
      *
-     * @param \Swagger\Client\Model\Invoice[] $upcoming upcoming
+     * @param \RackbeatApp\Client\Model\Invoice[] $upcoming upcoming
      *
      * @return $this
      */

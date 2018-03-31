@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrderUninvoicedLines Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class PurchaseOrderUninvoicedLines implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'uninvoiced_lines' => '\Swagger\Client\Model\PurchaseOrderLine[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'uninvoiced_lines' => '\RackbeatApp\Client\Model\PurchaseOrderLine[]',
+        'total'            => 'int',
+        'pages'            => 'int',
+        'limit'            => 'int',
+        'page'             => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class PurchaseOrderUninvoicedLines implements ModelInterface, ArrayAccess
     /**
      * Gets uninvoiced_lines
      *
-     * @return \Swagger\Client\Model\PurchaseOrderLine[]
+     * @return \RackbeatApp\Client\Model\PurchaseOrderLine[]
      */
     public function getUninvoicedLines()
     {
@@ -241,7 +241,7 @@ class PurchaseOrderUninvoicedLines implements ModelInterface, ArrayAccess
     /**
      * Sets uninvoiced_lines
      *
-     * @param \Swagger\Client\Model\PurchaseOrderLine[] $uninvoiced_lines uninvoiced_lines
+     * @param \RackbeatApp\Client\Model\PurchaseOrderLine[] $uninvoiced_lines uninvoiced_lines
      *
      * @return $this
      */

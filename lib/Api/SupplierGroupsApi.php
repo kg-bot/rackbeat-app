@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SupplierGroupsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class SupplierGroupsApi
      *
      * @param  string $number Supplier group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class SupplierGroupsApi
      *
      * @param  string $number Supplier group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -315,9 +315,9 @@ class SupplierGroupsApi
      *
      * @param  string $name Filter by name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SupplierGroupsList
+     * @return \RackbeatApp\Client\Model\SupplierGroupsList
      */
     public function indexSupplierGroups($name = null)
     {
@@ -332,14 +332,14 @@ class SupplierGroupsApi
      *
      * @param  string $name Filter by name (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SupplierGroupsList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\SupplierGroupsList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexSupplierGroupsWithHttpInfo($name = null)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroupsList';
-        $request = $this->indexSupplierGroupsRequest($name);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroupsList';
+        $request    = $this->indexSupplierGroupsRequest($name);
 
         try {
             $options = $this->createHttpClientOption();
@@ -390,7 +390,7 @@ class SupplierGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SupplierGroupsList',
+                        '\RackbeatApp\Client\Model\SupplierGroupsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -432,8 +432,8 @@ class SupplierGroupsApi
      */
     public function indexSupplierGroupsAsyncWithHttpInfo($name = null)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroupsList';
-        $request = $this->indexSupplierGroupsRequest($name);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroupsList';
+        $request    = $this->indexSupplierGroupsRequest($name);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -567,9 +567,9 @@ class SupplierGroupsApi
      *
      * @param  string $number Supplier group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SupplierGroup
+     * @return \RackbeatApp\Client\Model\SupplierGroup
      */
     public function showSupplierGroup($number)
     {
@@ -584,14 +584,14 @@ class SupplierGroupsApi
      *
      * @param  string $number Supplier group number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SupplierGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\SupplierGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function showSupplierGroupWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroup';
-        $request = $this->showSupplierGroupRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroup';
+        $request    = $this->showSupplierGroupRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -642,7 +642,7 @@ class SupplierGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SupplierGroup',
+                        '\RackbeatApp\Client\Model\SupplierGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -684,8 +684,8 @@ class SupplierGroupsApi
      */
     public function showSupplierGroupAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroup';
-        $request = $this->showSupplierGroupRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroup';
+        $request    = $this->showSupplierGroupRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -827,11 +827,11 @@ class SupplierGroupsApi
      *
      * Create new supplier group
      *
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SupplierGroup
+     * @return \RackbeatApp\Client\Model\SupplierGroup
      */
     public function storeSupplierGroup($body)
     {
@@ -844,16 +844,16 @@ class SupplierGroupsApi
      *
      * Create new supplier group
      *
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SupplierGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\SupplierGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeSupplierGroupWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroup';
-        $request = $this->storeSupplierGroupRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroup';
+        $request    = $this->storeSupplierGroupRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -904,7 +904,7 @@ class SupplierGroupsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SupplierGroup',
+                        '\RackbeatApp\Client\Model\SupplierGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -919,7 +919,7 @@ class SupplierGroupsApi
      *
      * Create new supplier group
      *
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -939,15 +939,15 @@ class SupplierGroupsApi
      *
      * Create new supplier group
      *
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeSupplierGroupAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroup';
-        $request = $this->storeSupplierGroupRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroup';
+        $request    = $this->storeSupplierGroupRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -989,7 +989,7 @@ class SupplierGroupsApi
     /**
      * Create request for operation 'storeSupplierGroup'
      *
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body Supplier group object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1084,12 +1084,12 @@ class SupplierGroupsApi
      *
      * Update existing supplier group
      *
-     * @param  string $number Supplier group number (required)
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be updated. (required)
+     * @param  string                                      $number Supplier group number (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body   Supplier group object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SupplierGroupForm
+     * @return \RackbeatApp\Client\Model\SupplierGroupForm
      */
     public function updateSupplierGroup($number, $body)
     {
@@ -1102,17 +1102,17 @@ class SupplierGroupsApi
      *
      * Update existing supplier group
      *
-     * @param  string $number Supplier group number (required)
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be updated. (required)
+     * @param  string                                      $number Supplier group number (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body   Supplier group object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SupplierGroupForm, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\SupplierGroupForm, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateSupplierGroupWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroupForm';
-        $request = $this->updateSupplierGroupRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroupForm';
+        $request    = $this->updateSupplierGroupRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1163,7 +1163,7 @@ class SupplierGroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SupplierGroupForm',
+                        '\RackbeatApp\Client\Model\SupplierGroupForm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1178,8 +1178,8 @@ class SupplierGroupsApi
      *
      * Update existing supplier group
      *
-     * @param  string $number Supplier group number (required)
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be updated. (required)
+     * @param  string                                      $number Supplier group number (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body   Supplier group object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1199,16 +1199,16 @@ class SupplierGroupsApi
      *
      * Update existing supplier group
      *
-     * @param  string $number Supplier group number (required)
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be updated. (required)
+     * @param  string                                      $number Supplier group number (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body   Supplier group object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateSupplierGroupAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\SupplierGroupForm';
-        $request = $this->updateSupplierGroupRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\SupplierGroupForm';
+        $request    = $this->updateSupplierGroupRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1250,8 +1250,8 @@ class SupplierGroupsApi
     /**
      * Create request for operation 'updateSupplierGroup'
      *
-     * @param  string $number Supplier group number (required)
-     * @param  \Swagger\Client\Model\SupplierGroupForm $body Supplier group object that should be updated. (required)
+     * @param  string                                      $number Supplier group number (required)
+     * @param  \RackbeatApp\Client\Model\SupplierGroupForm $body   Supplier group object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

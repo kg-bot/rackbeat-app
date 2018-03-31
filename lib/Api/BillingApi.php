@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * BillingApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class BillingApi
      *
      * @param  string $id Invoice id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class BillingApi
      *
      * @param  string $id Invoice id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -314,9 +314,9 @@ class BillingApi
      * Billing invoices
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2004
+     * @return \RackbeatApp\Client\Model\InlineResponse2004
      */
     public function billingInvoices()
     {
@@ -330,14 +330,14 @@ class BillingApi
      * Billing invoices
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
      */
     public function billingInvoicesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2004';
-        $request = $this->billingInvoicesRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2004';
+        $request    = $this->billingInvoicesRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -388,7 +388,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2004',
+                        '\RackbeatApp\Client\Model\InlineResponse2004',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -428,8 +428,8 @@ class BillingApi
      */
     public function billingInvoicesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2004';
-        $request = $this->billingInvoicesRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2004';
+        $request    = $this->billingInvoicesRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -557,9 +557,9 @@ class BillingApi
      * Billing sources
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2005
+     * @return \RackbeatApp\Client\Model\InlineResponse2005
      */
     public function billingSources()
     {
@@ -573,14 +573,14 @@ class BillingApi
      * Billing sources
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2005, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2005, HTTP status code, HTTP response headers (array of strings)
      */
     public function billingSourcesWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2005';
-        $request = $this->billingSourcesRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2005';
+        $request    = $this->billingSourcesRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -631,7 +631,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2005',
+                        '\RackbeatApp\Client\Model\InlineResponse2005',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -671,8 +671,8 @@ class BillingApi
      */
     public function billingSourcesAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2005';
-        $request = $this->billingSourcesRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2005';
+        $request    = $this->billingSourcesRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -800,9 +800,9 @@ class BillingApi
      * Subscriptions list
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2002
+     * @return \RackbeatApp\Client\Model\InlineResponse2002
      */
     public function subscriptionsList()
     {
@@ -816,14 +816,14 @@ class BillingApi
      * Subscriptions list
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsListWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
-        $request = $this->subscriptionsListRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2002';
+        $request    = $this->subscriptionsListRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -874,7 +874,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2002',
+                        '\RackbeatApp\Client\Model\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -914,8 +914,8 @@ class BillingApi
      */
     public function subscriptionsListAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
-        $request = $this->subscriptionsListRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2002';
+        $request    = $this->subscriptionsListRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1043,9 +1043,9 @@ class BillingApi
      * Subscriptions list by type
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2002
+     * @return \RackbeatApp\Client\Model\InlineResponse2002
      */
     public function subscriptionsListByType()
     {
@@ -1059,14 +1059,14 @@ class BillingApi
      * Subscriptions list by type
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsListByTypeWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
-        $request = $this->subscriptionsListByTypeRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2002';
+        $request    = $this->subscriptionsListByTypeRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -1117,7 +1117,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2002',
+                        '\RackbeatApp\Client\Model\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1157,8 +1157,8 @@ class BillingApi
      */
     public function subscriptionsListByTypeAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2002';
-        $request = $this->subscriptionsListByTypeRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2002';
+        $request    = $this->subscriptionsListByTypeRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1286,9 +1286,9 @@ class BillingApi
      * Total monthly price
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2003
+     * @return \RackbeatApp\Client\Model\InlineResponse2003
      */
     public function totalMonthlyPrice()
     {
@@ -1302,14 +1302,14 @@ class BillingApi
      * Total monthly price
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
      */
     public function totalMonthlyPriceWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2003';
-        $request = $this->totalMonthlyPriceRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2003';
+        $request    = $this->totalMonthlyPriceRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -1360,7 +1360,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2003',
+                        '\RackbeatApp\Client\Model\InlineResponse2003',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1400,8 +1400,8 @@ class BillingApi
      */
     public function totalMonthlyPriceAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2003';
-        $request = $this->totalMonthlyPriceRequest();
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2003';
+        $request    = $this->totalMonthlyPriceRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

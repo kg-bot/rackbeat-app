@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,17 +26,13 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
-
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+namespace RackbeatApp\Client;
 
 /**
  * UnitsApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen

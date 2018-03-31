@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Body1 Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,18 +56,18 @@ class Body1 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'string',
-        'group' => 'int',
-        'name' => 'string',
-        'barcode' => 'string',
-        'sales_price' => 'float',
+        'number'                 => 'string',
+        'group'                  => 'int',
+        'name'                   => 'string',
+        'barcode'                => 'string',
+        'sales_price'            => 'float',
         'recommended_cost_price' => 'float',
-        'min_order' => 'int',
-        'min_stock' => 'int',
-        'stock_quantity' => 'int',
-        'default_location_id' => 'int',
-        'unit' => 'int',
-        'physical' => '\Swagger\Client\Model\ProductsnumberPhysical'
+        'min_order'              => 'int',
+        'min_stock'              => 'int',
+        'stock_quantity'         => 'int',
+        'default_location_id'    => 'int',
+        'unit'                   => 'int',
+        'physical'               => '\RackbeatApp\Client\Model\ProductsnumberPhysical',
     ];
 
     /**
@@ -570,7 +570,7 @@ class Body1 implements ModelInterface, ArrayAccess
     /**
      * Gets physical
      *
-     * @return \Swagger\Client\Model\ProductsnumberPhysical
+     * @return \RackbeatApp\Client\Model\ProductsnumberPhysical
      */
     public function getPhysical()
     {
@@ -580,7 +580,7 @@ class Body1 implements ModelInterface, ArrayAccess
     /**
      * Sets physical
      *
-     * @param \Swagger\Client\Model\ProductsnumberPhysical $physical physical
+     * @param \RackbeatApp\Client\Model\ProductsnumberPhysical $physical physical
      *
      * @return $this
      */

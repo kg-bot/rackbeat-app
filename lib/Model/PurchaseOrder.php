@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrder Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,32 +56,32 @@ class PurchaseOrder implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'total_subtotal' => 'float',
-        'total_total' => 'float',
-        'currency' => 'string',
-        'currency_rate' => 'float',
-        'is_booked' => 'bool',
-        'is_received' => 'bool',
-        'is_partly_received' => 'bool',
-        'is_invoiced' => 'bool',
-        'is_partly_invoiced' => 'bool',
-        'is_sent' => 'bool',
+        'number'                => 'int',
+        'total_subtotal'        => 'float',
+        'total_total'           => 'float',
+        'currency'              => 'string',
+        'currency_rate'         => 'float',
+        'is_booked'             => 'bool',
+        'is_received'           => 'bool',
+        'is_partly_received'    => 'bool',
+        'is_invoiced'           => 'bool',
+        'is_partly_invoiced'    => 'bool',
+        'is_sent'               => 'bool',
         'delivery_time_in_days' => 'int',
-        'lines' => '\Swagger\Client\Model\PurchaseOrderLine[]',
-        'supplier_id' => 'int',
-        'supplier' => '\Swagger\Client\Model\Supplier',
-        'employee_id' => 'int',
-        'employee' => '\Swagger\Client\Model\Employee',
-        'note' => 'string',
-        'address_street' => 'string',
-        'address_street2' => 'string',
-        'address_city' => 'string',
-        'address_zipcode' => 'string',
-        'address_country' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'self' => 'string'
+        'lines'                 => '\RackbeatApp\Client\Model\PurchaseOrderLine[]',
+        'supplier_id'           => 'int',
+        'supplier'              => '\RackbeatApp\Client\Model\Supplier',
+        'employee_id'           => 'int',
+        'employee'              => '\RackbeatApp\Client\Model\Employee',
+        'note'                  => 'string',
+        'address_street'        => 'string',
+        'address_street2'       => 'string',
+        'address_city'          => 'string',
+        'address_zipcode'       => 'string',
+        'address_country'       => 'string',
+        'created_at'            => 'string',
+        'updated_at'            => 'string',
+        'self'                  => 'string'
     ];
 
     /**
@@ -691,7 +691,7 @@ class PurchaseOrder implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\PurchaseOrderLine[]
+     * @return \RackbeatApp\Client\Model\PurchaseOrderLine[]
      */
     public function getLines()
     {
@@ -701,7 +701,7 @@ class PurchaseOrder implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\PurchaseOrderLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\PurchaseOrderLine[] $lines lines
      *
      * @return $this
      */
@@ -739,7 +739,7 @@ class PurchaseOrder implements ModelInterface, ArrayAccess
     /**
      * Gets supplier
      *
-     * @return \Swagger\Client\Model\Supplier
+     * @return \RackbeatApp\Client\Model\Supplier
      */
     public function getSupplier()
     {
@@ -749,7 +749,7 @@ class PurchaseOrder implements ModelInterface, ArrayAccess
     /**
      * Sets supplier
      *
-     * @param \Swagger\Client\Model\Supplier $supplier supplier
+     * @param \RackbeatApp\Client\Model\Supplier $supplier supplier
      *
      * @return $this
      */
@@ -787,7 +787,7 @@ class PurchaseOrder implements ModelInterface, ArrayAccess
     /**
      * Gets employee
      *
-     * @return \Swagger\Client\Model\Employee
+     * @return \RackbeatApp\Client\Model\Employee
      */
     public function getEmployee()
     {
@@ -797,7 +797,7 @@ class PurchaseOrder implements ModelInterface, ArrayAccess
     /**
      * Sets employee
      *
-     * @param \Swagger\Client\Model\Employee $employee employee
+     * @param \RackbeatApp\Client\Model\Employee $employee employee
      *
      * @return $this
      */

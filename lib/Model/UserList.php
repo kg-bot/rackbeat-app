@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * UserList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class UserList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'users' => '\Swagger\Client\Model\User[]',
+        'users' => '\RackbeatApp\Client\Model\User[]',
         'total' => 'int',
         'pages' => 'int',
         'limit' => 'int',
-        'page' => 'int'
+        'page'  => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class UserList implements ModelInterface, ArrayAccess
     /**
      * Gets users
      *
-     * @return \Swagger\Client\Model\User[]
+     * @return \RackbeatApp\Client\Model\User[]
      */
     public function getUsers()
     {
@@ -241,7 +241,7 @@ class UserList implements ModelInterface, ArrayAccess
     /**
      * Sets users
      *
-     * @param \Swagger\Client\Model\User[] $users users
+     * @param \RackbeatApp\Client\Model\User[] $users users
      *
      * @return $this
      */

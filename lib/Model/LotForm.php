@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LotForm Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class LotForm implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
+        'name'                      => 'string',
         'add_products_individually' => 'bool',
-        'lines' => '\Swagger\Client\Model\LotLine[]',
-        'number' => 'string'
+        'lines'                     => '\RackbeatApp\Client\Model\LotLine[]',
+        'number'                    => 'string'
     ];
 
     /**
@@ -302,7 +302,7 @@ class LotForm implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\LotLine[]
+     * @return \RackbeatApp\Client\Model\LotLine[]
      */
     public function getLines()
     {
@@ -312,7 +312,7 @@ class LotForm implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\LotLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\LotLine[] $lines lines
      *
      * @return $this
      */

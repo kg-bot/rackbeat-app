@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**suppliers** | [**\Swagger\Client\Model\Supplier[]**](Supplier.md) |  | [optional] 
+**suppliers** | [**\RackbeatApp\Client\Model\Supplier[]**](Supplier.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

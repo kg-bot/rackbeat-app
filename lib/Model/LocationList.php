@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LocationList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class LocationList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'locations' => '\Swagger\Client\Model\Location[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'locations' => '\RackbeatApp\Client\Model\Location[]',
+        'total'     => 'int',
+        'pages'     => 'int',
+        'limit'     => 'int',
+        'page'      => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class LocationList implements ModelInterface, ArrayAccess
     /**
      * Gets locations
      *
-     * @return \Swagger\Client\Model\Location[]
+     * @return \RackbeatApp\Client\Model\Location[]
      */
     public function getLocations()
     {
@@ -241,7 +241,7 @@ class LocationList implements ModelInterface, ArrayAccess
     /**
      * Sets locations
      *
-     * @param \Swagger\Client\Model\Location[] $locations locations
+     * @param \RackbeatApp\Client\Model\Location[] $locations locations
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**purchase_orders** | [**\Swagger\Client\Model\PurchaseOrder[]**](PurchaseOrder.md) |  | [optional] 
+**purchase_orders** | [**\RackbeatApp\Client\Model\PurchaseOrder[]**](PurchaseOrder.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

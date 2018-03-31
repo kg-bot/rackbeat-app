@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **child_id** | **string** |  | [optional] 
 **child_type** | **string** |  | [optional] 
 **location_id** | **string** |  | [optional] 
-**location** | [**\Swagger\Client\Model\Location**](Location.md) |  | [optional] 
+**location** | [**\RackbeatApp\Client\Model\Location**](Location.md) |  | [optional] 
 **name** | **string** |  | [optional] 
 **quantity** | **int** |  | [optional] 
 **line_price** | **float** | Allows up to 6 decimals. Must not use comma (,) but instead a period (.) for decimals. | [optional] 

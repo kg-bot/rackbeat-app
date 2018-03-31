@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * ProductVariation Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,14 +56,14 @@ class ProductVariation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'product_id' => 'int',
-        'variation_options' => '\Swagger\Client\Model\VariationTypeOption[]',
+        'id'                  => 'int',
+        'product_id'          => 'int',
+        'variation_options'   => '\RackbeatApp\Client\Model\VariationTypeOption[]',
         'default_location_id' => 'int',
-        'barcode' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'self' => 'string'
+        'barcode'             => 'string',
+        'created_at'          => 'string',
+        'updated_at'          => 'string',
+        'self'                => 'string'
     ];
 
     /**
@@ -304,7 +304,7 @@ class ProductVariation implements ModelInterface, ArrayAccess
     /**
      * Gets variation_options
      *
-     * @return \Swagger\Client\Model\VariationTypeOption[]
+     * @return \RackbeatApp\Client\Model\VariationTypeOption[]
      */
     public function getVariationOptions()
     {
@@ -314,7 +314,7 @@ class ProductVariation implements ModelInterface, ArrayAccess
     /**
      * Sets variation_options
      *
-     * @param \Swagger\Client\Model\VariationTypeOption[] $variation_options variation_options
+     * @param \RackbeatApp\Client\Model\VariationTypeOption[] $variation_options variation_options
      *
      * @return $this
      */

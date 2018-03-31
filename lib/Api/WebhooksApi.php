@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * WebhooksApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class WebhooksApi
      *
      * @param  string $number Webhook number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class WebhooksApi
      *
      * @param  string $number Webhook number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -314,9 +314,9 @@ class WebhooksApi
      * Index webhook
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\WebhookList
+     * @return \RackbeatApp\Client\Model\WebhookList
      */
     public function indexWebhook()
     {
@@ -330,14 +330,14 @@ class WebhooksApi
      * Index webhook
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\WebhookList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\WebhookList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexWebhookWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\WebhookList';
-        $request = $this->indexWebhookRequest();
+        $returnType = '\RackbeatApp\Client\Model\WebhookList';
+        $request    = $this->indexWebhookRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -388,7 +388,7 @@ class WebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\WebhookList',
+                        '\RackbeatApp\Client\Model\WebhookList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -428,8 +428,8 @@ class WebhooksApi
      */
     public function indexWebhookAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\WebhookList';
-        $request = $this->indexWebhookRequest();
+        $returnType = '\RackbeatApp\Client\Model\WebhookList';
+        $request    = $this->indexWebhookRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -558,9 +558,9 @@ class WebhooksApi
      *
      * @param  string $number Webhook number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Webhook
+     * @return \RackbeatApp\Client\Model\Webhook
      */
     public function showWebhook($number)
     {
@@ -575,14 +575,14 @@ class WebhooksApi
      *
      * @param  string $number Webhook number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Webhook, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Webhook, HTTP status code, HTTP response headers (array of strings)
      */
     public function showWebhookWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Webhook';
-        $request = $this->showWebhookRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Webhook';
+        $request    = $this->showWebhookRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -633,7 +633,7 @@ class WebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Webhook',
+                        '\RackbeatApp\Client\Model\Webhook',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -675,8 +675,8 @@ class WebhooksApi
      */
     public function showWebhookAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Webhook';
-        $request = $this->showWebhookRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Webhook';
+        $request    = $this->showWebhookRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -818,11 +818,11 @@ class WebhooksApi
      *
      * Create new webhook
      *
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body Webhook object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Webhook
+     * @return \RackbeatApp\Client\Model\Webhook
      */
     public function storeWebhook($body)
     {
@@ -835,16 +835,16 @@ class WebhooksApi
      *
      * Create new webhook
      *
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body Webhook object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Webhook, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Webhook, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeWebhookWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Webhook';
-        $request = $this->storeWebhookRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Webhook';
+        $request    = $this->storeWebhookRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -895,7 +895,7 @@ class WebhooksApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Webhook',
+                        '\RackbeatApp\Client\Model\Webhook',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -910,7 +910,7 @@ class WebhooksApi
      *
      * Create new webhook
      *
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body Webhook object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -930,15 +930,15 @@ class WebhooksApi
      *
      * Create new webhook
      *
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body Webhook object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeWebhookAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Webhook';
-        $request = $this->storeWebhookRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Webhook';
+        $request    = $this->storeWebhookRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -980,7 +980,7 @@ class WebhooksApi
     /**
      * Create request for operation 'storeWebhook'
      *
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body Webhook object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1075,12 +1075,12 @@ class WebhooksApi
      *
      * Update existing webhook
      *
-     * @param  string $number Webhook number (required)
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  string                                $number Webhook number (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body   Webhook object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Webhook
+     * @return \RackbeatApp\Client\Model\Webhook
      */
     public function updateWebhook($number, $body)
     {
@@ -1093,17 +1093,17 @@ class WebhooksApi
      *
      * Update existing webhook
      *
-     * @param  string $number Webhook number (required)
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  string                                $number Webhook number (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body   Webhook object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Webhook, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Webhook, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateWebhookWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Webhook';
-        $request = $this->updateWebhookRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Webhook';
+        $request    = $this->updateWebhookRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1154,7 +1154,7 @@ class WebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Webhook',
+                        '\RackbeatApp\Client\Model\Webhook',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1169,8 +1169,8 @@ class WebhooksApi
      *
      * Update existing webhook
      *
-     * @param  string $number Webhook number (required)
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  string                                $number Webhook number (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body   Webhook object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1190,16 +1190,16 @@ class WebhooksApi
      *
      * Update existing webhook
      *
-     * @param  string $number Webhook number (required)
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  string                                $number Webhook number (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body   Webhook object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateWebhookAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Webhook';
-        $request = $this->updateWebhookRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Webhook';
+        $request    = $this->updateWebhookRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1241,8 +1241,8 @@ class WebhooksApi
     /**
      * Create request for operation 'updateWebhook'
      *
-     * @param  string $number Webhook number (required)
-     * @param  \Swagger\Client\Model\WebhookForm $body Webhook object that should be created. (required)
+     * @param  string                                $number Webhook number (required)
+     * @param  \RackbeatApp\Client\Model\WebhookForm $body   Webhook object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

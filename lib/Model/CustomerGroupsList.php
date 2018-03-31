@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CustomerGroupsList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class CustomerGroupsList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'customer_groups' => '\Swagger\Client\Model\CustomerGroup[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'customer_groups' => '\RackbeatApp\Client\Model\CustomerGroup[]',
+        'total'           => 'int',
+        'pages'           => 'int',
+        'limit'           => 'int',
+        'page'            => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class CustomerGroupsList implements ModelInterface, ArrayAccess
     /**
      * Gets customer_groups
      *
-     * @return \Swagger\Client\Model\CustomerGroup[]
+     * @return \RackbeatApp\Client\Model\CustomerGroup[]
      */
     public function getCustomerGroups()
     {
@@ -241,7 +241,7 @@ class CustomerGroupsList implements ModelInterface, ArrayAccess
     /**
      * Sets customer_groups
      *
-     * @param \Swagger\Client\Model\CustomerGroup[] $customer_groups customer_groups
+     * @param \RackbeatApp\Client\Model\CustomerGroup[] $customer_groups customer_groups
      *
      * @return $this
      */

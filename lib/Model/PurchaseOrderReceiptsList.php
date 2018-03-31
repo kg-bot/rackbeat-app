@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrderReceiptsList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class PurchaseOrderReceiptsList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'purchase_order_receipts' => '\Swagger\Client\Model\PurchaseOrderReceipt[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'purchase_order_receipts' => '\RackbeatApp\Client\Model\PurchaseOrderReceipt[]',
+        'total'                   => 'int',
+        'pages'                   => 'int',
+        'limit'                   => 'int',
+        'page'                    => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class PurchaseOrderReceiptsList implements ModelInterface, ArrayAccess
     /**
      * Gets purchase_order_receipts
      *
-     * @return \Swagger\Client\Model\PurchaseOrderReceipt[]
+     * @return \RackbeatApp\Client\Model\PurchaseOrderReceipt[]
      */
     public function getPurchaseOrderReceipts()
     {
@@ -241,7 +241,7 @@ class PurchaseOrderReceiptsList implements ModelInterface, ArrayAccess
     /**
      * Sets purchase_order_receipts
      *
-     * @param \Swagger\Client\Model\PurchaseOrderReceipt[] $purchase_order_receipts purchase_order_receipts
+     * @param \RackbeatApp\Client\Model\PurchaseOrderReceipt[] $purchase_order_receipts purchase_order_receipts
      *
      * @return $this
      */

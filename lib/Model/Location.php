@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Location Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,15 +56,15 @@ class Location implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'name' => 'string',
-        'is_draft' => 'bool',
-        'is_default' => 'bool',
-        'parent_id' => 'int',
-        'child_locations' => '\Swagger\Client\Model\Location[]',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'self' => 'string'
+        'number'          => 'int',
+        'name'            => 'string',
+        'is_draft'        => 'bool',
+        'is_default'      => 'bool',
+        'parent_id'       => 'int',
+        'child_locations' => '\RackbeatApp\Client\Model\Location[]',
+        'created_at'      => 'string',
+        'updated_at'      => 'string',
+        'self'            => 'string'
     ];
 
     /**
@@ -375,7 +375,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Gets child_locations
      *
-     * @return \Swagger\Client\Model\Location[]
+     * @return \RackbeatApp\Client\Model\Location[]
      */
     public function getChildLocations()
     {
@@ -385,7 +385,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets child_locations
      *
-     * @param \Swagger\Client\Model\Location[] $child_locations child_locations
+     * @param \RackbeatApp\Client\Model\Location[] $child_locations child_locations
      *
      * @return $this
      */

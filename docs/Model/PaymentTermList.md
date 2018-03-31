@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**products_drafts** | [**\Swagger\Client\Model\PaymentTerm[]**](PaymentTerm.md) |  | [optional] 
+**products_drafts** | [**\RackbeatApp\Client\Model\PaymentTerm[]**](PaymentTerm.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

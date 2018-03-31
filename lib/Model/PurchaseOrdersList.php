@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrdersList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class PurchaseOrdersList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'purchase_orders' => '\Swagger\Client\Model\PurchaseOrder[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'purchase_orders' => '\RackbeatApp\Client\Model\PurchaseOrder[]',
+        'total'           => 'int',
+        'pages'           => 'int',
+        'limit'           => 'int',
+        'page'            => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class PurchaseOrdersList implements ModelInterface, ArrayAccess
     /**
      * Gets purchase_orders
      *
-     * @return \Swagger\Client\Model\PurchaseOrder[]
+     * @return \RackbeatApp\Client\Model\PurchaseOrder[]
      */
     public function getPurchaseOrders()
     {
@@ -241,7 +241,7 @@ class PurchaseOrdersList implements ModelInterface, ArrayAccess
     /**
      * Sets purchase_orders
      *
-     * @param \Swagger\Client\Model\PurchaseOrder[] $purchase_orders purchase_orders
+     * @param \RackbeatApp\Client\Model\PurchaseOrder[] $purchase_orders purchase_orders
      *
      * @return $this
      */

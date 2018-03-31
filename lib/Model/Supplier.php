@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Supplier Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,26 +56,26 @@ class Supplier implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'company_name' => 'string',
-        'company_vat' => 'string',
-        'address_street' => 'string',
-        'address_street2' => 'string',
-        'address_city' => 'string',
-        'address_zipcode' => 'string',
-        'address_country' => 'string',
-        'contact_email' => 'string',
-        'contact_phone' => 'string',
-        'locale' => 'string',
-        'currency' => 'string',
-        'vat_zone' => 'string',
+        'number'           => 'int',
+        'company_name'     => 'string',
+        'company_vat'      => 'string',
+        'address_street'   => 'string',
+        'address_street2'  => 'string',
+        'address_city'     => 'string',
+        'address_zipcode'  => 'string',
+        'address_country'  => 'string',
+        'contact_email'    => 'string',
+        'contact_phone'    => 'string',
+        'locale'           => 'string',
+        'currency'         => 'string',
+        'vat_zone'         => 'string',
         'payment_terms_id' => 'int',
-        'payment_terms' => '\Swagger\Client\Model\PaymentTerm',
-        'supplier_groups' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'is_deleted' => 'bool',
-        'self' => 'string'
+        'payment_terms'    => '\RackbeatApp\Client\Model\PaymentTerm',
+        'supplier_groups'  => 'string',
+        'created_at'       => 'string',
+        'updated_at'       => 'string',
+        'is_deleted'       => 'bool',
+        'self'             => 'string'
     ];
 
     /**
@@ -789,7 +789,7 @@ class Supplier implements ModelInterface, ArrayAccess
     /**
      * Gets payment_terms
      *
-     * @return \Swagger\Client\Model\PaymentTerm
+     * @return \RackbeatApp\Client\Model\PaymentTerm
      */
     public function getPaymentTerms()
     {
@@ -799,7 +799,7 @@ class Supplier implements ModelInterface, ArrayAccess
     /**
      * Sets payment_terms
      *
-     * @param \Swagger\Client\Model\PaymentTerm $payment_terms payment_terms
+     * @param \RackbeatApp\Client\Model\PaymentTerm $payment_terms payment_terms
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# Swagger\Client\PaymentTermsApi
+# RackbeatApp\Client\PaymentTermsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing payment term
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\PaymentTermsApi(
+$apiInstance = new RackbeatApp\Client\Api\PaymentTermsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexPaymentTerm**
-> \Swagger\Client\Model\PaymentTermList indexPaymentTerm()
+> \RackbeatApp\Client\Model\PaymentTermList indexPaymentTerm()
 
 Index payment term
 
@@ -71,7 +71,7 @@ Index payment term
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\PaymentTermsApi(
+$apiInstance = new RackbeatApp\Client\Api\PaymentTermsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\PaymentTermList**](../Model/PaymentTermList.md)
+[**\RackbeatApp\Client\Model\PaymentTermList**](../Model/PaymentTermList.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showPaymentTerm**
-> \Swagger\Client\Model\PaymentTerm showPaymentTerm($number)
+> \RackbeatApp\Client\Model\PaymentTerm showPaymentTerm($number)
 
 Show single payment term
 
@@ -116,7 +116,7 @@ Show single payment term
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\PaymentTermsApi(
+$apiInstance = new RackbeatApp\Client\Api\PaymentTermsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PaymentTerm**](../Model/PaymentTerm.md)
+[**\RackbeatApp\Client\Model\PaymentTerm**](../Model/PaymentTerm.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storePaymentTerm**
-> \Swagger\Client\Model\PaymentTerm storePaymentTerm($body)
+> \RackbeatApp\Client\Model\PaymentTerm storePaymentTerm($body)
 
 Create new payment term
 
@@ -165,12 +165,12 @@ Create new payment term
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\PaymentTermsApi(
+$apiInstance = new RackbeatApp\Client\Api\PaymentTermsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\PaymentTermForm(); // \Swagger\Client\Model\PaymentTermForm | Payment term object that should be created.
+$body = new \RackbeatApp\Client\Model\PaymentTermForm(); // \RackbeatApp\Client\Model\PaymentTermForm | Payment term object that should be created.
 
 try {
     $result = $apiInstance->storePaymentTerm($body);
@@ -185,11 +185,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PaymentTermForm**](../Model/PaymentTermForm.md)| Payment term object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\PaymentTermForm**](../Model/PaymentTermForm.md)| Payment term object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\PaymentTerm**](../Model/PaymentTerm.md)
+[**\RackbeatApp\Client\Model\PaymentTerm**](../Model/PaymentTerm.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePaymentTerm**
-> \Swagger\Client\Model\PaymentTerm updatePaymentTerm($number)
+> \RackbeatApp\Client\Model\PaymentTerm updatePaymentTerm($number)
 
 Update existing payment term
 
@@ -214,7 +214,7 @@ Update existing payment term
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\PaymentTermsApi(
+$apiInstance = new RackbeatApp\Client\Api\PaymentTermsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\PaymentTerm**](../Model/PaymentTerm.md)
+[**\RackbeatApp\Client\Model\PaymentTerm**](../Model/PaymentTerm.md)
 
 ### Authorization
 

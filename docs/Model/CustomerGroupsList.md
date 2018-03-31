@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**customer_groups** | [**\Swagger\Client\Model\CustomerGroup[]**](CustomerGroup.md) |  | [optional] 
+**customer_groups** | [**\RackbeatApp\Client\Model\CustomerGroup[]**](CustomerGroup.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

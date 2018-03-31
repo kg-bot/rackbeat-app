@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * PurchaseOrderLine Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,17 +56,17 @@ class PurchaseOrderLine implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'child_id' => 'string',
-        'child_type' => 'string',
-        'location_id' => 'string',
-        'location' => '\Swagger\Client\Model\Location',
-        'name' => 'string',
-        'quantity' => 'int',
-        'line_price' => 'float',
-        'variations' => 'null[]',
+        'id'                   => 'int',
+        'child_id'             => 'string',
+        'child_type'           => 'string',
+        'location_id'          => 'string',
+        'location'             => '\RackbeatApp\Client\Model\Location',
+        'name'                 => 'string',
+        'quantity'             => 'int',
+        'line_price'           => 'float',
+        'variations'           => 'null[]',
         'variations_formatted' => 'null[]',
-        'product_variation' => 'string'
+        'product_variation'    => 'string'
     ];
 
     /**
@@ -381,7 +381,7 @@ class PurchaseOrderLine implements ModelInterface, ArrayAccess
     /**
      * Gets location
      *
-     * @return \Swagger\Client\Model\Location
+     * @return \RackbeatApp\Client\Model\Location
      */
     public function getLocation()
     {
@@ -391,7 +391,7 @@ class PurchaseOrderLine implements ModelInterface, ArrayAccess
     /**
      * Sets location
      *
-     * @param \Swagger\Client\Model\Location $location location
+     * @param \RackbeatApp\Client\Model\Location $location location
      *
      * @return $this
      */

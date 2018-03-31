@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * CustomersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -91,7 +91,7 @@ class CustomersApi
      * @param  string $number Customer group number (required)
      * @param  string $product_number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,7 +108,7 @@ class CustomersApi
      * @param  string $number Customer group number (required)
      * @param  string $product_number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -335,9 +335,9 @@ class CustomersApi
      * @param  string $number Customer number (required)
      * @param  string $product_number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerProduct
+     * @return \RackbeatApp\Client\Model\CustomerProduct
      */
     public function customersPproductsResetPrice($number, $product_number)
     {
@@ -353,14 +353,14 @@ class CustomersApi
      * @param  string $number Customer number (required)
      * @param  string $product_number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerProduct, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerProduct, HTTP status code, HTTP response headers (array of strings)
      */
     public function customersPproductsResetPriceWithHttpInfo($number, $product_number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerProduct';
-        $request = $this->customersPproductsResetPriceRequest($number, $product_number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerProduct';
+        $request    = $this->customersPproductsResetPriceRequest($number, $product_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -411,7 +411,7 @@ class CustomersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerProduct',
+                        '\RackbeatApp\Client\Model\CustomerProduct',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -455,8 +455,8 @@ class CustomersApi
      */
     public function customersPproductsResetPriceAsyncWithHttpInfo($number, $product_number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerProduct';
-        $request = $this->customersPproductsResetPriceRequest($number, $product_number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerProduct';
+        $request    = $this->customersPproductsResetPriceRequest($number, $product_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -615,7 +615,7 @@ class CustomersApi
      *
      * @param  string $number Customer number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -631,7 +631,7 @@ class CustomersApi
      *
      * @param  string $number Customer number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -841,9 +841,9 @@ class CustomersApi
      * @param  string $company_name Filter by company name (optional)
      * @param  string $search Search in company name or number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomersList
+     * @return \RackbeatApp\Client\Model\CustomersList
      */
     public function indexCustomers($company_name = null, $search = null)
     {
@@ -859,14 +859,14 @@ class CustomersApi
      * @param  string $company_name Filter by company name (optional)
      * @param  string $search Search in company name or number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomersList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomersList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCustomersWithHttpInfo($company_name = null, $search = null)
     {
-        $returnType = '\Swagger\Client\Model\CustomersList';
-        $request = $this->indexCustomersRequest($company_name, $search);
+        $returnType = '\RackbeatApp\Client\Model\CustomersList';
+        $request    = $this->indexCustomersRequest($company_name, $search);
 
         try {
             $options = $this->createHttpClientOption();
@@ -917,7 +917,7 @@ class CustomersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomersList',
+                        '\RackbeatApp\Client\Model\CustomersList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -961,8 +961,8 @@ class CustomersApi
      */
     public function indexCustomersAsyncWithHttpInfo($company_name = null, $search = null)
     {
-        $returnType = '\Swagger\Client\Model\CustomersList';
-        $request = $this->indexCustomersRequest($company_name, $search);
+        $returnType = '\RackbeatApp\Client\Model\CustomersList';
+        $request    = $this->indexCustomersRequest($company_name, $search);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1101,9 +1101,9 @@ class CustomersApi
      *
      * @param  string $number Customer number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Customer
+     * @return \RackbeatApp\Client\Model\Customer
      */
     public function indexCustomersProducts($number)
     {
@@ -1118,14 +1118,14 @@ class CustomersApi
      *
      * @param  string $number Customer number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexCustomersProductsWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->indexCustomersProductsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->indexCustomersProductsRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1176,7 +1176,7 @@ class CustomersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Customer',
+                        '\RackbeatApp\Client\Model\Customer',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1218,8 +1218,8 @@ class CustomersApi
      */
     public function indexCustomersProductsAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->indexCustomersProductsRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->indexCustomersProductsRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1364,9 +1364,9 @@ class CustomersApi
      * @param  string $number Customer number (required)
      * @param  string $product_number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerProduct
+     * @return \RackbeatApp\Client\Model\CustomerProduct
      */
     public function shoeCustomerProduct($number, $product_number)
     {
@@ -1382,14 +1382,14 @@ class CustomersApi
      * @param  string $number Customer number (required)
      * @param  string $product_number Product number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerProduct, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerProduct, HTTP status code, HTTP response headers (array of strings)
      */
     public function shoeCustomerProductWithHttpInfo($number, $product_number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerProduct';
-        $request = $this->shoeCustomerProductRequest($number, $product_number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerProduct';
+        $request    = $this->shoeCustomerProductRequest($number, $product_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1440,7 +1440,7 @@ class CustomersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerProduct',
+                        '\RackbeatApp\Client\Model\CustomerProduct',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1484,8 +1484,8 @@ class CustomersApi
      */
     public function shoeCustomerProductAsyncWithHttpInfo($number, $product_number)
     {
-        $returnType = '\Swagger\Client\Model\CustomerProduct';
-        $request = $this->shoeCustomerProductRequest($number, $product_number);
+        $returnType = '\RackbeatApp\Client\Model\CustomerProduct';
+        $request    = $this->shoeCustomerProductRequest($number, $product_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1644,9 +1644,9 @@ class CustomersApi
      *
      * @param  string $number Customer number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Customer
+     * @return \RackbeatApp\Client\Model\Customer
      */
     public function showCustomer($number)
     {
@@ -1661,14 +1661,14 @@ class CustomersApi
      *
      * @param  string $number Customer number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
      */
     public function showCustomerWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->showCustomerRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->showCustomerRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1719,7 +1719,7 @@ class CustomersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Customer',
+                        '\RackbeatApp\Client\Model\Customer',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1761,8 +1761,8 @@ class CustomersApi
      */
     public function showCustomerAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->showCustomerRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->showCustomerRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1904,11 +1904,11 @@ class CustomersApi
      *
      * Create new customer
      *
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Customer
+     * @return \RackbeatApp\Client\Model\Customer
      */
     public function storeCustomer($body)
     {
@@ -1921,16 +1921,16 @@ class CustomersApi
      *
      * Create new customer
      *
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeCustomerWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->storeCustomerRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->storeCustomerRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1981,7 +1981,7 @@ class CustomersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Customer',
+                        '\RackbeatApp\Client\Model\Customer',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1996,7 +1996,7 @@ class CustomersApi
      *
      * Create new customer
      *
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2016,15 +2016,15 @@ class CustomersApi
      *
      * Create new customer
      *
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeCustomerAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->storeCustomerRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->storeCustomerRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2066,7 +2066,7 @@ class CustomersApi
     /**
      * Create request for operation 'storeCustomer'
      *
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body Customer object that should be created.\&quot; (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2161,12 +2161,12 @@ class CustomersApi
      *
      * Update existing customer
      *
-     * @param  string $number Customer number (required)
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be updated. (required)
+     * @param  string                                 $number Customer number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body   Customer object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Customer
+     * @return \RackbeatApp\Client\Model\Customer
      */
     public function updateCustomer($number, $body)
     {
@@ -2179,17 +2179,17 @@ class CustomersApi
      *
      * Update existing customer
      *
-     * @param  string $number Customer number (required)
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be updated. (required)
+     * @param  string                                 $number Customer number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body   Customer object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCustomerWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->updateCustomerRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->updateCustomerRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2240,7 +2240,7 @@ class CustomersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Customer',
+                        '\RackbeatApp\Client\Model\Customer',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2255,8 +2255,8 @@ class CustomersApi
      *
      * Update existing customer
      *
-     * @param  string $number Customer number (required)
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be updated. (required)
+     * @param  string                                 $number Customer number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body   Customer object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2276,16 +2276,16 @@ class CustomersApi
      *
      * Update existing customer
      *
-     * @param  string $number Customer number (required)
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be updated. (required)
+     * @param  string                                 $number Customer number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body   Customer object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCustomerAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Customer';
-        $request = $this->updateCustomerRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Customer';
+        $request    = $this->updateCustomerRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2327,8 +2327,8 @@ class CustomersApi
     /**
      * Create request for operation 'updateCustomer'
      *
-     * @param  string $number Customer number (required)
-     * @param  \Swagger\Client\Model\CustomerForm $body Customer object that should be updated. (required)
+     * @param  string                                 $number Customer number (required)
+     * @param  \RackbeatApp\Client\Model\CustomerForm $body   Customer object that should be updated. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2437,13 +2437,13 @@ class CustomersApi
      *
      * Update customer product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product_number Product number (required)
-     * @param  \Swagger\Client\Model\Body3 $body Customers product object that should be created. (required)
+     * @param  string                          $number         Customer number (required)
+     * @param  string                          $product_number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body3 $body           Customers product object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CustomerProduct
+     * @return \RackbeatApp\Client\Model\CustomerProduct
      */
     public function updateCustomerProduct($number, $product_number, $body)
     {
@@ -2456,18 +2456,18 @@ class CustomersApi
      *
      * Update customer product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product_number Product number (required)
-     * @param  \Swagger\Client\Model\Body3 $body Customers product object that should be created. (required)
+     * @param  string                          $number         Customer number (required)
+     * @param  string                          $product_number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body3 $body           Customers product object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CustomerProduct, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\CustomerProduct, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCustomerProductWithHttpInfo($number, $product_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerProduct';
-        $request = $this->updateCustomerProductRequest($number, $product_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerProduct';
+        $request    = $this->updateCustomerProductRequest($number, $product_number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2518,7 +2518,7 @@ class CustomersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CustomerProduct',
+                        '\RackbeatApp\Client\Model\CustomerProduct',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2533,9 +2533,9 @@ class CustomersApi
      *
      * Update customer product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product_number Product number (required)
-     * @param  \Swagger\Client\Model\Body3 $body Customers product object that should be created. (required)
+     * @param  string                          $number         Customer number (required)
+     * @param  string                          $product_number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body3 $body           Customers product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2555,17 +2555,17 @@ class CustomersApi
      *
      * Update customer product
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product_number Product number (required)
-     * @param  \Swagger\Client\Model\Body3 $body Customers product object that should be created. (required)
+     * @param  string                          $number         Customer number (required)
+     * @param  string                          $product_number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body3 $body           Customers product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateCustomerProductAsyncWithHttpInfo($number, $product_number, $body)
     {
-        $returnType = '\Swagger\Client\Model\CustomerProduct';
-        $request = $this->updateCustomerProductRequest($number, $product_number, $body);
+        $returnType = '\RackbeatApp\Client\Model\CustomerProduct';
+        $request    = $this->updateCustomerProductRequest($number, $product_number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2607,9 +2607,9 @@ class CustomersApi
     /**
      * Create request for operation 'updateCustomerProduct'
      *
-     * @param  string $number Customer number (required)
-     * @param  string $product_number Product number (required)
-     * @param  \Swagger\Client\Model\Body3 $body Customers product object that should be created. (required)
+     * @param  string                          $number         Customer number (required)
+     * @param  string                          $product_number Product number (required)
+     * @param  \RackbeatApp\Client\Model\Body3 $body           Customers product object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

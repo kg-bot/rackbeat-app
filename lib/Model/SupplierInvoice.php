@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SupplierInvoice Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,27 +56,27 @@ class SupplierInvoice implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'currency' => 'string',
-        'currency_rate' => 'float',
-        'total_subtotal' => 'float',
-        'total_total' => 'float',
-        'balance' => 'float',
-        'is_booked' => 'bool',
-        'is_paid' => 'bool',
-        'is_party_paid' => 'bool',
-        'is_overpaid' => 'bool',
-        'lines' => '\Swagger\Client\Model\SupplierInvoiceLine[]',
-        'supplier_id' => 'int',
-        'note' => 'string',
-        'address_street' => 'string',
+        'number'          => 'int',
+        'currency'        => 'string',
+        'currency_rate'   => 'float',
+        'total_subtotal'  => 'float',
+        'total_total'     => 'float',
+        'balance'         => 'float',
+        'is_booked'       => 'bool',
+        'is_paid'         => 'bool',
+        'is_party_paid'   => 'bool',
+        'is_overpaid'     => 'bool',
+        'lines'           => '\RackbeatApp\Client\Model\SupplierInvoiceLine[]',
+        'supplier_id'     => 'int',
+        'note'            => 'string',
+        'address_street'  => 'string',
         'address_street2' => 'string',
-        'address_city' => 'string',
+        'address_city'    => 'string',
         'address_zipcode' => 'string',
         'address_country' => 'string',
-        'created_at' => 'string',
-        'updated_at' => 'string',
-        'self' => 'string'
+        'created_at'      => 'string',
+        'updated_at'      => 'string',
+        'self'            => 'string'
     ];
 
     /**
@@ -578,7 +578,7 @@ class SupplierInvoice implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\SupplierInvoiceLine[]
+     * @return \RackbeatApp\Client\Model\SupplierInvoiceLine[]
      */
     public function getLines()
     {
@@ -588,7 +588,7 @@ class SupplierInvoice implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\SupplierInvoiceLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\SupplierInvoiceLine[] $lines lines
      *
      * @return $this
      */

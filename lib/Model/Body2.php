@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * Body2 Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,16 +56,16 @@ class Body2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'number' => 'int',
-        'supplier_id' => 'int',
-        'currency' => 'string',
-        'address_street' => 'string',
+        'number'          => 'int',
+        'supplier_id'     => 'int',
+        'currency'        => 'string',
+        'address_street'  => 'string',
         'address_street2' => 'string',
-        'address_city' => 'string',
+        'address_city'    => 'string',
         'address_zipcode' => 'string',
         'address_country' => 'string',
-        'note' => 'string',
-        'lines' => '\Swagger\Client\Model\StoreSupplierInvoiceLine[]'
+        'note'            => 'string',
+        'lines'           => '\RackbeatApp\Client\Model\StoreSupplierInvoiceLine[]',
     ];
 
     /**
@@ -488,7 +488,7 @@ class Body2 implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Swagger\Client\Model\StoreSupplierInvoiceLine[]
+     * @return \RackbeatApp\Client\Model\StoreSupplierInvoiceLine[]
      */
     public function getLines()
     {
@@ -498,7 +498,7 @@ class Body2 implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Swagger\Client\Model\StoreSupplierInvoiceLine[] $lines lines
+     * @param \RackbeatApp\Client\Model\StoreSupplierInvoiceLine[] $lines lines
      *
      * @return $this
      */

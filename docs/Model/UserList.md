@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**users** | [**\Swagger\Client\Model\User[]**](User.md) |  | [optional] 
+**users** | [**\RackbeatApp\Client\Model\User[]**](User.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **pages** | **int** |  | [optional] 
 **limit** | **int** |  | [optional] 

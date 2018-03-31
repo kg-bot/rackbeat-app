@@ -7,10 +7,10 @@ Name | Type | Description | Notes
 **child_id** | **string** |  | [optional] 
 **child_type** | **string** | lor or product | [optional] 
 **location_id** | **int** |  | [optional] 
-**location** | [**\Swagger\Client\Model\Location**](Location.md) |  | [optional] 
+**location** | [**\RackbeatApp\Client\Model\Location**](Location.md) |  | [optional] 
 **quantity** | **int** |  | [optional] 
 **is_picked** | **bool** |  | [optional] 
-**picked_by** | [**\Swagger\Client\Model\User**](User.md) |  | [optional] 
+**picked_by** | [**\RackbeatApp\Client\Model\User**](User.md) |  | [optional] 
 **variations** | **string** |  | [optional] 
 **variations_formatted** | **string** |  | [optional] 
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * InventoryRegulationLine Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,16 +56,16 @@ class InventoryRegulationLine implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int',
-        'child_id' => 'int',
-        'child_type' => 'string',
-        'location_id' => 'int',
-        'location' => '\Swagger\Client\Model\Location',
-        'quantity' => 'int',
-        'variations' => '\Swagger\Client\Model\LineVariation[]',
+        'id'                   => 'int',
+        'child_id'             => 'int',
+        'child_type'           => 'string',
+        'location_id'          => 'int',
+        'location'             => '\RackbeatApp\Client\Model\Location',
+        'quantity'             => 'int',
+        'variations'           => '\RackbeatApp\Client\Model\LineVariation[]',
         'variations_formatted' => 'null[]',
-        'created_at' => 'string',
-        'updated_at' => 'string'
+        'created_at'           => 'string',
+        'updated_at'           => 'string'
     ];
 
     /**
@@ -357,7 +357,7 @@ class InventoryRegulationLine implements ModelInterface, ArrayAccess
     /**
      * Gets location
      *
-     * @return \Swagger\Client\Model\Location
+     * @return \RackbeatApp\Client\Model\Location
      */
     public function getLocation()
     {
@@ -367,7 +367,7 @@ class InventoryRegulationLine implements ModelInterface, ArrayAccess
     /**
      * Sets location
      *
-     * @param \Swagger\Client\Model\Location $location location
+     * @param \RackbeatApp\Client\Model\Location $location location
      *
      * @return $this
      */
@@ -405,7 +405,7 @@ class InventoryRegulationLine implements ModelInterface, ArrayAccess
     /**
      * Gets variations
      *
-     * @return \Swagger\Client\Model\LineVariation[]
+     * @return \RackbeatApp\Client\Model\LineVariation[]
      */
     public function getVariations()
     {
@@ -415,7 +415,7 @@ class InventoryRegulationLine implements ModelInterface, ArrayAccess
     /**
      * Sets variations
      *
-     * @param \Swagger\Client\Model\LineVariation[] $variations variations
+     * @param \RackbeatApp\Client\Model\LineVariation[] $variations variations
      *
      * @return $this
      */

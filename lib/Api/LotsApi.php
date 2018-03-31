@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LotsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class LotsApi
      *
      * @param  string $number Lot number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class LotsApi
      *
      * @param  string $number Lot number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -314,9 +314,9 @@ class LotsApi
      * Index lot
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\LotList
+     * @return \RackbeatApp\Client\Model\LotList
      */
     public function indexLot()
     {
@@ -330,14 +330,14 @@ class LotsApi
      * Index lot
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\LotList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\LotList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexLotWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\LotList';
-        $request = $this->indexLotRequest();
+        $returnType = '\RackbeatApp\Client\Model\LotList';
+        $request    = $this->indexLotRequest();
 
         try {
             $options = $this->createHttpClientOption();
@@ -388,7 +388,7 @@ class LotsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\LotList',
+                        '\RackbeatApp\Client\Model\LotList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -428,8 +428,8 @@ class LotsApi
      */
     public function indexLotAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\LotList';
-        $request = $this->indexLotRequest();
+        $returnType = '\RackbeatApp\Client\Model\LotList';
+        $request    = $this->indexLotRequest();
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -558,9 +558,9 @@ class LotsApi
      *
      * @param  string $number Lot number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Lot
+     * @return \RackbeatApp\Client\Model\Lot
      */
     public function showLot($number)
     {
@@ -575,14 +575,14 @@ class LotsApi
      *
      * @param  string $number Lot number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Lot, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Lot, HTTP status code, HTTP response headers (array of strings)
      */
     public function showLotWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Lot';
-        $request = $this->showLotRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Lot';
+        $request    = $this->showLotRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -633,7 +633,7 @@ class LotsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Lot',
+                        '\RackbeatApp\Client\Model\Lot',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -675,8 +675,8 @@ class LotsApi
      */
     public function showLotAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Lot';
-        $request = $this->showLotRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Lot';
+        $request    = $this->showLotRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -818,11 +818,11 @@ class LotsApi
      *
      * Create new lot
      *
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body Lot object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Lot
+     * @return \RackbeatApp\Client\Model\Lot
      */
     public function storeLot($body)
     {
@@ -835,16 +835,16 @@ class LotsApi
      *
      * Create new lot
      *
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body Lot object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Lot, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Lot, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeLotWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Lot';
-        $request = $this->storeLotRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Lot';
+        $request    = $this->storeLotRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -895,7 +895,7 @@ class LotsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Lot',
+                        '\RackbeatApp\Client\Model\Lot',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -910,7 +910,7 @@ class LotsApi
      *
      * Create new lot
      *
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body Lot object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -930,15 +930,15 @@ class LotsApi
      *
      * Create new lot
      *
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body Lot object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeLotAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Lot';
-        $request = $this->storeLotRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Lot';
+        $request    = $this->storeLotRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -980,7 +980,7 @@ class LotsApi
     /**
      * Create request for operation 'storeLot'
      *
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body Lot object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1075,12 +1075,12 @@ class LotsApi
      *
      * Update existing lot
      *
-     * @param  string $number Lot number (required)
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  string                            $number Lot number (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body   Lot object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Lot
+     * @return \RackbeatApp\Client\Model\Lot
      */
     public function updateLot($number, $body)
     {
@@ -1093,17 +1093,17 @@ class LotsApi
      *
      * Update existing lot
      *
-     * @param  string $number Lot number (required)
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  string                            $number Lot number (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body   Lot object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Lot, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Lot, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateLotWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Lot';
-        $request = $this->updateLotRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Lot';
+        $request    = $this->updateLotRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1154,7 +1154,7 @@ class LotsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Lot',
+                        '\RackbeatApp\Client\Model\Lot',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1169,8 +1169,8 @@ class LotsApi
      *
      * Update existing lot
      *
-     * @param  string $number Lot number (required)
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  string                            $number Lot number (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body   Lot object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1190,16 +1190,16 @@ class LotsApi
      *
      * Update existing lot
      *
-     * @param  string $number Lot number (required)
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  string                            $number Lot number (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body   Lot object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateLotAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Lot';
-        $request = $this->updateLotRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Lot';
+        $request    = $this->updateLotRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1241,8 +1241,8 @@ class LotsApi
     /**
      * Create request for operation 'updateLot'
      *
-     * @param  string $number Lot number (required)
-     * @param  \Swagger\Client\Model\LotForm $body Lot object that should be created. (required)
+     * @param  string                            $number Lot number (required)
+     * @param  \RackbeatApp\Client\Model\LotForm $body   Lot object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

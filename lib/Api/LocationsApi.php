@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * LocationsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -90,7 +90,7 @@ class LocationsApi
      *
      * @param  string $number Location number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,7 +106,7 @@ class LocationsApi
      *
      * @param  string $number Location number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -318,9 +318,9 @@ class LocationsApi
      * @param  string $search Filter by search query (optional)
      * @param  bool $is_default Filter by default flag (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\LocationList
+     * @return \RackbeatApp\Client\Model\LocationList
      */
     public function indexLocation($is_draft = null, $parent_id = null, $search = null, $is_default = null)
     {
@@ -338,14 +338,14 @@ class LocationsApi
      * @param  string $search Filter by search query (optional)
      * @param  bool $is_default Filter by default flag (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\LocationList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\LocationList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexLocationWithHttpInfo($is_draft = null, $parent_id = null, $search = null, $is_default = null)
     {
-        $returnType = '\Swagger\Client\Model\LocationList';
-        $request = $this->indexLocationRequest($is_draft, $parent_id, $search, $is_default);
+        $returnType = '\RackbeatApp\Client\Model\LocationList';
+        $request    = $this->indexLocationRequest($is_draft, $parent_id, $search, $is_default);
 
         try {
             $options = $this->createHttpClientOption();
@@ -396,7 +396,7 @@ class LocationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\LocationList',
+                        '\RackbeatApp\Client\Model\LocationList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,8 +444,8 @@ class LocationsApi
      */
     public function indexLocationAsyncWithHttpInfo($is_draft = null, $parent_id = null, $search = null, $is_default = null)
     {
-        $returnType = '\Swagger\Client\Model\LocationList';
-        $request = $this->indexLocationRequest($is_draft, $parent_id, $search, $is_default);
+        $returnType = '\RackbeatApp\Client\Model\LocationList';
+        $request    = $this->indexLocationRequest($is_draft, $parent_id, $search, $is_default);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -597,9 +597,9 @@ class LocationsApi
      * @param  string $search Filter by search query (optional)
      * @param  bool $is_default Filter by default flag (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2006
+     * @return \RackbeatApp\Client\Model\InlineResponse2006
      */
     public function locationFlat($is_draft = null, $parent_id = null, $search = null, $is_default = null)
     {
@@ -617,14 +617,14 @@ class LocationsApi
      * @param  string $search Filter by search query (optional)
      * @param  bool $is_default Filter by default flag (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
      */
     public function locationFlatWithHttpInfo($is_draft = null, $parent_id = null, $search = null, $is_default = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2006';
-        $request = $this->locationFlatRequest($is_draft, $parent_id, $search, $is_default);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2006';
+        $request    = $this->locationFlatRequest($is_draft, $parent_id, $search, $is_default);
 
         try {
             $options = $this->createHttpClientOption();
@@ -675,7 +675,7 @@ class LocationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2006',
+                        '\RackbeatApp\Client\Model\InlineResponse2006',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -723,8 +723,8 @@ class LocationsApi
      */
     public function locationFlatAsyncWithHttpInfo($is_draft = null, $parent_id = null, $search = null, $is_default = null)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2006';
-        $request = $this->locationFlatRequest($is_draft, $parent_id, $search, $is_default);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2006';
+        $request    = $this->locationFlatRequest($is_draft, $parent_id, $search, $is_default);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -873,9 +873,9 @@ class LocationsApi
      *
      * @param  string $number Location number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\LocationList
+     * @return \RackbeatApp\Client\Model\LocationList
      */
     public function locationsChildren($number)
     {
@@ -890,14 +890,14 @@ class LocationsApi
      *
      * @param  string $number Location number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\LocationList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\LocationList, HTTP status code, HTTP response headers (array of strings)
      */
     public function locationsChildrenWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\LocationList';
-        $request = $this->locationsChildrenRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\LocationList';
+        $request    = $this->locationsChildrenRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -948,7 +948,7 @@ class LocationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\LocationList',
+                        '\RackbeatApp\Client\Model\LocationList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -990,8 +990,8 @@ class LocationsApi
      */
     public function locationsChildrenAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\LocationList';
-        $request = $this->locationsChildrenRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\LocationList';
+        $request    = $this->locationsChildrenRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1136,9 +1136,9 @@ class LocationsApi
      * @param  string $number Location number (required)
      * @param  string $lineable_number Lineable number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\InlineResponse2007
+     * @return \RackbeatApp\Client\Model\InlineResponse2007
      */
     public function locationsGetLineableStock($number, $lineable_number)
     {
@@ -1154,14 +1154,14 @@ class LocationsApi
      * @param  string $number Location number (required)
      * @param  string $lineable_number Lineable number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
      */
     public function locationsGetLineableStockWithHttpInfo($number, $lineable_number)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2007';
-        $request = $this->locationsGetLineableStockRequest($number, $lineable_number);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2007';
+        $request    = $this->locationsGetLineableStockRequest($number, $lineable_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1212,7 +1212,7 @@ class LocationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\InlineResponse2007',
+                        '\RackbeatApp\Client\Model\InlineResponse2007',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1256,8 +1256,8 @@ class LocationsApi
      */
     public function locationsGetLineableStockAsyncWithHttpInfo($number, $lineable_number)
     {
-        $returnType = '\Swagger\Client\Model\InlineResponse2007';
-        $request = $this->locationsGetLineableStockRequest($number, $lineable_number);
+        $returnType = '\RackbeatApp\Client\Model\InlineResponse2007';
+        $request    = $this->locationsGetLineableStockRequest($number, $lineable_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1416,9 +1416,9 @@ class LocationsApi
      *
      * @param  string $number Location number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Location
+     * @return \RackbeatApp\Client\Model\Location
      */
     public function showLocation($number)
     {
@@ -1433,14 +1433,14 @@ class LocationsApi
      *
      * @param  string $number Location number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Location, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Location, HTTP status code, HTTP response headers (array of strings)
      */
     public function showLocationWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Location';
-        $request = $this->showLocationRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Location';
+        $request    = $this->showLocationRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1491,7 +1491,7 @@ class LocationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Location',
+                        '\RackbeatApp\Client\Model\Location',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1533,8 +1533,8 @@ class LocationsApi
      */
     public function showLocationAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\Location';
-        $request = $this->showLocationRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\Location';
+        $request    = $this->showLocationRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1676,11 +1676,11 @@ class LocationsApi
      *
      * Create new location
      *
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body Location object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Location
+     * @return \RackbeatApp\Client\Model\Location
      */
     public function storeLocation($body)
     {
@@ -1693,16 +1693,16 @@ class LocationsApi
      *
      * Create new location
      *
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body Location object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Location, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Location, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeLocationWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Location';
-        $request = $this->storeLocationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Location';
+        $request    = $this->storeLocationRequest($body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1753,7 +1753,7 @@ class LocationsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Location',
+                        '\RackbeatApp\Client\Model\Location',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1768,7 +1768,7 @@ class LocationsApi
      *
      * Create new location
      *
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1788,15 +1788,15 @@ class LocationsApi
      *
      * Create new location
      *
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function storeLocationAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Location';
-        $request = $this->storeLocationRequest($body);
+        $returnType = '\RackbeatApp\Client\Model\Location';
+        $request    = $this->storeLocationRequest($body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1838,7 +1838,7 @@ class LocationsApi
     /**
      * Create request for operation 'storeLocation'
      *
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1933,12 +1933,12 @@ class LocationsApi
      *
      * Update existing location
      *
-     * @param  string $number Location number (required)
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  string                                 $number Location number (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body   Location object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Location
+     * @return \RackbeatApp\Client\Model\Location
      */
     public function updateLocation($number, $body)
     {
@@ -1951,17 +1951,17 @@ class LocationsApi
      *
      * Update existing location
      *
-     * @param  string $number Location number (required)
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  string                                 $number Location number (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body   Location object that should be created. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Location, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\Location, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateLocationWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Location';
-        $request = $this->updateLocationRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Location';
+        $request    = $this->updateLocationRequest($number, $body);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2012,7 +2012,7 @@ class LocationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Location',
+                        '\RackbeatApp\Client\Model\Location',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2027,8 +2027,8 @@ class LocationsApi
      *
      * Update existing location
      *
-     * @param  string $number Location number (required)
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  string                                 $number Location number (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body   Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2048,16 +2048,16 @@ class LocationsApi
      *
      * Update existing location
      *
-     * @param  string $number Location number (required)
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  string                                 $number Location number (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body   Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateLocationAsyncWithHttpInfo($number, $body)
     {
-        $returnType = '\Swagger\Client\Model\Location';
-        $request = $this->updateLocationRequest($number, $body);
+        $returnType = '\RackbeatApp\Client\Model\Location';
+        $request    = $this->updateLocationRequest($number, $body);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2099,8 +2099,8 @@ class LocationsApi
     /**
      * Create request for operation 'updateLocation'
      *
-     * @param  string $number Location number (required)
-     * @param  \Swagger\Client\Model\LocationForm $body Location object that should be created. (required)
+     * @param  string                                 $number Location number (required)
+     * @param  \RackbeatApp\Client\Model\LocationForm $body   Location object that should be created. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

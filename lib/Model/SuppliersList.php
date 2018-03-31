@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SuppliersList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class SuppliersList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'suppliers' => '\Swagger\Client\Model\Supplier[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'suppliers' => '\RackbeatApp\Client\Model\Supplier[]',
+        'total'     => 'int',
+        'pages'     => 'int',
+        'limit'     => 'int',
+        'page'      => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class SuppliersList implements ModelInterface, ArrayAccess
     /**
      * Gets suppliers
      *
-     * @return \Swagger\Client\Model\Supplier[]
+     * @return \RackbeatApp\Client\Model\Supplier[]
      */
     public function getSuppliers()
     {
@@ -241,7 +241,7 @@ class SuppliersList implements ModelInterface, ArrayAccess
     /**
      * Sets suppliers
      *
-     * @param \Swagger\Client\Model\Supplier[] $suppliers suppliers
+     * @param \RackbeatApp\Client\Model\Supplier[] $suppliers suppliers
      *
      * @return $this
      */

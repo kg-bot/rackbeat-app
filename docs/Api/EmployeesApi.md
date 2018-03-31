@@ -1,4 +1,4 @@
-# Swagger\Client\EmployeesApi
+# RackbeatApp\Client\EmployeesApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing employee
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmployeesApi(
+$apiInstance = new RackbeatApp\Client\Api\EmployeesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexEmployees**
-> \Swagger\Client\Model\EmployeeList indexEmployees($name)
+> \RackbeatApp\Client\Model\EmployeeList indexEmployees($name)
 
 Index employees
 
@@ -71,7 +71,7 @@ Index employees
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmployeesApi(
+$apiInstance = new RackbeatApp\Client\Api\EmployeesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\EmployeeList**](../Model/EmployeeList.md)
+[**\RackbeatApp\Client\Model\EmployeeList**](../Model/EmployeeList.md)
 
 ### Authorization
 
@@ -109,7 +109,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showEmployee**
-> \Swagger\Client\Model\Employee showEmployee($number)
+> \RackbeatApp\Client\Model\Employee showEmployee($number)
 
 Show single employee
 
@@ -120,7 +120,7 @@ Show single employee
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmployeesApi(
+$apiInstance = new RackbeatApp\Client\Api\EmployeesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Employee**](../Model/Employee.md)
+[**\RackbeatApp\Client\Model\Employee**](../Model/Employee.md)
 
 ### Authorization
 
@@ -158,7 +158,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeEmployee**
-> \Swagger\Client\Model\Employee storeEmployee($body)
+> \RackbeatApp\Client\Model\Employee storeEmployee($body)
 
 Create new employee
 
@@ -169,12 +169,12 @@ Create new employee
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmployeesApi(
+$apiInstance = new RackbeatApp\Client\Api\EmployeesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\EmployeeForm(); // \Swagger\Client\Model\EmployeeForm | Employee object that should be created.
+$body = new \RackbeatApp\Client\Model\EmployeeForm(); // \RackbeatApp\Client\Model\EmployeeForm | Employee object that should be created.
 
 try {
     $result = $apiInstance->storeEmployee($body);
@@ -189,11 +189,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\EmployeeForm**](../Model/EmployeeForm.md)| Employee object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\EmployeeForm**](../Model/EmployeeForm.md)| Employee object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Employee**](../Model/Employee.md)
+[**\RackbeatApp\Client\Model\Employee**](../Model/Employee.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateEmployee**
-> \Swagger\Client\Model\Employee updateEmployee($number, $body)
+> \RackbeatApp\Client\Model\Employee updateEmployee($number, $body)
 
 Update existing employee
 
@@ -218,13 +218,13 @@ Update existing employee
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\EmployeesApi(
+$apiInstance = new RackbeatApp\Client\Api\EmployeesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Employee number
-$body = new \Swagger\Client\Model\EmployeeForm(); // \Swagger\Client\Model\EmployeeForm | Employee object that should be updated.
+$body = new \RackbeatApp\Client\Model\EmployeeForm(); // \RackbeatApp\Client\Model\EmployeeForm | Employee object that should be updated.
 
 try {
     $result = $apiInstance->updateEmployee($number, $body);
@@ -240,11 +240,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Employee number |
- **body** | [**\Swagger\Client\Model\EmployeeForm**](../Model/EmployeeForm.md)| Employee object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\EmployeeForm**](../Model/EmployeeForm.md)| Employee object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Employee**](../Model/Employee.md)
+[**\RackbeatApp\Client\Model\Employee**](../Model/Employee.md)
 
 ### Authorization
 

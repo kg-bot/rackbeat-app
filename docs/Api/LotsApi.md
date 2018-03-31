@@ -1,4 +1,4 @@
-# Swagger\Client\LotsApi
+# RackbeatApp\Client\LotsApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -23,7 +23,7 @@ Delete existing lot
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LotsApi(
+$apiInstance = new RackbeatApp\Client\Api\LotsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **indexLot**
-> \Swagger\Client\Model\LotList indexLot()
+> \RackbeatApp\Client\Model\LotList indexLot()
 
 Index lot
 
@@ -71,7 +71,7 @@ Index lot
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LotsApi(
+$apiInstance = new RackbeatApp\Client\Api\LotsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\LotList**](../Model/LotList.md)
+[**\RackbeatApp\Client\Model\LotList**](../Model/LotList.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showLot**
-> \Swagger\Client\Model\Lot showLot($number)
+> \RackbeatApp\Client\Model\Lot showLot($number)
 
 Show single lot
 
@@ -116,7 +116,7 @@ Show single lot
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LotsApi(
+$apiInstance = new RackbeatApp\Client\Api\LotsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Lot**](../Model/Lot.md)
+[**\RackbeatApp\Client\Model\Lot**](../Model/Lot.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **storeLot**
-> \Swagger\Client\Model\Lot storeLot($body)
+> \RackbeatApp\Client\Model\Lot storeLot($body)
 
 Create new lot
 
@@ -165,12 +165,12 @@ Create new lot
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LotsApi(
+$apiInstance = new RackbeatApp\Client\Api\LotsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\LotForm(); // \Swagger\Client\Model\LotForm | Lot object that should be created.
+$body = new \RackbeatApp\Client\Model\LotForm(); // \RackbeatApp\Client\Model\LotForm | Lot object that should be created.
 
 try {
     $result = $apiInstance->storeLot($body);
@@ -185,11 +185,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\LotForm**](../Model/LotForm.md)| Lot object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\LotForm**](../Model/LotForm.md)| Lot object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Lot**](../Model/Lot.md)
+[**\RackbeatApp\Client\Model\Lot**](../Model/Lot.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLot**
-> \Swagger\Client\Model\Lot updateLot($number, $body)
+> \RackbeatApp\Client\Model\Lot updateLot($number, $body)
 
 Update existing lot
 
@@ -214,13 +214,13 @@ Update existing lot
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\LotsApi(
+$apiInstance = new RackbeatApp\Client\Api\LotsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $number = "number_example"; // string | Lot number
-$body = new \Swagger\Client\Model\LotForm(); // \Swagger\Client\Model\LotForm | Lot object that should be created.
+$body = new \RackbeatApp\Client\Model\LotForm(); // \RackbeatApp\Client\Model\LotForm | Lot object that should be created.
 
 try {
     $result = $apiInstance->updateLot($number, $body);
@@ -236,11 +236,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **number** | **string**| Lot number |
- **body** | [**\Swagger\Client\Model\LotForm**](../Model/LotForm.md)| Lot object that should be created. |
+ **body** | [**\RackbeatApp\Client\Model\LotForm**](../Model/LotForm.md)| Lot object that should be created. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Lot**](../Model/Lot.md)
+[**\RackbeatApp\Client\Model\Lot**](../Model/Lot.md)
 
 ### Authorization
 

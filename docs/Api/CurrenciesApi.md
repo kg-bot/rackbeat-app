@@ -1,4 +1,4 @@
-# Swagger\Client\CurrenciesApi
+# RackbeatApp\Client\CurrenciesApi
 
 All URIs are relative to *https://api.rackbeat.io/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **indexCurrencies**
-> \Swagger\Client\Model\CurrencyRateList indexCurrencies()
+> \RackbeatApp\Client\Model\CurrencyRateList indexCurrencies()
 
 Index currencies
 
@@ -22,7 +22,7 @@ Index currencies
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CurrenciesApi(
+$apiInstance = new RackbeatApp\Client\Api\CurrenciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -42,7 +42,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\CurrencyRateList**](../Model/CurrencyRateList.md)
+[**\RackbeatApp\Client\Model\CurrencyRateList**](../Model/CurrencyRateList.md)
 
 ### Authorization
 
@@ -56,7 +56,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resetCurrency**
-> \Swagger\Client\Model\CurrencyRate resetCurrency($currency_code)
+> \RackbeatApp\Client\Model\CurrencyRate resetCurrency($currency_code)
 
 Reset existing currency
 
@@ -67,7 +67,7 @@ Reset existing currency
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CurrenciesApi(
+$apiInstance = new RackbeatApp\Client\Api\CurrenciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CurrencyRate**](../Model/CurrencyRate.md)
+[**\RackbeatApp\Client\Model\CurrencyRate**](../Model/CurrencyRate.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **showCurrency**
-> \Swagger\Client\Model\CurrencyRate showCurrency($currency_code)
+> \RackbeatApp\Client\Model\CurrencyRate showCurrency($currency_code)
 
 Show single currency
 
@@ -116,7 +116,7 @@ Show single currency
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CurrenciesApi(
+$apiInstance = new RackbeatApp\Client\Api\CurrenciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CurrencyRate**](../Model/CurrencyRate.md)
+[**\RackbeatApp\Client\Model\CurrencyRate**](../Model/CurrencyRate.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCurrency**
-> \Swagger\Client\Model\CurrencyRate updateCurrency($currency_code, $body)
+> \RackbeatApp\Client\Model\CurrencyRate updateCurrency($currency_code, $body)
 
 Update existing currency
 
@@ -165,13 +165,13 @@ Update existing currency
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\CurrenciesApi(
+$apiInstance = new RackbeatApp\Client\Api\CurrenciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $currency_code = "currency_code_example"; // string | Currency code
-$body = new \Swagger\Client\Model\CurrencyRateForm(); // \Swagger\Client\Model\CurrencyRateForm | Currency object that should be updated.
+$body = new \RackbeatApp\Client\Model\CurrencyRateForm(); // \RackbeatApp\Client\Model\CurrencyRateForm | Currency object that should be updated.
 
 try {
     $result = $apiInstance->updateCurrency($currency_code, $body);
@@ -187,11 +187,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **currency_code** | **string**| Currency code |
- **body** | [**\Swagger\Client\Model\CurrencyRateForm**](../Model/CurrencyRateForm.md)| Currency object that should be updated. |
+ **body** | [**\RackbeatApp\Client\Model\CurrencyRateForm**](../Model/CurrencyRateForm.md)| Currency object that should be updated. |
 
 ### Return type
 
-[**\Swagger\Client\Model\CurrencyRate**](../Model/CurrencyRate.md)
+[**\RackbeatApp\Client\Model\CurrencyRate**](../Model/CurrencyRate.md)
 
 ### Authorization
 

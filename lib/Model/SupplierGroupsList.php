@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace RackbeatApp\Client\Model;
 
-use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use ArrayAccess;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * SupplierGroupsList Class Doc Comment
  *
  * @category Class
- * @package     Swagger\Client
+ * @package     RackbeatApp\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,11 +56,11 @@ class SupplierGroupsList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'supplier_groups' => '\Swagger\Client\Model\SupplierGroup[]',
-        'total' => 'int',
-        'pages' => 'int',
-        'limit' => 'int',
-        'page' => 'int'
+        'supplier_groups' => '\RackbeatApp\Client\Model\SupplierGroup[]',
+        'total'           => 'int',
+        'pages'           => 'int',
+        'limit'           => 'int',
+        'page'            => 'int'
     ];
 
     /**
@@ -231,7 +231,7 @@ class SupplierGroupsList implements ModelInterface, ArrayAccess
     /**
      * Gets supplier_groups
      *
-     * @return \Swagger\Client\Model\SupplierGroup[]
+     * @return \RackbeatApp\Client\Model\SupplierGroup[]
      */
     public function getSupplierGroups()
     {
@@ -241,7 +241,7 @@ class SupplierGroupsList implements ModelInterface, ArrayAccess
     /**
      * Sets supplier_groups
      *
-     * @param \Swagger\Client\Model\SupplierGroup[] $supplier_groups supplier_groups
+     * @param \RackbeatApp\Client\Model\SupplierGroup[] $supplier_groups supplier_groups
      *
      * @return $this
      */

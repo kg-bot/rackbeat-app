@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **address_city** | **string** |  | [optional] 
 **address_zipcode** | **string** |  | [optional] 
 **address_country** | **string** |  | [optional] 
-**lines** | [**\Swagger\Client\Model\InvoiceLine[]**](InvoiceLine.md) |  | [optional] 
+**lines** | [**\RackbeatApp\Client\Model\InvoiceLine[]**](InvoiceLine.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

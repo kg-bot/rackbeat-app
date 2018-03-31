@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**orders** | [**\Swagger\Client\Model\SupplierProduct[]**](SupplierProduct.md) |  | [optional] 
+**orders** | [**\RackbeatApp\Client\Model\SupplierProduct[]**](SupplierProduct.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

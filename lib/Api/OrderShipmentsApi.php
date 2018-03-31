@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace RackbeatApp\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use RackbeatApp\Client\ApiException;
+use RackbeatApp\Client\Configuration;
+use RackbeatApp\Client\HeaderSelector;
+use RackbeatApp\Client\ObjectSerializer;
 
 /**
  * OrderShipmentsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  RackbeatApp\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -91,7 +91,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,7 +108,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -335,7 +335,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -352,7 +352,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -579,7 +579,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -596,7 +596,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -822,7 +822,7 @@ class OrderShipmentsApi
      *
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -838,7 +838,7 @@ class OrderShipmentsApi
      *
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1048,7 +1048,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1065,7 +1065,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1292,7 +1292,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1309,7 +1309,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1535,7 +1535,7 @@ class OrderShipmentsApi
      *
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1551,7 +1551,7 @@ class OrderShipmentsApi
      *
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1761,7 +1761,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1779,7 +1779,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2049,9 +2049,9 @@ class OrderShipmentsApi
      * @param  string $employee_number Filter by employee number (optional)
      * @param  string $order_number Filter by order number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipmentList
+     * @return \RackbeatApp\Client\Model\OrderShipmentList
      */
     public function indexOrderShipments($number, $employee = null, $is_shipped = null, $is_picked = null, $location = null, $search = null, $customer_number = null, $employee_number = null, $order_number = null)
     {
@@ -2074,14 +2074,14 @@ class OrderShipmentsApi
      * @param  string $employee_number Filter by employee number (optional)
      * @param  string $order_number Filter by order number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipmentList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipmentList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexOrderShipmentsWithHttpInfo($number, $employee = null, $is_shipped = null, $is_picked = null, $location = null, $search = null, $customer_number = null, $employee_number = null, $order_number = null)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentList';
-        $request = $this->indexOrderShipmentsRequest($number, $employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentList';
+        $request    = $this->indexOrderShipmentsRequest($number, $employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2132,7 +2132,7 @@ class OrderShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipmentList',
+                        '\RackbeatApp\Client\Model\OrderShipmentList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2190,8 +2190,8 @@ class OrderShipmentsApi
      */
     public function indexOrderShipmentsAsyncWithHttpInfo($number, $employee = null, $is_shipped = null, $is_picked = null, $location = null, $search = null, $customer_number = null, $employee_number = null, $order_number = null)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentList';
-        $request = $this->indexOrderShipmentsRequest($number, $employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentList';
+        $request    = $this->indexOrderShipmentsRequest($number, $employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2382,9 +2382,9 @@ class OrderShipmentsApi
      * @param  string $employee_number Filter by employee number (optional)
      * @param  string $order_number Filter by order number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipmentList
+     * @return \RackbeatApp\Client\Model\OrderShipmentList
      */
     public function indexOrderShipmentsGeneral($employee = null, $is_shipped = null, $is_picked = null, $location = null, $search = null, $customer_number = null, $employee_number = null, $order_number = null)
     {
@@ -2406,14 +2406,14 @@ class OrderShipmentsApi
      * @param  string $employee_number Filter by employee number (optional)
      * @param  string $order_number Filter by order number (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipmentList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipmentList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexOrderShipmentsGeneralWithHttpInfo($employee = null, $is_shipped = null, $is_picked = null, $location = null, $search = null, $customer_number = null, $employee_number = null, $order_number = null)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentList';
-        $request = $this->indexOrderShipmentsGeneralRequest($employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentList';
+        $request    = $this->indexOrderShipmentsGeneralRequest($employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2464,7 +2464,7 @@ class OrderShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipmentList',
+                        '\RackbeatApp\Client\Model\OrderShipmentList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2520,8 +2520,8 @@ class OrderShipmentsApi
      */
     public function indexOrderShipmentsGeneralAsyncWithHttpInfo($employee = null, $is_shipped = null, $is_picked = null, $location = null, $search = null, $customer_number = null, $employee_number = null, $order_number = null)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentList';
-        $request = $this->indexOrderShipmentsGeneralRequest($employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentList';
+        $request    = $this->indexOrderShipmentsGeneralRequest($employee, $is_shipped, $is_picked, $location, $search, $customer_number, $employee_number, $order_number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2691,9 +2691,9 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipmentLineList
+     * @return \RackbeatApp\Client\Model\OrderShipmentLineList
      */
     public function indexShipmentLines($number, $shipment_id)
     {
@@ -2709,14 +2709,14 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipmentLineList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipmentLineList, HTTP status code, HTTP response headers (array of strings)
      */
     public function indexShipmentLinesWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentLineList';
-        $request = $this->indexShipmentLinesRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentLineList';
+        $request    = $this->indexShipmentLinesRequest($number, $shipment_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2767,7 +2767,7 @@ class OrderShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipmentLineList',
+                        '\RackbeatApp\Client\Model\OrderShipmentLineList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2811,8 +2811,8 @@ class OrderShipmentsApi
      */
     public function indexShipmentLinesAsyncWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentLineList';
-        $request = $this->indexShipmentLinesRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentLineList';
+        $request    = $this->indexShipmentLinesRequest($number, $shipment_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2972,9 +2972,9 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipment
+     * @return \RackbeatApp\Client\Model\OrderShipment
      */
     public function markPickedOrderShipment($number, $shipment_id)
     {
@@ -2990,14 +2990,14 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
      */
     public function markPickedOrderShipmentWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->markPickedOrderShipmentRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->markPickedOrderShipmentRequest($number, $shipment_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3048,7 +3048,7 @@ class OrderShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipment',
+                        '\RackbeatApp\Client\Model\OrderShipment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3092,8 +3092,8 @@ class OrderShipmentsApi
      */
     public function markPickedOrderShipmentAsyncWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->markPickedOrderShipmentRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->markPickedOrderShipmentRequest($number, $shipment_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3254,7 +3254,7 @@ class OrderShipmentsApi
      * @param  string $shipment_id Order shipment id (required)
      * @param  string $shipment_line_id Order shipment line id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3272,7 +3272,7 @@ class OrderShipmentsApi
      * @param  string $shipment_id Order shipment id (required)
      * @param  string $shipment_line_id Order shipment line id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3517,7 +3517,7 @@ class OrderShipmentsApi
      * @param  string $shipment_id Order shipment id (required)
      * @param  string $shipment_line_id Order shipment line id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3535,7 +3535,7 @@ class OrderShipmentsApi
      * @param  string $shipment_id Order shipment id (required)
      * @param  string $shipment_line_id Order shipment line id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3779,9 +3779,9 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipment
+     * @return \RackbeatApp\Client\Model\OrderShipment
      */
     public function markShippedOrderShipment($number, $shipment_id)
     {
@@ -3797,14 +3797,14 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
      */
     public function markShippedOrderShipmentWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->markShippedOrderShipmentRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->markShippedOrderShipmentRequest($number, $shipment_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3855,7 +3855,7 @@ class OrderShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipment',
+                        '\RackbeatApp\Client\Model\OrderShipment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3899,8 +3899,8 @@ class OrderShipmentsApi
      */
     public function markShippedOrderShipmentAsyncWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->markShippedOrderShipmentRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->markShippedOrderShipmentRequest($number, $shipment_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -4059,7 +4059,7 @@ class OrderShipmentsApi
      *
      * @param  string $body Order note object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4075,7 +4075,7 @@ class OrderShipmentsApi
      *
      * @param  string $body Order note object that should be updated. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4280,7 +4280,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4297,7 +4297,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4524,7 +4524,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -4542,7 +4542,7 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4805,9 +4805,9 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipment
+     * @return \RackbeatApp\Client\Model\OrderShipment
      */
     public function showOrderShipment($number, $shipment_id)
     {
@@ -4823,14 +4823,14 @@ class OrderShipmentsApi
      * @param  string $number Order number (required)
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
      */
     public function showOrderShipmentWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->showOrderShipmentRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->showOrderShipmentRequest($number, $shipment_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -4881,7 +4881,7 @@ class OrderShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipment',
+                        '\RackbeatApp\Client\Model\OrderShipment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4925,8 +4925,8 @@ class OrderShipmentsApi
      */
     public function showOrderShipmentAsyncWithHttpInfo($number, $shipment_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->showOrderShipmentRequest($number, $shipment_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->showOrderShipmentRequest($number, $shipment_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -5087,9 +5087,9 @@ class OrderShipmentsApi
      * @param  string $shipment_id Order shipment id (required)
      * @param  string $shipment_line_id Order shipment line id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipmentLine
+     * @return \RackbeatApp\Client\Model\OrderShipmentLine
      */
     public function showShipmentLine($number, $shipment_id, $shipment_line_id)
     {
@@ -5106,14 +5106,14 @@ class OrderShipmentsApi
      * @param  string $shipment_id Order shipment id (required)
      * @param  string $shipment_line_id Order shipment line id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipmentLine, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipmentLine, HTTP status code, HTTP response headers (array of strings)
      */
     public function showShipmentLineWithHttpInfo($number, $shipment_id, $shipment_line_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentLine';
-        $request = $this->showShipmentLineRequest($number, $shipment_id, $shipment_line_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentLine';
+        $request    = $this->showShipmentLineRequest($number, $shipment_id, $shipment_line_id);
 
         try {
             $options = $this->createHttpClientOption();
@@ -5164,7 +5164,7 @@ class OrderShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipmentLine',
+                        '\RackbeatApp\Client\Model\OrderShipmentLine',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5210,8 +5210,8 @@ class OrderShipmentsApi
      */
     public function showShipmentLineAsyncWithHttpInfo($number, $shipment_id, $shipment_line_id)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipmentLine';
-        $request = $this->showShipmentLineRequest($number, $shipment_id, $shipment_line_id);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipmentLine';
+        $request    = $this->showShipmentLineRequest($number, $shipment_id, $shipment_line_id);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -5385,9 +5385,9 @@ class OrderShipmentsApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrderShipment
+     * @return \RackbeatApp\Client\Model\OrderShipment
      */
     public function storeOrderShipment($number)
     {
@@ -5402,14 +5402,14 @@ class OrderShipmentsApi
      *
      * @param  string $number Order number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \RackbeatApp\Client\Model\OrderShipment, HTTP status code, HTTP response headers (array of strings)
      */
     public function storeOrderShipmentWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->storeOrderShipmentRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->storeOrderShipmentRequest($number);
 
         try {
             $options = $this->createHttpClientOption();
@@ -5460,7 +5460,7 @@ class OrderShipmentsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrderShipment',
+                        '\RackbeatApp\Client\Model\OrderShipment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5502,8 +5502,8 @@ class OrderShipmentsApi
      */
     public function storeOrderShipmentAsyncWithHttpInfo($number)
     {
-        $returnType = '\Swagger\Client\Model\OrderShipment';
-        $request = $this->storeOrderShipmentRequest($number);
+        $returnType = '\RackbeatApp\Client\Model\OrderShipment';
+        $request    = $this->storeOrderShipmentRequest($number);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -5647,7 +5647,7 @@ class OrderShipmentsApi
      *
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -5663,7 +5663,7 @@ class OrderShipmentsApi
      *
      * @param  string $shipment_id Order shipment id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \RackbeatApp\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
